@@ -22,14 +22,30 @@ class CellFormat:
         """String representation of cell format."""
         parts = []
         for fmt in self.formats:
-            parts.append(fmt.name.lower())
+            parts.append(fmt.name)
         if self.bg_color:
-            parts.append(f"bg:{self.bg_color}")
+            parts.append("Fill Color")
         if self.font_color:
-            parts.append(f"fg:{self.font_color}")
+            parts.append("Font Color")
         if self.borders:
-            parts.append(f"borders:{','.join(self.borders)}")
-        return " ".join(parts)
+            parts.extend(f"{border} Border" for border in self.borders)
+        return ",".join(parts)
+    
+    def add_border(self, border_type: str):
+        """Add a border to the cell."""
+        self.borders.add(border_type)
+    
+    def add_format(self, format_type: FormatType):
+        """Add a format type to the cell."""
+        self.formats.add(format_type)
+    
+    def set_background_color(self, color: str):
+        """Set the background color of the cell."""
+        self.bg_color = color
+    
+    def set_font_color(self, color: str):
+        """Set the font color of the cell."""
+        self.font_color = color
 
 @dataclass
 class Cell:

@@ -85,135 +85,148 @@ class SheetCompressor:
         )
     
     def _find_anchor_rows(self, sheet_matrix: SheetMatrix) -> Set[int]:
-        """Find anchor rows based on cell content variation and formatting."""
+        """
+        Find anchor rows based on content heterogeneity.
+        
+        Detects rows that:
+        1. Have high diversity in cell values or formats (headers, section breaks)
+        2. Contain format changes (borders, colors, font styles)
+        3. Mark natural table boundaries
+        """
         anchor_rows = set()
+        row_scores = {}
         
-        # Track data type changes
-        prev_row_types = []
-        
+        # Calculate row heterogeneity scores
         for row in range(1, sheet_matrix.max_row + 1):
-            # Check for header/title indicators
-            has_bold = False
-            has_border = False
-            has_highlight = False
-            
-            # Check for data type variation
-            row_types = []
+            # Track value changes
+            value_changes = 0
+            unique_values = set()
+            format_changes = 0
+            has_borders = False
+            has_colors = False
+            has_emphasis = False
             
             for col in range(1, sheet_matrix.max_col + 1):
                 cell = sheet_matrix.get_cell(row, col)
-                if cell:
-                    # Check for formatting indicators
-                    if cell.format.formats:
-                        if FormatType.BOLD in cell.format.formats:
-                            has_bold = True
-                        if FormatType.BORDERED in cell.format.formats:
-                            has_border = True
-                        if FormatType.HIGHLIGHTED in cell.format.formats:
-                            has_highlight = True
+                if cell and cell.value is not None:
+                    unique_values.add(str(cell.value))
                     
-                    # Track data type
-                    if cell.value is not None:
-                        row_types.append(cell.data_type)
+                    # Check format features
+                    if cell.format:
+                        if cell.format.borders:
+                            has_borders = True
+                        if cell.format.bg_color or cell.format.font_color:
+                            has_colors = True
+                        if FormatType.BOLD in cell.format.formats or FormatType.ITALIC in cell.format.formats:
+                            has_emphasis = True
             
-            # Determine if this is an anchor row
+            # Calculate heterogeneity score
+            value_changes = len(unique_values)
             
-            # Check for formatting indicators of headers/titles
-            if has_bold or has_border or has_highlight:
-                anchor_rows.add(row)
-                continue
+            # Weighted score following the framework's guidelines
+            row_score = (
+                value_changes * 2.0 +                # Value diversity weight
+                (1.5 if has_borders else 0) +        # Border weight
+                (1.0 if has_colors else 0) +         # Color weight
+                (1.0 if has_emphasis else 0)         # Font emphasis weight
+            )
             
-            # Check for data type transitions
-            if prev_row_types and row_types:
-                # Check if this row marks a transition between data types
-                if set(row_types) != set(prev_row_types):
-                    anchor_rows.add(row)
-                    
-            # Store current row's types for next iteration
-            prev_row_types = row_types
+            row_scores[row] = row_score
             
-            # Also check for non-empty rows surrounded by empty rows
-            prev_empty = row > 1 and all(sheet_matrix.get_cell(row-1, col) is None or 
-                                        sheet_matrix.get_cell(row-1, col).value is None 
-                                        for col in range(1, sheet_matrix.max_col + 1))
-            
-            next_empty = row < sheet_matrix.max_row and all(sheet_matrix.get_cell(row+1, col) is None or 
-                                                          sheet_matrix.get_cell(row+1, col).value is None 
-                                                          for col in range(1, sheet_matrix.max_col + 1))
-            
-            current_non_empty = any(sheet_matrix.get_cell(row, col) is not None and 
-                                   sheet_matrix.get_cell(row, col).value is not None 
-                                   for col in range(1, sheet_matrix.max_col + 1))
-            
-            if current_non_empty and (prev_empty or next_empty):
+            # Consider row as anchor if score exceeds threshold
+            # Threshold determined based on empirical analysis
+            if row_score >= 3.0:
                 anchor_rows.add(row)
         
+        # Always include first and last row as anchors
+        if sheet_matrix.max_row > 0:
+            anchor_rows.add(1)
+            anchor_rows.add(sheet_matrix.max_row)
+            
+        # If too few anchors detected, lower threshold and retry
+        if len(anchor_rows) < 3 and sheet_matrix.max_row > 5:
+            secondary_threshold = 2.0
+            for row, score in row_scores.items():
+                if score >= secondary_threshold:
+                    anchor_rows.add(row)
+                    
         return anchor_rows
     
     def _find_anchor_cols(self, sheet_matrix: SheetMatrix) -> Set[int]:
-        """Find anchor columns based on cell content variation and formatting."""
+        """
+        Find anchor columns based on content heterogeneity.
+        
+        Detects columns that:
+        1. Have high diversity in cell values or formats
+        2. Contain format changes (borders, colors, font styles)
+        3. Mark natural table boundaries
+        """
         anchor_cols = set()
+        col_scores = {}
         
-        # Track data type changes
-        prev_col_types = []
-        
+        # Calculate column heterogeneity scores
         for col in range(1, sheet_matrix.max_col + 1):
-            # Check for header/title indicators
-            has_bold = False
-            has_border = False
-            has_highlight = False
-            
-            # Check for data type variation
-            col_types = []
+            # Track value changes
+            value_changes = 0
+            unique_values = set()
+            has_borders = False
+            has_colors = False
+            has_emphasis = False
+            has_nonumeric = 0
+            total_cells = 0
             
             for row in range(1, sheet_matrix.max_row + 1):
                 cell = sheet_matrix.get_cell(row, col)
-                if cell:
-                    # Check for formatting indicators
-                    if cell.format.formats:
-                        if FormatType.BOLD in cell.format.formats:
-                            has_bold = True
-                        if FormatType.BORDERED in cell.format.formats:
-                            has_border = True
-                        if FormatType.HIGHLIGHTED in cell.format.formats:
-                            has_highlight = True
+                if cell and cell.value is not None:
+                    total_cells += 1
+                    unique_values.add(str(cell.value))
                     
-                    # Track data type
-                    if cell.value is not None:
-                        col_types.append(cell.data_type)
-            
-            # Determine if this is an anchor column
-            
-            # Check for formatting indicators of headers/titles
-            if has_bold or has_border or has_highlight:
-                anchor_cols.add(col)
-                continue
-            
-            # Check for data type transitions
-            if prev_col_types and col_types:
-                # Check if this column marks a transition between data types
-                if set(col_types) != set(prev_col_types):
-                    anchor_cols.add(col)
+                    # Check for non-numeric values (headers often contain text)
+                    if cell.data_type not in [DataType.INT_NUM, DataType.FLOAT_NUM]:
+                        has_nonumeric += 1
                     
-            # Store current column's types for next iteration
-            prev_col_types = col_types
+                    # Check format features
+                    if cell.format:
+                        if cell.format.borders:
+                            has_borders = True
+                        if cell.format.bg_color or cell.format.font_color:
+                            has_colors = True
+                        if FormatType.BOLD in cell.format.formats or FormatType.ITALIC in cell.format.formats:
+                            has_emphasis = True
             
-            # Also check for non-empty columns surrounded by empty columns
-            prev_empty = col > 1 and all(sheet_matrix.get_cell(row, col-1) is None or 
-                                        sheet_matrix.get_cell(row, col-1).value is None 
-                                        for row in range(1, sheet_matrix.max_row + 1))
+            # Calculate heterogeneity score
+            value_changes = len(unique_values)
             
-            next_empty = col < sheet_matrix.max_col and all(sheet_matrix.get_cell(row, col+1) is None or 
-                                                          sheet_matrix.get_cell(row, col+1).value is None 
-                                                          for row in range(1, sheet_matrix.max_row + 1))
+            # Non-numeric ratio (for identifying label columns)
+            nonumeric_ratio = has_nonumeric / total_cells if total_cells > 0 else 0
             
-            current_non_empty = any(sheet_matrix.get_cell(row, col) is not None and 
-                                   sheet_matrix.get_cell(row, col).value is not None 
-                                   for row in range(1, sheet_matrix.max_row + 1))
+            # Weighted score following the framework's guidelines
+            col_score = (
+                value_changes * 1.5 +                     # Value diversity weight
+                (nonumeric_ratio * 3.0) +                 # Non-numeric weight (higher for label columns)
+                (1.5 if has_borders else 0) +             # Border weight
+                (1.0 if has_colors else 0) +              # Color weight
+                (1.0 if has_emphasis else 0)              # Font emphasis weight
+            )
             
-            if current_non_empty and (prev_empty or next_empty):
+            col_scores[col] = col_score
+            
+            # Consider column as anchor if score exceeds threshold
+            if col_score >= 3.0:
                 anchor_cols.add(col)
         
+        # Always include first and last column as anchors
+        if sheet_matrix.max_col > 0:
+            anchor_cols.add(1)
+            anchor_cols.add(sheet_matrix.max_col)
+            
+        # If too few anchors detected, lower threshold and retry
+        if len(anchor_cols) < 3 and sheet_matrix.max_col > 5:
+            secondary_threshold = 2.0
+            for col, score in col_scores.items():
+                if score >= secondary_threshold:
+                    anchor_cols.add(col)
+                    
         return anchor_cols
     
     def _expand_anchors(self, anchors: Set[int], max_index: int) -> Set[int]:

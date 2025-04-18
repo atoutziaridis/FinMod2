@@ -3,7 +3,7 @@
 import re
 import datetime
 import tiktoken
-from typing import Any, Dict, List, Tuple, Union
+from typing import Any, Dict, List, Tuple, Union, Optional
 
 from Core.utils.constants import DataType
 
@@ -35,58 +35,133 @@ def parse_cell_address(address: str) -> Tuple[int, int]:
     return int(row), get_column_index(col_letter)
 
 def infer_data_type(value: Any) -> DataType:
-    """Infer data type from cell value."""
+    """Infer data type from a cell value."""
     if value is None:
         return DataType.EMPTY
     
     if isinstance(value, bool):
         return DataType.BOOLEAN
-    
+        
     if isinstance(value, int):
         return DataType.INT_NUM
-    
+        
     if isinstance(value, float):
         return DataType.FLOAT_NUM
     
+    # Handle string values
     if isinstance(value, str):
-        # Check if string is a date/time
-        if re.match(r'\d{1,2}[/-]\d{1,2}[/-]\d{2,4}', value):
-            return DataType.DATE
+        # Check if the string is a number
+        value_str = value.strip()
         
-        # Check if string is an email
-        if re.match(r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$', value):
-            return DataType.EMAIL
-        
-        # Check if string is a URL
-        if re.match(r'^(http|https)://', value) or re.match(r'^www\.', value):
-            return DataType.URL
-        
-        # Check if string is a percentage
-        if re.match(r'^-?\d+(\.\d+)?%$', value):
+        # Empty or whitespace-only string
+        if not value_str:
+            return DataType.EMPTY
+            
+        # Check for percentage format
+        if value_str.endswith('%') and _is_numeric(value_str[:-1]):
             return DataType.PERCENTAGE
+            
+        # Check for currency format
+        if (value_str.startswith('$') or value_str.startswith('€') or 
+            value_str.startswith('£')) and _is_numeric(value_str[1:]):
+            return DataType.CURRENCY
         
-        # Check if string is a formula
-        if value.startswith('='):
-            return DataType.FORMULA
+        # Check for date format - simple patterns
+        date_patterns = [
+            r'^\d{4}-\d{2}-\d{2}$',  # YYYY-MM-DD
+            r'^\d{1,2}/\d{1,2}/\d{2,4}$',  # M/D/YY or M/D/YYYY
+            r'^\d{1,2}-\d{1,2}-\d{2,4}$',  # M-D-YY or M-D-YYYY
+        ]
+        for pattern in date_patterns:
+            if re.match(pattern, value_str):
+                return DataType.DATE
         
-        # Check if string is a phone number
-        if re.match(r'^\+?[\d\s-]{10,15}$', value):
-            return DataType.PHONE
-        
-        # Default to text
-        return DataType.TEXT
+        # Check if it's a numeric string
+        if _is_numeric(value_str):
+            if '.' in value_str:
+                return DataType.FLOAT_NUM
+            else:
+                return DataType.INT_NUM
     
-    if isinstance(value, datetime.datetime):
-        if value.hour == 0 and value.minute == 0 and value.second == 0:
-            return DataType.DATE
-        elif value.year == 1900 and value.month == 1 and value.day == 1:
-            return DataType.TIME
-        else:
-            return DataType.DATETIME
-    
+    # Default to text for anything else
     return DataType.TEXT
 
+def _is_numeric(value_str: str) -> bool:
+    """Check if a string represents a numeric value."""
+    try:
+        float(value_str.replace(',', ''))
+        return True
+    except ValueError:
+        return False
+
 def estimate_tokens(text: str) -> int:
-    """Estimate token count for a given text using tiktoken."""
-    encoding = tiktoken.get_encoding("cl100k_base")  # OpenAI's encoding
-    return len(encoding.encode(text)) 
+    """Estimate number of tokens in text using tiktoken."""
+    try:
+        encoding = tiktoken.get_encoding("cl100k_base")
+        return len(encoding.encode(text))
+    except:
+        # Fallback estimation if tiktoken is not available
+        # This is a very rough estimate
+        return len(text) // 4
+
+def detect_number_format_string(value: Any) -> Optional[str]:
+    """Detect number format string based on value."""
+    if value is None:
+        return None
+        
+    if isinstance(value, bool):
+        return None
+        
+    if isinstance(value, int):
+        return "0"
+        
+    if isinstance(value, float):
+        # Check if it's a whole number
+        if value.is_integer():
+            return "0"
+            
+        # Check decimal places
+        str_value = str(value)
+        if '.' in str_value:
+            decimal_places = len(str_value.split('.')[1])
+            return "0." + "0" * decimal_places
+    
+    # String checks
+    if isinstance(value, str):
+        value_str = value.strip()
+        
+        # Percentage
+        if value_str.endswith('%') and _is_numeric(value_str[:-1]):
+            return "0%"
+            
+        # Currency with 2 decimal places
+        if (value_str.startswith('$') or value_str.startswith('€') or 
+            value_str.startswith('£')) and _is_numeric(value_str[1:]):
+            
+            # Check for thousands separator
+            if ',' in value_str:
+                if '.' in value_str:
+                    # Currency with decimals and thousands separator
+                    return "$#,##0.00"
+                else:
+                    # Currency without decimals but with thousands separator
+                    return "$#,##0"
+            else:
+                if '.' in value_str:
+                    # Currency with decimals, no thousands separator
+                    return "$0.00"
+                else:
+                    # Currency without decimals, no thousands separator
+                    return "$0"
+                    
+        # Numbers with thousands separator
+        if ',' in value_str and _is_numeric(value_str.replace(',', '')):
+            if '.' in value_str:
+                # With decimals
+                decimal_places = len(value_str.split('.')[1])
+                return "#,##0." + "0" * decimal_places
+            else:
+                # Without decimals
+                return "#,##0"
+                
+    return None 
