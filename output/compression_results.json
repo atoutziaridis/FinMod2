@@ -1,0 +1,141 @@
+{
+  "DCF": {
+    "dimensions": "35x13",
+    "non_empty_cells": 84,
+    "data_types": {
+      "TEXT": 41,
+      "FLOAT_NUM": 42,
+      "INT_NUM": 1
+    },
+    "compression_method": "combined",
+    "compression_ratio": 3.5373226403454656,
+    "output_file": "output/DCF_combined_all_modules.json",
+    "tokens": 1621
+  },
+  "Income Statement - FCF": {
+    "dimensions": "128x10",
+    "non_empty_cells": 509,
+    "data_types": {
+      "TEXT": 108,
+      "INT_NUM": 94,
+      "EMPTY": 1,
+      "FLOAT_NUM": 306
+    },
+    "compression_method": "combined",
+    "compression_ratio": 4.795857988165681,
+    "output_file": "output/Income Statement - FCF_combined_all_modules.json",
+    "tokens": 6084
+  },
+  "Balance Sheet": {
+    "dimensions": "54x9",
+    "non_empty_cells": 318,
+    "data_types": {
+      "TEXT": 60,
+      "INT_NUM": 7,
+      "FLOAT_NUM": 251
+    },
+    "compression_method": "combined",
+    "compression_ratio": 2.072764540097361,
+    "output_file": "output/Balance Sheet_combined_all_modules.json",
+    "tokens": 3903
+  },
+  "Variance Analysis": {
+    "dimensions": "17x11",
+    "non_empty_cells": 83,
+    "data_types": {
+      "TEXT": 31,
+      "FLOAT_NUM": 52
+    },
+    "compression_method": "combined",
+    "compression_ratio": 2.378234903782349,
+    "output_file": "output/Variance Analysis_combined_all_modules.json",
+    "tokens": 1507
+  },
+  "Revenue Build (Toggle & Link)": {
+    "dimensions": "77x36",
+    "non_empty_cells": 1147,
+    "data_types": {
+      "TEXT": 83,
+      "FLOAT_NUM": 906,
+      "INT_NUM": 158
+    },
+    "compression_method": "combined",
+    "compression_ratio": 2.4522153529108706,
+    "output_file": "output/Revenue Build (Toggle & Link)_combined_all_modules.json",
+    "tokens": 15528
+  },
+  "Revevnue Build Base": {
+    "dimensions": "60x50",
+    "non_empty_cells": 1117,
+    "data_types": {
+      "TEXT": 73,
+      "FLOAT_NUM": 892,
+      "INT_NUM": 152
+    },
+    "compression_method": "combined",
+    "compression_ratio": 2.5945735932137537,
+    "output_file": "output/Revevnue Build Base_combined_all_modules.json",
+    "tokens": 15443
+  },
+  "Public Comparables": {
+    "dimensions": "28x12",
+    "non_empty_cells": 176,
+    "data_types": {
+      "TEXT": 35,
+      "FLOAT_NUM": 138,
+      "INT_NUM": 3
+    },
+    "compression_method": "combined",
+    "compression_ratio": 2.413572343149808,
+    "output_file": "output/Public Comparables_combined_all_modules.json",
+    "tokens": 2343
+  },
+  "Pre and Post Earnings": {
+    "dimensions": "3x5",
+    "non_empty_cells": 3,
+    "data_types": {
+      "TEXT": 3
+    },
+    "compression_method": "combined",
+    "compression_ratio": 2.2083333333333335,
+    "output_file": "output/Pre and Post Earnings_combined_all_modules.json",
+    "tokens": 120
+  },
+  "Forex Assumptions": {
+    "dimensions": "20x44",
+    "non_empty_cells": 668,
+    "data_types": {
+      "TEXT": 68,
+      "FLOAT_NUM": 600
+    },
+    "compression_method": "combined",
+    "compression_ratio": 1.7866440294284098,
+    "output_file": "output/Forex Assumptions_combined_all_modules.json",
+    "tokens": 8835
+  },
+  "Stock Price History": {
+    "dimensions": "267x12",
+    "non_empty_cells": 2338,
+    "data_types": {
+      "TEXT": 12,
+      "INT_NUM": 786,
+      "FLOAT_NUM": 1540
+    },
+    "compression_method": "combined",
+    "compression_ratio": 5.5075124446271175,
+    "output_file": "output/Stock Price History_combined_all_modules.json",
+    "tokens": 21897
+  },
+  "Customer Demographics": {
+    "dimensions": "30x4",
+    "non_empty_cells": 33,
+    "data_types": {
+      "TEXT": 19,
+      "FLOAT_NUM": 14
+    },
+    "compression_method": "combined",
+    "compression_ratio": 4.605194805194805,
+    "output_file": "output/Customer Demographics_combined_all_modules.json",
+    "tokens": 385
+  }
+}

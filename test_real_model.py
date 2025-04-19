@@ -8,6 +8,7 @@ import json
 import argparse
 from pathlib import Path
 from openpyxl import load_workbook
+from typing import Dict
 
 from Core.parser import SpreadsheetParser
 from Core.encoder import SpreadsheetEncoder
@@ -61,23 +62,21 @@ def test_compression_modules(sheet_matrix, sheet_name, output_dir, token_limit=8
             print("Trying Module 3 (Data-Format-Aware Aggregation) for large sheet...")
             encoder.use_inverted_index = False
             encoder.use_format_aggregation = True
-            compressed_tokens = "Too large"
             
             try:
                 m3_encoded = encoder.encode_sheet(sheet_matrix)
                 m3_tokens = estimate_tokens(m3_encoded)
-                compressed_tokens = m3_tokens
                 
-                # Save the encoded result
-                m3_file = os.path.join(output_dir, f"{sheet_name}_m3_format_aggregation.json")
-                with open(m3_file, 'w') as f:
+                # Save only the final output
+                final_file = os.path.join(output_dir, f"{sheet_name}_combined_all_modules.json")
+                with open(final_file, 'w') as f:
                     f.write(m3_encoded)
                 print(f"Successfully encoded large sheet with Module 3: {m3_tokens} tokens")
                 
                 return {
                     "module3": {
                         "tokens": m3_tokens,
-                        "file": m3_file,
+                        "file": final_file,
                         "compression_ratio": "N/A (large sheet)"
                     }
                 }
@@ -89,7 +88,7 @@ def test_compression_modules(sheet_matrix, sheet_name, output_dir, token_limit=8
             print(f"Error processing large sheet: {str(e)}")
             return {"error": str(e)}
     
-    # Original (no compression)
+    # Original (no compression) - just for comparison, don't save
     print("\nTesting vanilla encoding (no compression)...")
     try:
         encoder.use_inverted_index = False
@@ -97,14 +96,10 @@ def test_compression_modules(sheet_matrix, sheet_name, output_dir, token_limit=8
         
         vanilla_encoded = encoder.encode_sheet(sheet_matrix)
         vanilla_tokens = estimate_tokens(vanilla_encoded)
-        vanilla_file = os.path.join(output_dir, f"{sheet_name}_vanilla.md")
-        with open(vanilla_file, 'w') as f:
-            f.write(vanilla_encoded)
         print(f"Vanilla encoding token count: {vanilla_tokens}")
         
         results["vanilla"] = {
             "tokens": vanilla_tokens,
-            "file": vanilla_file,
             "compression_ratio": 1.0  # Baseline
         }
     except ValueError as e:
@@ -122,9 +117,6 @@ def test_compression_modules(sheet_matrix, sheet_name, output_dir, token_limit=8
         encoder.use_format_aggregation = False
         m1_encoded = encoder.encode_sheet(compressed_m1)
         m1_tokens = estimate_tokens(m1_encoded)
-        m1_file = os.path.join(output_dir, f"{sheet_name}_m1_structural_anchor.md")
-        with open(m1_file, 'w') as f:
-            f.write(m1_encoded)
         
         compression_ratio = m1_tokens / vanilla_tokens if vanilla_tokens > 0 else 0
         print(f"Module 1 token count: {m1_tokens}")
@@ -132,7 +124,6 @@ def test_compression_modules(sheet_matrix, sheet_name, output_dir, token_limit=8
         
         results["module1"] = {
             "tokens": m1_tokens,
-            "file": m1_file,
             "compression_ratio": 1/compression_ratio
         }
     except Exception as e:
@@ -146,9 +137,6 @@ def test_compression_modules(sheet_matrix, sheet_name, output_dir, token_limit=8
         encoder.use_format_aggregation = False
         m2_encoded = encoder.encode_sheet(sheet_matrix)
         m2_tokens = estimate_tokens(m2_encoded)
-        m2_file = os.path.join(output_dir, f"{sheet_name}_m2_inverted_index.json")
-        with open(m2_file, 'w') as f:
-            f.write(m2_encoded)
         
         compression_ratio = m2_tokens / vanilla_tokens if vanilla_tokens > 0 else 0
         print(f"Module 2 token count: {m2_tokens}")
@@ -156,7 +144,6 @@ def test_compression_modules(sheet_matrix, sheet_name, output_dir, token_limit=8
         
         results["module2"] = {
             "tokens": m2_tokens,
-            "file": m2_file,
             "compression_ratio": 1/compression_ratio
         }
     except Exception as e:
@@ -170,9 +157,6 @@ def test_compression_modules(sheet_matrix, sheet_name, output_dir, token_limit=8
         encoder.use_format_aggregation = True
         m3_encoded = encoder.encode_sheet(sheet_matrix)
         m3_tokens = estimate_tokens(m3_encoded)
-        m3_file = os.path.join(output_dir, f"{sheet_name}_m3_format_aggregation.json")
-        with open(m3_file, 'w') as f:
-            f.write(m3_encoded)
         
         compression_ratio = m3_tokens / vanilla_tokens if vanilla_tokens > 0 else 0
         print(f"Module 3 token count: {m3_tokens}")
@@ -180,7 +164,6 @@ def test_compression_modules(sheet_matrix, sheet_name, output_dir, token_limit=8
         
         results["module3"] = {
             "tokens": m3_tokens,
-            "file": m3_file,
             "compression_ratio": 1/compression_ratio
         }
     except Exception as e:
@@ -199,8 +182,10 @@ def test_compression_modules(sheet_matrix, sheet_name, output_dir, token_limit=8
         encoder.use_format_aggregation = True
         combined_encoded = encoder.encode_sheet(compressed_combined)
         combined_tokens = estimate_tokens(combined_encoded)
-        combined_file = os.path.join(output_dir, f"{sheet_name}_combined_all_modules.json")
-        with open(combined_file, 'w') as f:
+        
+        # Save only the final combined output
+        final_file = os.path.join(output_dir, f"{sheet_name}_combined_all_modules.json")
+        with open(final_file, 'w') as f:
             f.write(combined_encoded)
         
         compression_ratio = combined_tokens / vanilla_tokens if vanilla_tokens > 0 else 0
@@ -209,7 +194,7 @@ def test_compression_modules(sheet_matrix, sheet_name, output_dir, token_limit=8
         
         results["combined"] = {
             "tokens": combined_tokens,
-            "file": combined_file,
+            "file": final_file,
             "compression_ratio": 1/compression_ratio
         }
     except Exception as e:
@@ -217,6 +202,72 @@ def test_compression_modules(sheet_matrix, sheet_name, output_dir, token_limit=8
         results["combined"] = {"error": str(e)}
     
     return results
+
+def compress_with_best_method(sheet_matrix, output_dir, filename_prefix, max_tokens):
+    """Compress the sheet using the best available method."""
+    results = {}
+    
+    # Test all compression modules
+    compression_results = test_compression_modules(
+        sheet_matrix, 
+        filename_prefix, 
+        output_dir,
+        token_limit=max_tokens
+    )
+    
+    # Determine best approach
+    best_approach = None
+    best_ratio = float('-inf')
+    
+    for module, result in compression_results.items():
+        if "error" in result:
+            continue
+        if "compression_ratio" in result and result["compression_ratio"] > best_ratio:
+            best_ratio = result["compression_ratio"]
+            best_approach = module
+    
+    if best_approach:
+        results["method"] = best_approach
+        results["compression_ratio"] = best_ratio
+        results["output_file"] = compression_results[best_approach]["file"]
+        results["tokens"] = compression_results[best_approach]["tokens"]
+    else:
+        results["error"] = "No valid compression method found"
+    
+    return results
+
+def process_sheet(sheet_name: str, model_path: str, output_dir: str, token_limit: int) -> Dict:
+    """Process a single sheet and return results."""
+    try:
+        print(f"Processing sheet: {sheet_name}")
+        parser = SpreadsheetParser(model_path)
+        sheet_matrix = parser.parse_sheet(sheet_name)
+        
+        # Get basic statistics
+        sheet_stats = analyze_sheet(sheet_matrix, sheet_name)
+        
+        # Use the best compression method automatically
+        compression_results = compress_with_best_method(
+            sheet_matrix,
+            output_dir,
+            filename_prefix=sheet_name,
+            max_tokens=token_limit
+        )
+        
+        # Update sheet statistics with compression results
+        sheet_stats.update({
+            "compression_method": compression_results["method"],
+            "compression_ratio": compression_results["compression_ratio"],
+            "output_file": compression_results["output_file"],
+            "tokens": compression_results["tokens"]
+        })
+        
+        print(f"Completed sheet {sheet_name}")
+        return {sheet_name: sheet_stats}
+        
+    except Exception as e:
+        print(f"Error processing sheet {sheet_name}: {str(e)}")
+        return {sheet_name: {"error": str(e)}}
 
 def main():
     """Run analysis on the real Excel model."""
@@ -227,16 +278,15 @@ def main():
     parser.add_argument("--output-dir", default="output", help="Output directory")
     parser.add_argument("--sheet", help="Specific sheet to process (omit to process all sheets)")
     parser.add_argument("--token-limit", type=int, default=8000, help="Token limit for encoding")
-    parser.add_argument("--large-sheet-threshold", type=int, default=50000, 
-                      help="Skip detailed analysis for sheets larger than this threshold")
+    parser.add_argument("--parallel", type=int, default=4, help="Number of parallel processes")
     args = parser.parse_args()
     
     # Set up variables
     model_path = args.file
     output_dir = args.output_dir
     token_limit = args.token_limit
-    large_sheet_threshold = args.large_sheet_threshold
     specific_sheet = args.sheet
+    parallel = args.parallel
     
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
@@ -265,114 +315,29 @@ def main():
         for name in sheet_names:
             print(f"- {name}")
     
-    # Initialize parser
-    parser = SpreadsheetParser(model_path)
+    # Process sheets in parallel
+    from multiprocessing import Pool
     
-    # Store results for all sheets
-    all_sheets_stats = {}
-    all_compression_results = {}
-    
-    # Analyze each sheet
-    for sheet_name in sheet_names:
-        try:
-            print(f"\nProcessing sheet: {sheet_name}")
-            sheet_matrix = parser.parse_sheet(sheet_name)
-            
-            # Get basic statistics
-            sheet_stats = analyze_sheet(sheet_matrix, sheet_name)
-            
-            # Test all compression modules
-            compression_results = test_compression_modules(
-                sheet_matrix, 
-                sheet_name, 
-                output_dir,
-                token_limit=token_limit,
-                skip_if_larger_than=large_sheet_threshold
-            )
-            
-            # Update sheet statistics
-            sheet_stats.update({
-                "compression_results": compression_results
-            })
-            
-            all_sheets_stats[sheet_name] = sheet_stats
-            all_compression_results[sheet_name] = compression_results
-            
-        except Exception as e:
-            print(f"Error processing sheet {sheet_name}: {str(e)}")
-            all_sheets_stats[sheet_name] = {"error": str(e)}
-    
-    # Save overall statistics
-    stats_filename = os.path.join(output_dir, "compression_stats.json")
-    with open(stats_filename, 'w') as f:
-        json.dump(all_sheets_stats, f, indent=2)
-    print(f"\nCompression statistics saved to: {stats_filename}")
-    
-    # Create a summary report
-    report_rows = []
-    report_rows.append("# Compression Summary Report")
-    report_rows.append("\nSheet Name | Original Size | Module 1 | Module 2 | Module 3 | Combined | Best Approach")
-    report_rows.append("--- | --- | --- | --- | --- | --- | ---")
-    
-    for sheet_name, results in all_compression_results.items():
-        if "vanilla" not in results or "error" in results["vanilla"]:
-            if "module3" in results and "tokens" in results["module3"]:
-                # For large sheets that only have Module 3 results
-                m3_tokens = results["module3"]["tokens"]
-                row = f"{sheet_name} | Too large | - | - | {m3_tokens} tokens | - | Module 3 (large sheet)"
-                report_rows.append(row)
-            continue
-            
-        vanilla_tokens = results["vanilla"]["tokens"]
-        m1_ratio = results.get("module1", {}).get("compression_ratio", 0)
-        m2_ratio = results.get("module2", {}).get("compression_ratio", 0)
-        m3_ratio = results.get("module3", {}).get("compression_ratio", 0)
-        combined_ratio = results.get("combined", {}).get("compression_ratio", 0)
+    # Create a pool of workers
+    with Pool(processes=parallel) as pool:
+        # Prepare arguments for each sheet
+        args_list = [(name, model_path, output_dir, token_limit) for name in sheet_names]
         
-        # Determine best approach
-        best_ratio = max(m1_ratio, m2_ratio, m3_ratio, combined_ratio)
-        if best_ratio == m1_ratio:
-            best_approach = "Module 1"
-        elif best_ratio == m2_ratio:
-            best_approach = "Module 2"
-        elif best_ratio == m3_ratio:
-            best_approach = "Module 3"
-        else:
-            best_approach = "Combined"
-            
-        row = f"{sheet_name} | {vanilla_tokens} tokens | {m1_ratio:.2f}x | {m2_ratio:.2f}x | {m3_ratio:.2f}x | {combined_ratio:.2f}x | {best_approach} ({best_ratio:.2f}x)"
-        report_rows.append(row)
+        # Process sheets in parallel
+        results = pool.starmap(process_sheet, args_list)
     
-    # Add recommendations section
-    report_rows.append("\n## Recommendations")
-    report_rows.append("\nBased on the test results, here are the recommended approaches:")
-    report_rows.append("\n1. **For financial sheets with numeric data**: Use Module 3 (Format-Aware Aggregation)")
-    report_rows.append("2. **For text-heavy sheets**: Use Module 2 (Inverted Index)")
-    report_rows.append("3. **For very large sheets**: Use chunked encoding with Module 3")
-    report_rows.append("4. **For small sheets with varied formats**: Use the Combined approach")
+    # Combine results
+    all_sheets_results = {}
+    for result in results:
+        all_sheets_results.update(result)
     
-    # Add implementation details
-    report_rows.append("\n## Implementation Details")
-    report_rows.append("\n- **Module 1**: Identifies and preserves important rows/columns while discarding uniform data")
-    report_rows.append("- **Module 2**: Groups identical values to reduce token usage for repeated data")
-    report_rows.append("- **Module 3**: Groups cells with similar formats for better compression")
-    report_rows.append("- **Combined**: Applies all three modules in sequence")
-    report_rows.append("\nLarge sheets are automatically chunked with headers preserved in each chunk.")
-    
-    # Save the summary report
-    report_filename = os.path.join(output_dir, "compression_summary.md")
-    with open(report_filename, 'w') as f:
-        f.write("\n".join(report_rows))
-    print(f"Compression summary report saved to: {report_filename}")
+    # Save overall results
+    stats_filename = os.path.join(output_dir, "compression_results.json")
+    with open(stats_filename, 'w') as f:
+        json.dump(all_sheets_results, f, indent=2)
+    print(f"\nCompression results saved to: {stats_filename}")
     
     print("\nAnalysis complete!")
-    
-    # Print final recommendations
-    print("\nRecommendations based on analysis:")
-    print("1. Use Module 3 (Format-Aware Aggregation) for financial sheets with numeric data")
-    print("2. Use Module 2 (Inverted Index) for text-heavy sheets")
-    print("3. Use chunking with Module 3 for very large sheets")
-    print("4. Use Combined approach for small sheets with varied formats")
 
 if __name__ == "__main__":
     main() 

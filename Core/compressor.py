@@ -2,50 +2,36 @@
 
 from typing import Dict, List, Tuple, Set, Optional, Any
 import numpy as np
+import json
+import os
+from pathlib import Path
 from collections import defaultdict
 
 from Core.parser import SheetMatrix, Cell
+from Core.encoder import SpreadsheetEncoder
 from Core.utils.constants import DataType, FormatType
-from Core.utils.helpers import get_cell_address
+from Core.utils.helpers import get_cell_address, estimate_tokens
 
-class SheetCompressor:
-    """Main compressor class implementing various compression strategies."""
+class CompressionStrategy:
+    """Base class for compression strategies."""
     
-    def __init__(self, use_structural_anchors: bool = True, 
-                 use_inverted_index: bool = True, 
-                 use_format_aggregation: bool = True,
-                 anchor_proximity: int = 4):
-        """Initialize compressor with selected strategies."""
-        self.use_structural_anchors = use_structural_anchors
-        self.use_inverted_index = use_inverted_index
-        self.use_format_aggregation = use_format_aggregation
+    def apply(self, sheet_matrix: SheetMatrix) -> SheetMatrix:
+        """Apply the compression strategy to the sheet matrix."""
+        raise NotImplementedError("Subclasses must implement apply()")
+    
+    def get_name(self) -> str:
+        """Get the name of the compression strategy."""
+        return self.__class__.__name__
+
+class StructuralAnchorStrategy(CompressionStrategy):
+    """Strategy that extracts content based on structural anchors."""
+    
+    def __init__(self, anchor_proximity: int = 4):
+        """Initialize with anchor proximity."""
         self.anchor_proximity = anchor_proximity
-        
-    def compress(self, sheet_matrix: SheetMatrix) -> SheetMatrix:
-        """Apply all enabled compression strategies to the sheet matrix."""
-        compressed_matrix = sheet_matrix
-        
-        # Apply structural anchor-based extraction
-        if self.use_structural_anchors:
-            compressed_matrix = self._structural_anchor_extraction(compressed_matrix)
-            
-        # Apply inverted index translation (to be implemented)
-        if self.use_inverted_index:
-            pass  # Will implement this next
-            
-        # Apply data-format-aware aggregation (to be implemented)
-        if self.use_format_aggregation:
-            pass  # Will implement this next
-            
-        return compressed_matrix
-        
-    def _structural_anchor_extraction(self, sheet_matrix: SheetMatrix) -> SheetMatrix:
-        """
-        Module 1: Structural-Anchor-Based Extraction
-        
-        Detect boundary rows/columns based on cell content variation,
-        and retain rows/cols within k of these anchors.
-        """
+    
+    def apply(self, sheet_matrix: SheetMatrix) -> SheetMatrix:
+        """Apply structural anchor-based extraction."""
         # Find anchor rows and columns
         anchor_rows = self._find_anchor_rows(sheet_matrix)
         anchor_cols = self._find_anchor_cols(sheet_matrix)
@@ -85,14 +71,7 @@ class SheetCompressor:
         )
     
     def _find_anchor_rows(self, sheet_matrix: SheetMatrix) -> Set[int]:
-        """
-        Find anchor rows based on content heterogeneity.
-        
-        Detects rows that:
-        1. Have high diversity in cell values or formats (headers, section breaks)
-        2. Contain format changes (borders, colors, font styles)
-        3. Mark natural table boundaries
-        """
+        """Find anchor rows based on content heterogeneity."""
         anchor_rows = set()
         row_scores = {}
         
@@ -153,14 +132,7 @@ class SheetCompressor:
         return anchor_rows
     
     def _find_anchor_cols(self, sheet_matrix: SheetMatrix) -> Set[int]:
-        """
-        Find anchor columns based on content heterogeneity.
-        
-        Detects columns that:
-        1. Have high diversity in cell values or formats
-        2. Contain format changes (borders, colors, font styles)
-        3. Mark natural table boundaries
-        """
+        """Find anchor columns based on content heterogeneity."""
         anchor_cols = set()
         col_scores = {}
         
@@ -241,4 +213,317 @@ class SheetCompressor:
                 if anchor + i <= max_index:
                     expanded.add(anchor + i)
         
-        return expanded 
+        return expanded
+
+class SheetCompressor:
+    """Main compressor class implementing various compression strategies."""
+    
+    def __init__(self, use_structural_anchors: bool = True, 
+                 use_inverted_index: bool = True, 
+                 use_format_aggregation: bool = True,
+                 anchor_proximity: int = 4,
+                 max_tokens: int = 4000):
+        """Initialize compressor with selected strategies."""
+        self.strategies = []
+        self.max_tokens = max_tokens
+        
+        # Add selected strategies
+        if use_structural_anchors:
+            self.strategies.append(StructuralAnchorStrategy(anchor_proximity))
+            
+        # Configure encoder options
+        self.use_inverted_index = use_inverted_index
+        self.use_format_aggregation = use_format_aggregation
+        
+    def compress(self, sheet_matrix: SheetMatrix) -> SheetMatrix:
+        """Apply all enabled compression strategies to the sheet matrix."""
+        compressed_matrix = sheet_matrix
+        
+        for strategy in self.strategies:
+            compressed_matrix = strategy.apply(compressed_matrix)
+            
+        return compressed_matrix
+    
+    def compress_and_save(self, sheet_matrix: SheetMatrix, output_dir: str, filename_prefix: str = None) -> Dict:
+        """Compress the sheet matrix, encode it, and save to a file.
+        
+        Args:
+            sheet_matrix: The sheet matrix to compress
+            output_dir: Directory to save the output file
+            filename_prefix: Optional prefix for the output filename
+        
+        Returns:
+            Dict with compression statistics
+        """
+        # Create output directory if it doesn't exist
+        os.makedirs(output_dir, exist_ok=True)
+        
+        # Determine filename
+        if filename_prefix is None:
+            filename_prefix = sheet_matrix.sheet_name.replace(" ", "_")
+        
+        # Get statistics before compression
+        original_cell_count = sum(1 for row in range(1, sheet_matrix.max_row + 1) 
+                                for col in range(1, sheet_matrix.max_col + 1) 
+                                if sheet_matrix.get_cell(row, col) is not None and 
+                                   sheet_matrix.get_cell(row, col).value is not None)
+        
+        # Apply compression
+        compressed_matrix = self.compress(sheet_matrix)
+        
+        # Get statistics after compression
+        compressed_cell_count = sum(1 for row in range(1, compressed_matrix.max_row + 1) 
+                                  for col in range(1, compressed_matrix.max_col + 1) 
+                                  if compressed_matrix.get_cell(row, col) is not None and 
+                                     compressed_matrix.get_cell(row, col).value is not None)
+        
+        # Encode the compressed sheet
+        encoder = SpreadsheetEncoder(max_tokens=self.max_tokens)
+        encoder.use_inverted_index = self.use_inverted_index
+        encoder.use_format_aggregation = self.use_format_aggregation
+        
+        try:
+            encoded_compressed = encoder.encode_sheet(compressed_matrix)
+            compressed_tokens = estimate_tokens(encoded_compressed)
+            
+            # Skip saving intermediate files - only save final combined output
+            output_filename = os.path.join(output_dir, f"{filename_prefix}_combined_all_modules.json")
+            
+            with open(output_filename, 'w') as f:
+                f.write(encoded_compressed)
+            
+            # Compile statistics
+            stats = {
+                "sheet_name": sheet_matrix.sheet_name,
+                "original_dimensions": f"{sheet_matrix.max_row}x{sheet_matrix.max_col}",
+                "original_cell_count": original_cell_count,
+                "compressed_cell_count": compressed_cell_count,
+                "compression_ratio": compressed_cell_count / original_cell_count,
+                "token_count": compressed_tokens,
+                "output_file": output_filename,
+                "compression_strategies": [strategy.get_name() for strategy in self.strategies],
+                "encoding_options": {
+                    "inverted_index": self.use_inverted_index,
+                    "format_aggregation": self.use_format_aggregation
+                }
+            }
+            
+            return stats
+            
+        except ValueError as e:
+            error_msg = f"Error encoding compressed sheet: {str(e)}"
+            print(error_msg)
+            return {"error": error_msg}
+
+def compress_spreadsheet_to_file(sheet_matrix: SheetMatrix, output_dir: str, filename_prefix: str = None,
+                              use_structural_anchors: bool = True, use_inverted_index: bool = True,
+                              use_format_aggregation: bool = True, anchor_proximity: int = 4,
+                              max_tokens: int = 4000) -> Dict:
+    """Convenience function to compress a spreadsheet and save it to a file.
+    
+    Args:
+        sheet_matrix: The sheet matrix to compress
+        output_dir: Directory to save the output file
+        filename_prefix: Optional prefix for the output filename
+        use_structural_anchors: Whether to use structural anchor-based extraction
+        use_inverted_index: Whether to use inverted-index translation
+        use_format_aggregation: Whether to use format aggregation
+        anchor_proximity: Proximity range for structural anchors
+        max_tokens: Maximum token limit
+    
+    Returns:
+        Dict with compression statistics
+    """
+    compressor = SheetCompressor(
+        use_structural_anchors=use_structural_anchors,
+        use_inverted_index=use_inverted_index,
+        use_format_aggregation=use_format_aggregation,
+        anchor_proximity=anchor_proximity,
+        max_tokens=max_tokens
+    )
+    
+    return compressor.compress_and_save(sheet_matrix, output_dir, filename_prefix)
+
+def extract_metadata(sheet_matrix: SheetMatrix) -> Dict:
+    """Extract metadata from sheet matrix.
+    
+    Args:
+        sheet_matrix: The sheet matrix to analyze
+        
+    Returns:
+        Dictionary containing metadata
+    """
+    metadata = {
+        "dimensions": f"{sheet_matrix.max_row}x{sheet_matrix.max_col}",
+        "headers": [],
+        "data_types": set(),
+        "date_ranges": {},
+        "key_metrics": []
+    }
+    
+    # Extract headers (first row)
+    if sheet_matrix.max_row > 0:
+        for col in range(1, sheet_matrix.max_col + 1):
+            cell = sheet_matrix.get_cell(1, col)
+            if cell and cell.value:
+                metadata["headers"].append(str(cell.value))
+    
+    # Analyze data types and content
+    for row in range(1, sheet_matrix.max_row + 1):
+        for col in range(1, sheet_matrix.max_col + 1):
+            cell = sheet_matrix.get_cell(row, col)
+            if cell and cell.value:
+                # Track data types
+                metadata["data_types"].add(cell.data_type.name)
+                
+                # Check for dates
+                if cell.data_type.name in ["DATE", "DATETIME"]:
+                    if "date_ranges" not in metadata:
+                        metadata["date_ranges"] = {"min": None, "max": None}
+                    if not metadata["date_ranges"]["min"] or cell.value < metadata["date_ranges"]["min"]:
+                        metadata["date_ranges"]["min"] = cell.value
+                    if not metadata["date_ranges"]["max"] or cell.value > metadata["date_ranges"]["max"]:
+                        metadata["date_ranges"]["max"] = cell.value
+                
+                # Check for key metrics
+                if any(keyword in str(cell.value).lower() for keyword in ["revenue", "income", "expense", "profit", "loss"]):
+                    metadata["key_metrics"].append(str(cell.value))
+    
+    # Convert sets to lists for JSON serialization
+    metadata["data_types"] = list(metadata["data_types"])
+    
+    return metadata
+
+def compress_with_best_method(sheet_matrix: SheetMatrix, output_dir: str, filename_prefix: str = None,
+                            max_tokens: int = 4000) -> Dict:
+    """
+    Automatically select and apply the best compression method for the given sheet matrix.
+    Optimized for runtime performance while maintaining output quality.
+    
+    Args:
+        sheet_matrix: The sheet matrix to compress
+        output_dir: Directory to save the compressed output
+        filename_prefix: Optional prefix for the output filename
+        max_tokens: Maximum number of tokens allowed in the output
+        
+    Returns:
+        Dict containing compression results and metadata
+    """
+    # Create output directory if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Extract metadata
+    metadata = extract_metadata(sheet_matrix)
+    
+    # Initialize metadata index
+    metadata_index = MetadataIndex(output_dir)
+    if filename_prefix:
+        metadata_index.update_index(filename_prefix, metadata)
+    
+    # Initialize encoder with token limit
+    encoder = SpreadsheetEncoder(max_tokens=max_tokens)
+    
+    # Quick size check - if sheet is very large, use Module 3 directly
+    estimated_size = sheet_matrix.max_row * sheet_matrix.max_col * 2
+    if estimated_size > 100000:  # Large sheet threshold
+        try:
+            encoder.use_structural_anchors = False
+            encoder.use_inverted_index = False
+            encoder.use_format_aggregation = True
+            encoded = encoder.encode_sheet(sheet_matrix)
+            
+            # Generate output filename
+            if filename_prefix is None:
+                filename_prefix = sheet_matrix.sheet_name
+            output_file = os.path.join(output_dir, f"{filename_prefix}_compressed.json")
+            
+            # Save the output
+            with open(output_file, 'w') as f:
+                f.write(encoded)
+            
+            return {
+                "method": "module3",
+                "compression_ratio": 1.0,  # Not calculated for large sheets
+                "output_file": output_file,
+                "tokens": estimate_tokens(encoded),
+                "metadata": metadata
+            }
+        except Exception as e:
+            print(f"Error with Module 3 for large sheet: {str(e)}")
+            raise
+    
+    # For smaller sheets, try all methods in order of expected effectiveness
+    methods = [
+        ("combined", {"use_structural_anchors": True, "use_inverted_index": True, "use_format_aggregation": True}),
+        ("module3", {"use_structural_anchors": False, "use_inverted_index": False, "use_format_aggregation": True}),
+        ("module2", {"use_structural_anchors": False, "use_inverted_index": True, "use_format_aggregation": False}),
+        ("module1", {"use_structural_anchors": True, "use_inverted_index": False, "use_format_aggregation": False})
+    ]
+    
+    # Cache the original encoding to avoid recalculating
+    original_encoded = encoder.encode_sheet(sheet_matrix)
+    original_tokens = estimate_tokens(original_encoded)
+    
+    best_ratio = float('inf')
+    best_method = None
+    best_encoded = None
+    
+    # Try each method and measure compression ratio
+    for method_name, params in methods:
+        try:
+            # Configure encoder
+            encoder.use_structural_anchors = params["use_structural_anchors"]
+            encoder.use_inverted_index = params["use_inverted_index"]
+            encoder.use_format_aggregation = params["use_format_aggregation"]
+            
+            # Apply compression
+            if params["use_structural_anchors"]:
+                compressor = SheetCompressor(**params)
+                compressed_matrix = compressor.compress(sheet_matrix)
+                encoded = encoder.encode_sheet(compressed_matrix)
+            else:
+                encoded = encoder.encode_sheet(sheet_matrix)
+            
+            # Calculate compression ratio
+            compressed_tokens = estimate_tokens(encoded)
+            ratio = compressed_tokens / original_tokens if original_tokens > 0 else 0
+            
+            # If we achieve very good compression, use it immediately
+            if ratio < 0.3:  # 70% compression or better
+                best_ratio = ratio
+                best_method = method_name
+                best_encoded = encoded
+                break
+                
+            # Update best method if this one is better
+            if ratio < best_ratio:
+                best_ratio = ratio
+                best_method = method_name
+                best_encoded = encoded
+                
+        except Exception as e:
+            print(f"Error with {method_name}: {str(e)}")
+            continue
+    
+    if best_encoded is None:
+        raise ValueError("No compression method succeeded")
+    
+    # Generate output filename
+    if filename_prefix is None:
+        filename_prefix = sheet_matrix.sheet_name
+    output_file = os.path.join(output_dir, f"{filename_prefix}_compressed.json")
+    
+    # Save the best compressed output
+    with open(output_file, 'w') as f:
+        f.write(best_encoded)
+    
+    # Add metadata to the return value
+    result = {
+        "method": best_method,
+        "compression_ratio": best_ratio,
+        "output_file": output_file,
+        "tokens": estimate_tokens(best_encoded),
+        "metadata": metadata
+    }
+    
+    return result 

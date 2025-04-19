@@ -5,4 +5,4 @@ Text Input:
 {"Variance Analysis":["B2"],"Source: Visible Alpha":["B3"],"3Q FY-2024, Aug 29th":["C3"],"__empty_cells":12}
 
 Format Input:
-{"FMT:HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,top Border,left Border":["B2"],"FMT:BORDERED,Font Color,top Border,left Border":["B3"],"FMT:CENTER_ALIGNED,BORDERED,Font Color,right Border,top Border":["C3"]}
+{"FMT:BORDERED,BOLD,HIGHLIGHTED,Fill Color,Font Color,left Border,top Border":["B2"],"FMT:BORDERED,Font Color,left Border,top Border":["B3"],"FMT:CENTER_ALIGNED,BORDERED,Font Color,top Border,right Border":["C3"]}
