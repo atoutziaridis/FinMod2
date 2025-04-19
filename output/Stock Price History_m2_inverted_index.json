@@ -1,0 +1,1104 @@
+# Sheet: Stock Price History
+Dimensions: 267x12
+
+Chunk 1/4 (rows 8-87):
+
+Text Input:
+{"BIRK":["B3","K7"],"VOO":["C3"],"2023-10-20 00:00:00":["B4"],"2024-10-30 00:00:00":["C4"],"Date":["B7","F7","J7"],"Close":["C7","G7"],"VOO (Rebased)":["L7"],"45219":["B8","F8","J8"],"38.7":["C8","D8","H8","K8","L8"],"386.99":["G8"],"45222":["B9","F9","J9"],"38.82":["C10","C9","K10","K9"],"38.63199824284865":["D9","H9","L9"],"386.31":["G9"],"45223":["B10","F10","J10"],"38.92100571074188":["D10","H10","L10"],"389.2":["G10"],"45224":["B11","F11","J11"],"39.2":["C11","K11"],"38.37199152432879":["D11","H11","L11"],"383.71":["G11"],"45225":["B12","F12","J12"],"38.55":["C12","K12"],"37.90097935347167":["D12","H12","L12"],"379":["G12"],"45226":["B13","F13","J13"],"38.07":["C13","K13"],"37.732975012274224":["D13","H13","L13"],"377.32":["G13"],"45229":["B14","F14","J14"],"38.54":["C14","K14"],"38.18698674384351":["D14","H14","L14"],"381.86":["G14"],"45230":["B15","F15","J15"],"39.07":["C15","K15"],"38.41799271299001":["D15","H15","L15"],"384.17":["G15"],"45231":["B16","F16","J16"],"38.5":["C16","K16"],"38.841003643505":["D16","H16","L16"],"388.4":["G16"],"45232":["B17","F17","J17"],"40.2":["C17","K17"],"39.57902271376521":["D17","H17","L17"],"395.78":["G17"],"45233":["B18","F18","J18"],"41.16":["C18","K18"],"39.94503217137394":["D18","H18","L18"],"399.44":["G18"],"45236":["B19","F19","J19"],"41.43":["C19","K19"],"40.02203416108943":["D19","H19","L19"],"400.21":["G19"],"45237":["B20","F20","J20"],"42.22":["C20","K20"],"40.13503708106152":["D20","H20","L20"],"401.34":["G20"],"45238":["B21","F21","J21"],"42.21":["C21","C27","K21","K27"],"40.16803793379675":["D21","H21","L21"],"401.67":["G21"],"45239":["B22","F22","J22"],"39.9":["C22","K22"],"39.865030104137055":["D22","H22","L22"],"398.64":["G22"],"45240":["B23","F23","J23"],"40.65":["C23","K23"],"40.487046176903796":["D23","H23","L23"],"404.86":["G23"],"45243":["B24","F24","J24"],"39.84":["C24","K24"],"40.446045117444896":["D24","H24","L24"],"404.45":["G24"],"45244":["B25","F25","J25"],"39.72":["C25","K25"],"41.223065195483095":["D25","H25","L25"],"412.22":["G25"],"45245":["B26","F26","J26"],"41.22":["C26","K26"],"41.31306752112458":["D26","H26","L26"],"413.12":["G26"],"45246":["B27","F27","J27"],"41.37106901987132":["D27","H27","L27"],"413.7":["G27"],"45247":["B28","F28","J28"],"41.79":["C28","K28"],"41.43207059613944":["D28","H28","L28"],"414.31":["G28"],"45250":["B29","F29","J29"],"41.84":["C29","K29"],"41.74407865836327":["D29","H29","L29"],"417.43":["G29"],"45251":["B30","F30","J30"],"43.4":["C30","K30"],"41.63507584175302":["D30","H30","L30"],"416.34":["G30"],"45252":["B31","F31","J31"],"41.85":["C31","K31"],"41.81508049303599":["D31","H31","L31"],"418.14":["G31"],"45254":["B32","F32","J32"],"42.14":["C32","K32"],"41.8380810873666":["D32","H32","L32"],"418.37":["G32"],"45257":["B33","F33","J33"],"41.49":["C33","K33"],"41.76507920101295":["D33","H33","L33"],"417.64":["G33"],"45258":["B34","F34","J34"],"45.38":["C34","K34"],"41.80608026047185":["D34","H34","L34"],"418.05":["G34"],"45259":["B35","F35","J35"],"45.75":["C35","K35"],"41.7790795627794":["D35","H35","L35"],"417.78":["G35"],"45260":["B36","F36","J36"],"46.15":["C36","K36"],"41.941083748934076":["D36","H36","L36"],"419.4":["G36"],"45261":["B37","F37","J37"],"48.45":["C37","K37"],"42.18709010568749":["D37","H37","L37"],"421.86":["G37"],"45264":["B38","F38","J38"],"48.68":["C38","C47","K38","K47"],"41.97508462750976":["D38","H38","L38"],"419.74":["G38"],"45265":["B39","F39","J39"],"49.03":["C39","C53","K39","K53"],"41.962084291583764":["D39","H39","L39"],"419.61":["G39"],"45266":["B40","F40","J40"],"47.17":["C40","K40"],"41.78707976950309":["D40","H40","L40"],"417.86":["G40"],"45267":["B41","F41","J41"],"47.4":["C41","K41"],"42.11408821933384":["D41","H41","L41"],"421.13":["G41"],"45268":["B42","F42","J42"],"47.91":["C42","K42"],"42.29309284477635":["D42","H42","L42"],"422.92":["G42"],"45271":["B43","F43","J43"],"48.25":["C43","K43"],"42.45709708261196":["D43","H43","L43"],"424.56":["G43"],"45272":["B44","F44","J44"],"48.76":["C44","K44"],"42.66810253494923":["D44","H44","L44"],"426.67":["G44"],"45273":["B45","F45","J45"],"48.46":["C45","K45"],"43.24911754825706":["D45","H45","L45"],"432.48":["G45"],"45274":["B46","F46","J46"],"49.98":["C46","C67","K46","K67"],"43.376120829995614":["D46","H46","L46"],"433.75":["G46"],"45275":["B47","F47","J47"],"43.31011912452518":["D47","H47","L47"],"433.09":["G47"],"45278":["B48","F48","J48"],"48.7":["C48","K48"],"43.55512545543813":["D48","H48","L48"],"435.54":["G48"],"45279":["B49","F49","J49"],"49.04":["C49","K49"],"43.82013230316029":["D49","H49","L49"],"438.19":["G49"],"45280":["B50","F50","J50"],"47.75":["C50","K50"],"43.01011137238688":["D50","H50","L50"],"430.09":["G50"],"45281":["B51","F51","J51"],"46.8":["C51","K51"],"43.42912219954004":["D51","H51","L51"],"434.28":["G51"],"45282":["B52","F52","J52"],"46.31":["C52","K52"],"43.5301248094266":["D52","H52","L52"],"435.29":["G52"],"45286":["B53","F53","J53"],"43.71112948655005":["D53","H53","L53"],"437.1":["G53"],"45287":["B54","F54","J54"],"50.06":["C54","K54"],"43.791131553786926":["D54","H54","L54"],"437.9":["G54"],"45288":["B55","F55","J55"],"49.5":["C55","K55"],"43.79813173467015":["D55","H55","L55"],"437.97":["G55"],"45289":["B56","F56","J56"],"48.73":["C56","K56"],"43.68112871133621":["D56","H56","L56"],"436.8":["G56"],"45293":["B57","F57","J57"],"47.38":["C57","K57"],"43.402121501847596":["D57","H57","L57"],"434.01":["G57"],"45294":["B58","F58","J58"],"46.29":["C58","K58"],"43.08011318121916":["D58","H58","L58"],"430.79":["G58"],"45295":["B59","F59","J59"],"46.19":["C59","K59"],"42.94410966691647":["D59","H59","L59"],"429.43":["G59"],"45296":["B60","F60","J60"],"45.7":["C60","K60"],"42.99911108814181":["D60","H60","L60"],"429.98":["G60"],"45299":["B61","F61","J61"],"47.43":["C61","K61"],"43.614126980025326":["D61","H61","L61"],"436.13":["G61"],"45300":["B62","F62","J62"],"46.64":["C62","K62"],"43.50812424093646":["D62","H62","L62"],"435.07":["G62"],"45301":["B63","F63","J63"],"47.65":["C63","K63"],"43.795131657148765":["D63","H63","L63"],"437.94":["G63"],"45302":["B64","F64","J64"],"47.54":["C64","K64"],"43.780131269541855":["D64","H64","L64"],"437.79":["G64"],"45303":["B65","F65","J65"],"47.88":["C65","K65"],"43.80013178635107":["D65","H65","L65"],"437.99":["G65"],"45307":["B66","F66","J66"],"49.43":["C66","K66"],"43.65112793612238":["D66","H66","L66"],"436.5":["G66"],"45308":["B67","F67","J67"],"43.40812165689036":["D67","H67","L67"],"434.07":["G67"],"45309":["B68","F68","J68"],"46.12":["C68","K68"],"43.79413163130831":["D68","H68","L68"],"437.93":["G68"],"45310":["B69","F69","J69"],"46.32":["C69","K69"],"44.3301454817954":["D69","H69","L69"],"443.29":["G69"],"45313":["B70","F70","J70"],"47.6":["C70","K70"],"44.43114809168196":["D70","H70","L70"],"444.3":["G70"],"45314":["B71","F71","J71"],"45.61":["C71","K71"],"44.56315150262281":["D71","H71","L71"],"445.62":["G71"],"45315":["B72","F72","J72"],"44.8":["C72","K72"],"44.60015245871986":["D72","H72","L72"],"445.99":["G72"],"45316":["B73","F73","J73"],"46.4":["C73","K73"],"44.851158944675575":["D73","H73","L73"],"448.5":["G73"],"45317":["B74","F74","J74"],"46.53":["C74","K74"],"44.82415824698313":["D74","H74","L74"],"448.23":["G74"],"45320":["B75","F75","J75"],"48.42":["C75","K75"],"45.15016667097341":["D75","H75","L75"],"451.49":["G75"],"45321":["B76","F76","J76"],"47.5":["C76","K76"],"45.11816584407866":["D76","H76","L76"],"451.17":["G76"],"45322":["B77","F77","J77"],"46.39":["C77","K77"],"44.38314685133983":["D77","H77","L77"],"443.82":["G77"],"45323":["B78","F78","J78"],"46.67":["C78","K78"],"44.96716194216905":["D78","H78","L78"],"449.66":["G78"],"45324":["B79","F79","J79"],"46.09":["C79","K79"],"45.42917388046203":["D79","H79","L79"],"454.28":["G79"],"45327":["B80","F80","J80"],"45.15":["C80","K80"],"45.26316959094551":["D80","H80","L80"],"452.62":["G80"],"45328":["B81","F81","J81"],"46.41":["C81","K81"],"45.404173234450504":["D81","H81","L81"],"454.03":["G81"],"45329":["B82","F82","J82"],"45.91":["C82","K82"],"45.777182872942454":["D82","H82","L82"],"457.76":["G82"],"45330":["B83","F83","J83"],"48":["C83","K83"],"45.808183673996744":["D83","H83","L83"],"458.07":["G83"],"45331":["B84","F84","J84"],"47.86":["C84","K84"],"46.068190392516605":["D84","H84","L84"],"460.67":["G84"],"45334":["B85","F85","J85"],"50.7":["C85","K85"],"46.04718984986692":["D85","H85","L85"],"460.46":["G85"],"45335":["B86","F86","J86"],"48.13":["C86","K86"],"45.39817307940774":["D86","H86","L86"],"453.97":["G86"],"45336":["B87","F87","J87"],"49.85":["C87","K87"],"45.83018424248689":["D87","H87","L87"],"458.29":["G87"],"__empty_cells":2473}
+
+Format Input:
+A1,,Font Color|B1,,Font Color|C1,,Font Color|D1,,Font Color|E1,,Font Color|F1,,Font Color|G1,,Font Color|H1,,Font Color|I1,,Font Color|J1,,Font Color|K1,,Font Color|L1,,Font Color
+A2,|B2,|C2,|D2,|E2,|F2,|G2,|H2,|I2,|J2,|K2,|L2,
+A3,,Font Color|B3,HIGHLIGHTED,BORDERED,Fill Color,Font Color,top Border,left Border|C3,HIGHLIGHTED,BORDERED,Fill Color,Font Color,right Border,top Border|D3,,Font Color|E3,,Font Color|F3,,Font Color|G3,,Font Color|H3,,Font Color|I3,,Font Color|J3,,Font Color|K3,,Font Color|L3,,Font Color
+A4,,Font Color|B4,BORDERED,Font Color,bottom Border,left Border|C4,BORDERED,Font Color,right Border,bottom Border|D4,,Font Color|E4,,Font Color|F4,,Font Color|G4,,Font Color|H4,,Font Color|I4,,Font Color|J4,,Font Color|K4,,Font Color|L4,,Font Color
+A5,|B5,|C5,|D5,|E5,|F5,|G5,|H5,|I5,|J5,|K5,|L5,
+A6,|B6,|C6,|D6,|E6,|F6,|G6,|H6,|I6,|J6,|K6,|L6,
+A7,,Font Color|B7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border,left Border|C7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|D7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|E7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|F7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|G7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|H7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|I7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|J7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|K7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|L7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,right Border,bottom Border,top Border
+A8,,Font Color|B8,BORDERED,Font Color,left Border|C8,,Font Color|D8,,Font Color|E8,,Font Color|F8,,Font Color|G8,,Font Color|H8,,Font Color|I8,,Font Color|J8,,Font Color|K8,,Font Color|L8,BORDERED,Font Color,right Border
+A9,,Font Color|B9,BORDERED,Font Color,left Border|C9,,Font Color|D9,,Font Color|E9,,Font Color|F9,,Font Color|G9,,Font Color|H9,,Font Color|I9,,Font Color|J9,,Font Color|K9,,Font Color|L9,BORDERED,Font Color,right Border
+A10,,Font Color|B10,BORDERED,Font Color,left Border|C10,,Font Color|D10,,Font Color|E10,,Font Color|F10,,Font Color|G10,,Font Color|H10,,Font Color|I10,,Font Color|J10,,Font Color|K10,,Font Color|L10,BORDERED,Font Color,right Border
+A11,,Font Color|B11,BORDERED,Font Color,left Border|C11,,Font Color|D11,,Font Color|E11,,Font Color|F11,,Font Color|G11,,Font Color|H11,,Font Color|I11,,Font Color|J11,,Font Color|K11,,Font Color|L11,BORDERED,Font Color,right Border
+A12,,Font Color|B12,BORDERED,Font Color,left Border|C12,,Font Color|D12,,Font Color|E12,,Font Color|F12,,Font Color|G12,,Font Color|H12,,Font Color|I12,,Font Color|J12,,Font Color|K12,,Font Color|L12,BORDERED,Font Color,right Border
+A13,,Font Color|B13,BORDERED,Font Color,left Border|C13,,Font Color|D13,,Font Color|E13,,Font Color|F13,,Font Color|G13,,Font Color|H13,,Font Color|I13,,Font Color|J13,,Font Color|K13,,Font Color|L13,BORDERED,Font Color,right Border
+A14,,Font Color|B14,BORDERED,Font Color,left Border|C14,,Font Color|D14,,Font Color|E14,,Font Color|F14,,Font Color|G14,,Font Color|H14,,Font Color|I14,,Font Color|J14,,Font Color|K14,,Font Color|L14,BORDERED,Font Color,right Border
+A15,,Font Color|B15,BORDERED,Font Color,left Border|C15,,Font Color|D15,,Font Color|E15,,Font Color|F15,,Font Color|G15,,Font Color|H15,,Font Color|I15,,Font Color|J15,,Font Color|K15,,Font Color|L15,BORDERED,Font Color,right Border
+A16,,Font Color|B16,BORDERED,Font Color,left Border|C16,,Font Color|D16,,Font Color|E16,,Font Color|F16,,Font Color|G16,,Font Color|H16,,Font Color|I16,,Font Color|J16,,Font Color|K16,,Font Color|L16,BORDERED,Font Color,right Border
+A17,,Font Color|B17,BORDERED,Font Color,left Border|C17,,Font Color|D17,,Font Color|E17,,Font Color|F17,,Font Color|G17,,Font Color|H17,,Font Color|I17,,Font Color|J17,,Font Color|K17,,Font Color|L17,BORDERED,Font Color,right Border
+A18,,Font Color|B18,BORDERED,Font Color,left Border|C18,,Font Color|D18,,Font Color|E18,,Font Color|F18,,Font Color|G18,,Font Color|H18,,Font Color|I18,,Font Color|J18,,Font Color|K18,,Font Color|L18,BORDERED,Font Color,right Border
+A19,,Font Color|B19,BORDERED,Font Color,left Border|C19,,Font Color|D19,,Font Color|E19,,Font Color|F19,,Font Color|G19,,Font Color|H19,,Font Color|I19,,Font Color|J19,,Font Color|K19,,Font Color|L19,BORDERED,Font Color,right Border
+A20,,Font Color|B20,BORDERED,Font Color,left Border|C20,,Font Color|D20,,Font Color|E20,,Font Color|F20,,Font Color|G20,,Font Color|H20,,Font Color|I20,,Font Color|J20,,Font Color|K20,,Font Color|L20,BORDERED,Font Color,right Border
+A21,,Font Color|B21,BORDERED,Font Color,left Border|C21,,Font Color|D21,,Font Color|E21,,Font Color|F21,,Font Color|G21,,Font Color|H21,,Font Color|I21,,Font Color|J21,,Font Color|K21,,Font Color|L21,BORDERED,Font Color,right Border
+A22,,Font Color|B22,BORDERED,Font Color,left Border|C22,,Font Color|D22,,Font Color|E22,,Font Color|F22,,Font Color|G22,,Font Color|H22,,Font Color|I22,,Font Color|J22,,Font Color|K22,,Font Color|L22,BORDERED,Font Color,right Border
+A23,,Font Color|B23,BORDERED,Font Color,left Border|C23,,Font Color|D23,,Font Color|E23,,Font Color|F23,,Font Color|G23,,Font Color|H23,,Font Color|I23,,Font Color|J23,,Font Color|K23,,Font Color|L23,BORDERED,Font Color,right Border
+A24,,Font Color|B24,BORDERED,Font Color,left Border|C24,,Font Color|D24,,Font Color|E24,,Font Color|F24,,Font Color|G24,,Font Color|H24,,Font Color|I24,,Font Color|J24,,Font Color|K24,,Font Color|L24,BORDERED,Font Color,right Border
+A25,,Font Color|B25,BORDERED,Font Color,left Border|C25,,Font Color|D25,,Font Color|E25,,Font Color|F25,,Font Color|G25,,Font Color|H25,,Font Color|I25,,Font Color|J25,,Font Color|K25,,Font Color|L25,BORDERED,Font Color,right Border
+A26,,Font Color|B26,BORDERED,Font Color,left Border|C26,,Font Color|D26,,Font Color|E26,,Font Color|F26,,Font Color|G26,,Font Color|H26,,Font Color|I26,,Font Color|J26,,Font Color|K26,,Font Color|L26,BORDERED,Font Color,right Border
+A27,,Font Color|B27,BORDERED,Font Color,left Border|C27,,Font Color|D27,,Font Color|E27,,Font Color|F27,,Font Color|G27,,Font Color|H27,,Font Color|I27,,Font Color|J27,,Font Color|K27,,Font Color|L27,BORDERED,Font Color,right Border
+A28,,Font Color|B28,BORDERED,Font Color,left Border|C28,,Font Color|D28,,Font Color|E28,,Font Color|F28,,Font Color|G28,,Font Color|H28,,Font Color|I28,,Font Color|J28,,Font Color|K28,,Font Color|L28,BORDERED,Font Color,right Border
+A29,,Font Color|B29,BORDERED,Font Color,left Border|C29,,Font Color|D29,,Font Color|E29,,Font Color|F29,,Font Color|G29,,Font Color|H29,,Font Color|I29,,Font Color|J29,,Font Color|K29,,Font Color|L29,BORDERED,Font Color,right Border
+A30,,Font Color|B30,BORDERED,Font Color,left Border|C30,,Font Color|D30,,Font Color|E30,,Font Color|F30,,Font Color|G30,,Font Color|H30,,Font Color|I30,,Font Color|J30,,Font Color|K30,,Font Color|L30,BORDERED,Font Color,right Border
+A31,,Font Color|B31,BORDERED,Font Color,left Border|C31,,Font Color|D31,,Font Color|E31,,Font Color|F31,,Font Color|G31,,Font Color|H31,,Font Color|I31,,Font Color|J31,,Font Color|K31,,Font Color|L31,BORDERED,Font Color,right Border
+A32,,Font Color|B32,BORDERED,Font Color,left Border|C32,,Font Color|D32,,Font Color|E32,,Font Color|F32,,Font Color|G32,,Font Color|H32,,Font Color|I32,,Font Color|J32,,Font Color|K32,,Font Color|L32,BORDERED,Font Color,right Border
+A33,,Font Color|B33,BORDERED,Font Color,left Border|C33,,Font Color|D33,,Font Color|E33,,Font Color|F33,,Font Color|G33,,Font Color|H33,,Font Color|I33,,Font Color|J33,,Font Color|K33,,Font Color|L33,BORDERED,Font Color,right Border
+A34,,Font Color|B34,BORDERED,Font Color,left Border|C34,,Font Color|D34,,Font Color|E34,,Font Color|F34,,Font Color|G34,,Font Color|H34,,Font Color|I34,,Font Color|J34,,Font Color|K34,,Font Color|L34,BORDERED,Font Color,right Border
+A35,,Font Color|B35,BORDERED,Font Color,left Border|C35,,Font Color|D35,,Font Color|E35,,Font Color|F35,,Font Color|G35,,Font Color|H35,,Font Color|I35,,Font Color|J35,,Font Color|K35,,Font Color|L35,BORDERED,Font Color,right Border
+A36,,Font Color|B36,BORDERED,Font Color,left Border|C36,,Font Color|D36,,Font Color|E36,,Font Color|F36,,Font Color|G36,,Font Color|H36,,Font Color|I36,,Font Color|J36,,Font Color|K36,,Font Color|L36,BORDERED,Font Color,right Border
+A37,,Font Color|B37,BORDERED,Font Color,left Border|C37,,Font Color|D37,,Font Color|E37,,Font Color|F37,,Font Color|G37,,Font Color|H37,,Font Color|I37,,Font Color|J37,,Font Color|K37,,Font Color|L37,BORDERED,Font Color,right Border
+A38,,Font Color|B38,BORDERED,Font Color,left Border|C38,,Font Color|D38,,Font Color|E38,,Font Color|F38,,Font Color|G38,,Font Color|H38,,Font Color|I38,,Font Color|J38,,Font Color|K38,,Font Color|L38,BORDERED,Font Color,right Border
+A39,,Font Color|B39,BORDERED,Font Color,left Border|C39,,Font Color|D39,,Font Color|E39,,Font Color|F39,,Font Color|G39,,Font Color|H39,,Font Color|I39,,Font Color|J39,,Font Color|K39,,Font Color|L39,BORDERED,Font Color,right Border
+A40,,Font Color|B40,BORDERED,Font Color,left Border|C40,,Font Color|D40,,Font Color|E40,,Font Color|F40,,Font Color|G40,,Font Color|H40,,Font Color|I40,,Font Color|J40,,Font Color|K40,,Font Color|L40,BORDERED,Font Color,right Border
+A41,,Font Color|B41,BORDERED,Font Color,left Border|C41,,Font Color|D41,,Font Color|E41,,Font Color|F41,,Font Color|G41,,Font Color|H41,,Font Color|I41,,Font Color|J41,,Font Color|K41,,Font Color|L41,BORDERED,Font Color,right Border
+A42,,Font Color|B42,BORDERED,Font Color,left Border|C42,,Font Color|D42,,Font Color|E42,,Font Color|F42,,Font Color|G42,,Font Color|H42,,Font Color|I42,,Font Color|J42,,Font Color|K42,,Font Color|L42,BORDERED,Font Color,right Border
+A43,,Font Color|B43,BORDERED,Font Color,left Border|C43,,Font Color|D43,,Font Color|E43,,Font Color|F43,,Font Color|G43,,Font Color|H43,,Font Color|I43,,Font Color|J43,,Font Color|K43,,Font Color|L43,BORDERED,Font Color,right Border
+A44,,Font Color|B44,BORDERED,Font Color,left Border|C44,,Font Color|D44,,Font Color|E44,,Font Color|F44,,Font Color|G44,,Font Color|H44,,Font Color|I44,,Font Color|J44,,Font Color|K44,,Font Color|L44,BORDERED,Font Color,right Border
+A45,,Font Color|B45,BORDERED,Font Color,left Border|C45,,Font Color|D45,,Font Color|E45,,Font Color|F45,,Font Color|G45,,Font Color|H45,,Font Color|I45,,Font Color|J45,,Font Color|K45,,Font Color|L45,BORDERED,Font Color,right Border
+A46,,Font Color|B46,BORDERED,Font Color,left Border|C46,,Font Color|D46,,Font Color|E46,,Font Color|F46,,Font Color|G46,,Font Color|H46,,Font Color|I46,,Font Color|J46,,Font Color|K46,,Font Color|L46,BORDERED,Font Color,right Border
+A47,,Font Color|B47,BORDERED,Font Color,left Border|C47,,Font Color|D47,,Font Color|E47,,Font Color|F47,,Font Color|G47,,Font Color|H47,,Font Color|I47,,Font Color|J47,,Font Color|K47,,Font Color|L47,BORDERED,Font Color,right Border
+A48,,Font Color|B48,BORDERED,Font Color,left Border|C48,,Font Color|D48,,Font Color|E48,,Font Color|F48,,Font Color|G48,,Font Color|H48,,Font Color|I48,,Font Color|J48,,Font Color|K48,,Font Color|L48,BORDERED,Font Color,right Border
+A49,,Font Color|B49,BORDERED,Font Color,left Border|C49,,Font Color|D49,,Font Color|E49,,Font Color|F49,,Font Color|G49,,Font Color|H49,,Font Color|I49,,Font Color|J49,,Font Color|K49,,Font Color|L49,BORDERED,Font Color,right Border
+A50,,Font Color|B50,BORDERED,Font Color,left Border|C50,,Font Color|D50,,Font Color|E50,,Font Color|F50,,Font Color|G50,,Font Color|H50,,Font Color|I50,,Font Color|J50,,Font Color|K50,,Font Color|L50,BORDERED,Font Color,right Border
+A51,,Font Color|B51,BORDERED,Font Color,left Border|C51,,Font Color|D51,,Font Color|E51,,Font Color|F51,,Font Color|G51,,Font Color|H51,,Font Color|I51,,Font Color|J51,,Font Color|K51,,Font Color|L51,BORDERED,Font Color,right Border
+A52,,Font Color|B52,BORDERED,Font Color,left Border|C52,,Font Color|D52,,Font Color|E52,,Font Color|F52,,Font Color|G52,,Font Color|H52,,Font Color|I52,,Font Color|J52,,Font Color|K52,,Font Color|L52,BORDERED,Font Color,right Border
+A53,,Font Color|B53,BORDERED,Font Color,left Border|C53,,Font Color|D53,,Font Color|E53,,Font Color|F53,,Font Color|G53,,Font Color|H53,,Font Color|I53,,Font Color|J53,,Font Color|K53,,Font Color|L53,BORDERED,Font Color,right Border
+A54,,Font Color|B54,BORDERED,Font Color,left Border|C54,,Font Color|D54,,Font Color|E54,,Font Color|F54,,Font Color|G54,,Font Color|H54,,Font Color|I54,,Font Color|J54,,Font Color|K54,,Font Color|L54,BORDERED,Font Color,right Border
+A55,,Font Color|B55,BORDERED,Font Color,left Border|C55,,Font Color|D55,,Font Color|E55,,Font Color|F55,,Font Color|G55,,Font Color|H55,,Font Color|I55,,Font Color|J55,,Font Color|K55,,Font Color|L55,BORDERED,Font Color,right Border
+A56,,Font Color|B56,BORDERED,Font Color,left Border|C56,,Font Color|D56,,Font Color|E56,,Font Color|F56,,Font Color|G56,,Font Color|H56,,Font Color|I56,,Font Color|J56,,Font Color|K56,,Font Color|L56,BORDERED,Font Color,right Border
+A57,,Font Color|B57,BORDERED,Font Color,left Border|C57,,Font Color|D57,,Font Color|E57,,Font Color|F57,,Font Color|G57,,Font Color|H57,,Font Color|I57,,Font Color|J57,,Font Color|K57,,Font Color|L57,BORDERED,Font Color,right Border
+A58,,Font Color|B58,BORDERED,Font Color,left Border|C58,,Font Color|D58,,Font Color|E58,,Font Color|F58,,Font Color|G58,,Font Color|H58,,Font Color|I58,,Font Color|J58,,Font Color|K58,,Font Color|L58,BORDERED,Font Color,right Border
+A59,,Font Color|B59,BORDERED,Font Color,left Border|C59,,Font Color|D59,,Font Color|E59,,Font Color|F59,,Font Color|G59,,Font Color|H59,,Font Color|I59,,Font Color|J59,,Font Color|K59,,Font Color|L59,BORDERED,Font Color,right Border
+A60,,Font Color|B60,BORDERED,Font Color,left Border|C60,,Font Color|D60,,Font Color|E60,,Font Color|F60,,Font Color|G60,,Font Color|H60,,Font Color|I60,,Font Color|J60,,Font Color|K60,,Font Color|L60,BORDERED,Font Color,right Border
+A61,,Font Color|B61,BORDERED,Font Color,left Border|C61,,Font Color|D61,,Font Color|E61,,Font Color|F61,,Font Color|G61,,Font Color|H61,,Font Color|I61,,Font Color|J61,,Font Color|K61,,Font Color|L61,BORDERED,Font Color,right Border
+A62,,Font Color|B62,BORDERED,Font Color,left Border|C62,,Font Color|D62,,Font Color|E62,,Font Color|F62,,Font Color|G62,,Font Color|H62,,Font Color|I62,,Font Color|J62,,Font Color|K62,,Font Color|L62,BORDERED,Font Color,right Border
+A63,,Font Color|B63,BORDERED,Font Color,left Border|C63,,Font Color|D63,,Font Color|E63,,Font Color|F63,,Font Color|G63,,Font Color|H63,,Font Color|I63,,Font Color|J63,,Font Color|K63,,Font Color|L63,BORDERED,Font Color,right Border
+A64,,Font Color|B64,BORDERED,Font Color,left Border|C64,,Font Color|D64,,Font Color|E64,,Font Color|F64,,Font Color|G64,,Font Color|H64,,Font Color|I64,,Font Color|J64,,Font Color|K64,,Font Color|L64,BORDERED,Font Color,right Border
+A65,,Font Color|B65,BORDERED,Font Color,left Border|C65,,Font Color|D65,,Font Color|E65,,Font Color|F65,,Font Color|G65,,Font Color|H65,,Font Color|I65,,Font Color|J65,,Font Color|K65,,Font Color|L65,BORDERED,Font Color,right Border
+A66,,Font Color|B66,BORDERED,Font Color,left Border|C66,,Font Color|D66,,Font Color|E66,,Font Color|F66,,Font Color|G66,,Font Color|H66,,Font Color|I66,,Font Color|J66,,Font Color|K66,,Font Color|L66,BORDERED,Font Color,right Border
+A67,,Font Color|B67,BORDERED,Font Color,left Border|C67,,Font Color|D67,,Font Color|E67,,Font Color|F67,,Font Color|G67,,Font Color|H67,,Font Color|I67,,Font Color|J67,,Font Color|K67,,Font Color|L67,BORDERED,Font Color,right Border
+A68,,Font Color|B68,BORDERED,Font Color,left Border|C68,,Font Color|D68,,Font Color|E68,,Font Color|F68,,Font Color|G68,,Font Color|H68,,Font Color|I68,,Font Color|J68,,Font Color|K68,,Font Color|L68,BORDERED,Font Color,right Border
+A69,,Font Color|B69,BORDERED,Font Color,left Border|C69,,Font Color|D69,,Font Color|E69,,Font Color|F69,,Font Color|G69,,Font Color|H69,,Font Color|I69,,Font Color|J69,,Font Color|K69,,Font Color|L69,BORDERED,Font Color,right Border
+A70,,Font Color|B70,BORDERED,Font Color,left Border|C70,,Font Color|D70,,Font Color|E70,,Font Color|F70,,Font Color|G70,,Font Color|H70,,Font Color|I70,,Font Color|J70,,Font Color|K70,,Font Color|L70,BORDERED,Font Color,right Border
+A71,,Font Color|B71,BORDERED,Font Color,left Border|C71,,Font Color|D71,,Font Color|E71,,Font Color|F71,,Font Color|G71,,Font Color|H71,,Font Color|I71,,Font Color|J71,,Font Color|K71,,Font Color|L71,BORDERED,Font Color,right Border
+A72,,Font Color|B72,BORDERED,Font Color,left Border|C72,,Font Color|D72,,Font Color|E72,,Font Color|F72,,Font Color|G72,,Font Color|H72,,Font Color|I72,,Font Color|J72,,Font Color|K72,,Font Color|L72,BORDERED,Font Color,right Border
+A73,,Font Color|B73,BORDERED,Font Color,left Border|C73,,Font Color|D73,,Font Color|E73,,Font Color|F73,,Font Color|G73,,Font Color|H73,,Font Color|I73,,Font Color|J73,,Font Color|K73,,Font Color|L73,BORDERED,Font Color,right Border
+A74,,Font Color|B74,BORDERED,Font Color,left Border|C74,,Font Color|D74,,Font Color|E74,,Font Color|F74,,Font Color|G74,,Font Color|H74,,Font Color|I74,,Font Color|J74,,Font Color|K74,,Font Color|L74,BORDERED,Font Color,right Border
+A75,,Font Color|B75,BORDERED,Font Color,left Border|C75,,Font Color|D75,,Font Color|E75,,Font Color|F75,,Font Color|G75,,Font Color|H75,,Font Color|I75,,Font Color|J75,,Font Color|K75,,Font Color|L75,BORDERED,Font Color,right Border
+A76,,Font Color|B76,BORDERED,Font Color,left Border|C76,,Font Color|D76,,Font Color|E76,,Font Color|F76,,Font Color|G76,,Font Color|H76,,Font Color|I76,,Font Color|J76,,Font Color|K76,,Font Color|L76,BORDERED,Font Color,right Border
+A77,,Font Color|B77,BORDERED,Font Color,left Border|C77,,Font Color|D77,,Font Color|E77,,Font Color|F77,,Font Color|G77,,Font Color|H77,,Font Color|I77,,Font Color|J77,,Font Color|K77,,Font Color|L77,BORDERED,Font Color,right Border
+A78,,Font Color|B78,BORDERED,Font Color,left Border|C78,,Font Color|D78,,Font Color|E78,,Font Color|F78,,Font Color|G78,,Font Color|H78,,Font Color|I78,,Font Color|J78,,Font Color|K78,,Font Color|L78,BORDERED,Font Color,right Border
+A79,,Font Color|B79,BORDERED,Font Color,left Border|C79,,Font Color|D79,,Font Color|E79,,Font Color|F79,,Font Color|G79,,Font Color|H79,,Font Color|I79,,Font Color|J79,,Font Color|K79,,Font Color|L79,BORDERED,Font Color,right Border
+A80,,Font Color|B80,BORDERED,Font Color,left Border|C80,,Font Color|D80,,Font Color|E80,,Font Color|F80,,Font Color|G80,,Font Color|H80,,Font Color|I80,,Font Color|J80,,Font Color|K80,,Font Color|L80,BORDERED,Font Color,right Border
+A81,,Font Color|B81,BORDERED,Font Color,left Border|C81,,Font Color|D81,,Font Color|E81,,Font Color|F81,,Font Color|G81,,Font Color|H81,,Font Color|I81,,Font Color|J81,,Font Color|K81,,Font Color|L81,BORDERED,Font Color,right Border
+A82,,Font Color|B82,BORDERED,Font Color,left Border|C82,,Font Color|D82,,Font Color|E82,,Font Color|F82,,Font Color|G82,,Font Color|H82,,Font Color|I82,,Font Color|J82,,Font Color|K82,,Font Color|L82,BORDERED,Font Color,right Border
+A83,,Font Color|B83,BORDERED,Font Color,left Border|C83,,Font Color|D83,,Font Color|E83,,Font Color|F83,,Font Color|G83,,Font Color|H83,,Font Color|I83,,Font Color|J83,,Font Color|K83,,Font Color|L83,BORDERED,Font Color,right Border
+A84,,Font Color|B84,BORDERED,Font Color,left Border|C84,,Font Color|D84,,Font Color|E84,,Font Color|F84,,Font Color|G84,,Font Color|H84,,Font Color|I84,,Font Color|J84,,Font Color|K84,,Font Color|L84,BORDERED,Font Color,right Border
+A85,,Font Color|B85,BORDERED,Font Color,left Border|C85,,Font Color|D85,,Font Color|E85,,Font Color|F85,,Font Color|G85,,Font Color|H85,,Font Color|I85,,Font Color|J85,,Font Color|K85,,Font Color|L85,BORDERED,Font Color,right Border
+A86,,Font Color|B86,BORDERED,Font Color,left Border|C86,,Font Color|D86,,Font Color|E86,,Font Color|F86,,Font Color|G86,,Font Color|H86,,Font Color|I86,,Font Color|J86,,Font Color|K86,,Font Color|L86,BORDERED,Font Color,right Border
+A87,,Font Color|B87,BORDERED,Font Color,left Border|C87,,Font Color|D87,,Font Color|E87,,Font Color|F87,,Font Color|G87,,Font Color|H87,,Font Color|I87,,Font Color|J87,,Font Color|K87,,Font Color|L87,BORDERED,Font Color,right Border
+A88,|B88,|C88,|D88,|E88,|F88,|G88,|H88,|I88,|J88,|K88,|L88,
+A89,|B89,|C89,|D89,|E89,|F89,|G89,|H89,|I89,|J89,|K89,|L89,
+A90,|B90,|C90,|D90,|E90,|F90,|G90,|H90,|I90,|J90,|K90,|L90,
+A91,|B91,|C91,|D91,|E91,|F91,|G91,|H91,|I91,|J91,|K91,|L91,
+A92,|B92,|C92,|D92,|E92,|F92,|G92,|H92,|I92,|J92,|K92,|L92,
+A93,|B93,|C93,|D93,|E93,|F93,|G93,|H93,|I93,|J93,|K93,|L93,
+A94,|B94,|C94,|D94,|E94,|F94,|G94,|H94,|I94,|J94,|K94,|L94,
+A95,|B95,|C95,|D95,|E95,|F95,|G95,|H95,|I95,|J95,|K95,|L95,
+A96,|B96,|C96,|D96,|E96,|F96,|G96,|H96,|I96,|J96,|K96,|L96,
+A97,|B97,|C97,|D97,|E97,|F97,|G97,|H97,|I97,|J97,|K97,|L97,
+A98,|B98,|C98,|D98,|E98,|F98,|G98,|H98,|I98,|J98,|K98,|L98,
+A99,|B99,|C99,|D99,|E99,|F99,|G99,|H99,|I99,|J99,|K99,|L99,
+A100,|B100,|C100,|D100,|E100,|F100,|G100,|H100,|I100,|J100,|K100,|L100,
+A101,|B101,|C101,|D101,|E101,|F101,|G101,|H101,|I101,|J101,|K101,|L101,
+A102,|B102,|C102,|D102,|E102,|F102,|G102,|H102,|I102,|J102,|K102,|L102,
+A103,|B103,|C103,|D103,|E103,|F103,|G103,|H103,|I103,|J103,|K103,|L103,
+A104,|B104,|C104,|D104,|E104,|F104,|G104,|H104,|I104,|J104,|K104,|L104,
+A105,|B105,|C105,|D105,|E105,|F105,|G105,|H105,|I105,|J105,|K105,|L105,
+A106,|B106,|C106,|D106,|E106,|F106,|G106,|H106,|I106,|J106,|K106,|L106,
+A107,|B107,|C107,|D107,|E107,|F107,|G107,|H107,|I107,|J107,|K107,|L107,
+A108,|B108,|C108,|D108,|E108,|F108,|G108,|H108,|I108,|J108,|K108,|L108,
+A109,|B109,|C109,|D109,|E109,|F109,|G109,|H109,|I109,|J109,|K109,|L109,
+A110,|B110,|C110,|D110,|E110,|F110,|G110,|H110,|I110,|J110,|K110,|L110,
+A111,|B111,|C111,|D111,|E111,|F111,|G111,|H111,|I111,|J111,|K111,|L111,
+A112,|B112,|C112,|D112,|E112,|F112,|G112,|H112,|I112,|J112,|K112,|L112,
+A113,|B113,|C113,|D113,|E113,|F113,|G113,|H113,|I113,|J113,|K113,|L113,
+A114,|B114,|C114,|D114,|E114,|F114,|G114,|H114,|I114,|J114,|K114,|L114,
+A115,|B115,|C115,|D115,|E115,|F115,|G115,|H115,|I115,|J115,|K115,|L115,
+A116,|B116,|C116,|D116,|E116,|F116,|G116,|H116,|I116,|J116,|K116,|L116,
+A117,|B117,|C117,|D117,|E117,|F117,|G117,|H117,|I117,|J117,|K117,|L117,
+A118,|B118,|C118,|D118,|E118,|F118,|G118,|H118,|I118,|J118,|K118,|L118,
+A119,|B119,|C119,|D119,|E119,|F119,|G119,|H119,|I119,|J119,|K119,|L119,
+A120,|B120,|C120,|D120,|E120,|F120,|G120,|H120,|I120,|J120,|K120,|L120,
+A121,|B121,|C121,|D121,|E121,|F121,|G121,|H121,|I121,|J121,|K121,|L121,
+A122,|B122,|C122,|D122,|E122,|F122,|G122,|H122,|I122,|J122,|K122,|L122,
+A123,|B123,|C123,|D123,|E123,|F123,|G123,|H123,|I123,|J123,|K123,|L123,
+A124,|B124,|C124,|D124,|E124,|F124,|G124,|H124,|I124,|J124,|K124,|L124,
+A125,|B125,|C125,|D125,|E125,|F125,|G125,|H125,|I125,|J125,|K125,|L125,
+A126,|B126,|C126,|D126,|E126,|F126,|G126,|H126,|I126,|J126,|K126,|L126,
+A127,|B127,|C127,|D127,|E127,|F127,|G127,|H127,|I127,|J127,|K127,|L127,
+A128,|B128,|C128,|D128,|E128,|F128,|G128,|H128,|I128,|J128,|K128,|L128,
+A129,|B129,|C129,|D129,|E129,|F129,|G129,|H129,|I129,|J129,|K129,|L129,
+A130,|B130,|C130,|D130,|E130,|F130,|G130,|H130,|I130,|J130,|K130,|L130,
+A131,|B131,|C131,|D131,|E131,|F131,|G131,|H131,|I131,|J131,|K131,|L131,
+A132,|B132,|C132,|D132,|E132,|F132,|G132,|H132,|I132,|J132,|K132,|L132,
+A133,|B133,|C133,|D133,|E133,|F133,|G133,|H133,|I133,|J133,|K133,|L133,
+A134,|B134,|C134,|D134,|E134,|F134,|G134,|H134,|I134,|J134,|K134,|L134,
+A135,|B135,|C135,|D135,|E135,|F135,|G135,|H135,|I135,|J135,|K135,|L135,
+A136,|B136,|C136,|D136,|E136,|F136,|G136,|H136,|I136,|J136,|K136,|L136,
+A137,|B137,|C137,|D137,|E137,|F137,|G137,|H137,|I137,|J137,|K137,|L137,
+A138,|B138,|C138,|D138,|E138,|F138,|G138,|H138,|I138,|J138,|K138,|L138,
+A139,|B139,|C139,|D139,|E139,|F139,|G139,|H139,|I139,|J139,|K139,|L139,
+A140,|B140,|C140,|D140,|E140,|F140,|G140,|H140,|I140,|J140,|K140,|L140,
+A141,|B141,|C141,|D141,|E141,|F141,|G141,|H141,|I141,|J141,|K141,|L141,
+A142,|B142,|C142,|D142,|E142,|F142,|G142,|H142,|I142,|J142,|K142,|L142,
+A143,|B143,|C143,|D143,|E143,|F143,|G143,|H143,|I143,|J143,|K143,|L143,
+A144,|B144,|C144,|D144,|E144,|F144,|G144,|H144,|I144,|J144,|K144,|L144,
+A145,|B145,|C145,|D145,|E145,|F145,|G145,|H145,|I145,|J145,|K145,|L145,
+A146,|B146,|C146,|D146,|E146,|F146,|G146,|H146,|I146,|J146,|K146,|L146,
+A147,|B147,|C147,|D147,|E147,|F147,|G147,|H147,|I147,|J147,|K147,|L147,
+A148,|B148,|C148,|D148,|E148,|F148,|G148,|H148,|I148,|J148,|K148,|L148,
+A149,|B149,|C149,|D149,|E149,|F149,|G149,|H149,|I149,|J149,|K149,|L149,
+A150,|B150,|C150,|D150,|E150,|F150,|G150,|H150,|I150,|J150,|K150,|L150,
+A151,|B151,|C151,|D151,|E151,|F151,|G151,|H151,|I151,|J151,|K151,|L151,
+A152,|B152,|C152,|D152,|E152,|F152,|G152,|H152,|I152,|J152,|K152,|L152,
+A153,|B153,|C153,|D153,|E153,|F153,|G153,|H153,|I153,|J153,|K153,|L153,
+A154,|B154,|C154,|D154,|E154,|F154,|G154,|H154,|I154,|J154,|K154,|L154,
+A155,|B155,|C155,|D155,|E155,|F155,|G155,|H155,|I155,|J155,|K155,|L155,
+A156,|B156,|C156,|D156,|E156,|F156,|G156,|H156,|I156,|J156,|K156,|L156,
+A157,|B157,|C157,|D157,|E157,|F157,|G157,|H157,|I157,|J157,|K157,|L157,
+A158,|B158,|C158,|D158,|E158,|F158,|G158,|H158,|I158,|J158,|K158,|L158,
+A159,|B159,|C159,|D159,|E159,|F159,|G159,|H159,|I159,|J159,|K159,|L159,
+A160,|B160,|C160,|D160,|E160,|F160,|G160,|H160,|I160,|J160,|K160,|L160,
+A161,|B161,|C161,|D161,|E161,|F161,|G161,|H161,|I161,|J161,|K161,|L161,
+A162,|B162,|C162,|D162,|E162,|F162,|G162,|H162,|I162,|J162,|K162,|L162,
+A163,|B163,|C163,|D163,|E163,|F163,|G163,|H163,|I163,|J163,|K163,|L163,
+A164,|B164,|C164,|D164,|E164,|F164,|G164,|H164,|I164,|J164,|K164,|L164,
+A165,|B165,|C165,|D165,|E165,|F165,|G165,|H165,|I165,|J165,|K165,|L165,
+A166,|B166,|C166,|D166,|E166,|F166,|G166,|H166,|I166,|J166,|K166,|L166,
+A167,|B167,|C167,|D167,|E167,|F167,|G167,|H167,|I167,|J167,|K167,|L167,
+A168,|B168,|C168,|D168,|E168,|F168,|G168,|H168,|I168,|J168,|K168,|L168,
+A169,|B169,|C169,|D169,|E169,|F169,|G169,|H169,|I169,|J169,|K169,|L169,
+A170,|B170,|C170,|D170,|E170,|F170,|G170,|H170,|I170,|J170,|K170,|L170,
+A171,|B171,|C171,|D171,|E171,|F171,|G171,|H171,|I171,|J171,|K171,|L171,
+A172,|B172,|C172,|D172,|E172,|F172,|G172,|H172,|I172,|J172,|K172,|L172,
+A173,|B173,|C173,|D173,|E173,|F173,|G173,|H173,|I173,|J173,|K173,|L173,
+A174,|B174,|C174,|D174,|E174,|F174,|G174,|H174,|I174,|J174,|K174,|L174,
+A175,|B175,|C175,|D175,|E175,|F175,|G175,|H175,|I175,|J175,|K175,|L175,
+A176,|B176,|C176,|D176,|E176,|F176,|G176,|H176,|I176,|J176,|K176,|L176,
+A177,|B177,|C177,|D177,|E177,|F177,|G177,|H177,|I177,|J177,|K177,|L177,
+A178,|B178,|C178,|D178,|E178,|F178,|G178,|H178,|I178,|J178,|K178,|L178,
+A179,|B179,|C179,|D179,|E179,|F179,|G179,|H179,|I179,|J179,|K179,|L179,
+A180,|B180,|C180,|D180,|E180,|F180,|G180,|H180,|I180,|J180,|K180,|L180,
+A181,|B181,|C181,|D181,|E181,|F181,|G181,|H181,|I181,|J181,|K181,|L181,
+A182,|B182,|C182,|D182,|E182,|F182,|G182,|H182,|I182,|J182,|K182,|L182,
+A183,|B183,|C183,|D183,|E183,|F183,|G183,|H183,|I183,|J183,|K183,|L183,
+A184,|B184,|C184,|D184,|E184,|F184,|G184,|H184,|I184,|J184,|K184,|L184,
+A185,|B185,|C185,|D185,|E185,|F185,|G185,|H185,|I185,|J185,|K185,|L185,
+A186,|B186,|C186,|D186,|E186,|F186,|G186,|H186,|I186,|J186,|K186,|L186,
+A187,|B187,|C187,|D187,|E187,|F187,|G187,|H187,|I187,|J187,|K187,|L187,
+A188,|B188,|C188,|D188,|E188,|F188,|G188,|H188,|I188,|J188,|K188,|L188,
+A189,|B189,|C189,|D189,|E189,|F189,|G189,|H189,|I189,|J189,|K189,|L189,
+A190,|B190,|C190,|D190,|E190,|F190,|G190,|H190,|I190,|J190,|K190,|L190,
+A191,|B191,|C191,|D191,|E191,|F191,|G191,|H191,|I191,|J191,|K191,|L191,
+A192,|B192,|C192,|D192,|E192,|F192,|G192,|H192,|I192,|J192,|K192,|L192,
+A193,|B193,|C193,|D193,|E193,|F193,|G193,|H193,|I193,|J193,|K193,|L193,
+A194,|B194,|C194,|D194,|E194,|F194,|G194,|H194,|I194,|J194,|K194,|L194,
+A195,|B195,|C195,|D195,|E195,|F195,|G195,|H195,|I195,|J195,|K195,|L195,
+A196,|B196,|C196,|D196,|E196,|F196,|G196,|H196,|I196,|J196,|K196,|L196,
+A197,|B197,|C197,|D197,|E197,|F197,|G197,|H197,|I197,|J197,|K197,|L197,
+A198,|B198,|C198,|D198,|E198,|F198,|G198,|H198,|I198,|J198,|K198,|L198,
+A199,|B199,|C199,|D199,|E199,|F199,|G199,|H199,|I199,|J199,|K199,|L199,
+A200,|B200,|C200,|D200,|E200,|F200,|G200,|H200,|I200,|J200,|K200,|L200,
+A201,|B201,|C201,|D201,|E201,|F201,|G201,|H201,|I201,|J201,|K201,|L201,
+A202,|B202,|C202,|D202,|E202,|F202,|G202,|H202,|I202,|J202,|K202,|L202,
+A203,|B203,|C203,|D203,|E203,|F203,|G203,|H203,|I203,|J203,|K203,|L203,
+A204,|B204,|C204,|D204,|E204,|F204,|G204,|H204,|I204,|J204,|K204,|L204,
+A205,|B205,|C205,|D205,|E205,|F205,|G205,|H205,|I205,|J205,|K205,|L205,
+A206,|B206,|C206,|D206,|E206,|F206,|G206,|H206,|I206,|J206,|K206,|L206,
+A207,|B207,|C207,|D207,|E207,|F207,|G207,|H207,|I207,|J207,|K207,|L207,
+A208,|B208,|C208,|D208,|E208,|F208,|G208,|H208,|I208,|J208,|K208,|L208,
+A209,|B209,|C209,|D209,|E209,|F209,|G209,|H209,|I209,|J209,|K209,|L209,
+A210,|B210,|C210,|D210,|E210,|F210,|G210,|H210,|I210,|J210,|K210,|L210,
+A211,|B211,|C211,|D211,|E211,|F211,|G211,|H211,|I211,|J211,|K211,|L211,
+A212,|B212,|C212,|D212,|E212,|F212,|G212,|H212,|I212,|J212,|K212,|L212,
+A213,|B213,|C213,|D213,|E213,|F213,|G213,|H213,|I213,|J213,|K213,|L213,
+A214,|B214,|C214,|D214,|E214,|F214,|G214,|H214,|I214,|J214,|K214,|L214,
+A215,|B215,|C215,|D215,|E215,|F215,|G215,|H215,|I215,|J215,|K215,|L215,
+A216,|B216,|C216,|D216,|E216,|F216,|G216,|H216,|I216,|J216,|K216,|L216,
+A217,|B217,|C217,|D217,|E217,|F217,|G217,|H217,|I217,|J217,|K217,|L217,
+A218,|B218,|C218,|D218,|E218,|F218,|G218,|H218,|I218,|J218,|K218,|L218,
+A219,|B219,|C219,|D219,|E219,|F219,|G219,|H219,|I219,|J219,|K219,|L219,
+A220,|B220,|C220,|D220,|E220,|F220,|G220,|H220,|I220,|J220,|K220,|L220,
+A221,|B221,|C221,|D221,|E221,|F221,|G221,|H221,|I221,|J221,|K221,|L221,
+A222,|B222,|C222,|D222,|E222,|F222,|G222,|H222,|I222,|J222,|K222,|L222,
+A223,|B223,|C223,|D223,|E223,|F223,|G223,|H223,|I223,|J223,|K223,|L223,
+A224,|B224,|C224,|D224,|E224,|F224,|G224,|H224,|I224,|J224,|K224,|L224,
+A225,|B225,|C225,|D225,|E225,|F225,|G225,|H225,|I225,|J225,|K225,|L225,
+A226,|B226,|C226,|D226,|E226,|F226,|G226,|H226,|I226,|J226,|K226,|L226,
+A227,|B227,|C227,|D227,|E227,|F227,|G227,|H227,|I227,|J227,|K227,|L227,
+A228,|B228,|C228,|D228,|E228,|F228,|G228,|H228,|I228,|J228,|K228,|L228,
+A229,|B229,|C229,|D229,|E229,|F229,|G229,|H229,|I229,|J229,|K229,|L229,
+A230,|B230,|C230,|D230,|E230,|F230,|G230,|H230,|I230,|J230,|K230,|L230,
+A231,|B231,|C231,|D231,|E231,|F231,|G231,|H231,|I231,|J231,|K231,|L231,
+A232,|B232,|C232,|D232,|E232,|F232,|G232,|H232,|I232,|J232,|K232,|L232,
+A233,|B233,|C233,|D233,|E233,|F233,|G233,|H233,|I233,|J233,|K233,|L233,
+A234,|B234,|C234,|D234,|E234,|F234,|G234,|H234,|I234,|J234,|K234,|L234,
+A235,|B235,|C235,|D235,|E235,|F235,|G235,|H235,|I235,|J235,|K235,|L235,
+A236,|B236,|C236,|D236,|E236,|F236,|G236,|H236,|I236,|J236,|K236,|L236,
+A237,|B237,|C237,|D237,|E237,|F237,|G237,|H237,|I237,|J237,|K237,|L237,
+A238,|B238,|C238,|D238,|E238,|F238,|G238,|H238,|I238,|J238,|K238,|L238,
+A239,|B239,|C239,|D239,|E239,|F239,|G239,|H239,|I239,|J239,|K239,|L239,
+A240,|B240,|C240,|D240,|E240,|F240,|G240,|H240,|I240,|J240,|K240,|L240,
+A241,|B241,|C241,|D241,|E241,|F241,|G241,|H241,|I241,|J241,|K241,|L241,
+A242,|B242,|C242,|D242,|E242,|F242,|G242,|H242,|I242,|J242,|K242,|L242,
+A243,|B243,|C243,|D243,|E243,|F243,|G243,|H243,|I243,|J243,|K243,|L243,
+A244,|B244,|C244,|D244,|E244,|F244,|G244,|H244,|I244,|J244,|K244,|L244,
+A245,|B245,|C245,|D245,|E245,|F245,|G245,|H245,|I245,|J245,|K245,|L245,
+A246,|B246,|C246,|D246,|E246,|F246,|G246,|H246,|I246,|J246,|K246,|L246,
+A247,|B247,|C247,|D247,|E247,|F247,|G247,|H247,|I247,|J247,|K247,|L247,
+A248,|B248,|C248,|D248,|E248,|F248,|G248,|H248,|I248,|J248,|K248,|L248,
+A249,|B249,|C249,|D249,|E249,|F249,|G249,|H249,|I249,|J249,|K249,|L249,
+A250,|B250,|C250,|D250,|E250,|F250,|G250,|H250,|I250,|J250,|K250,|L250,
+A251,|B251,|C251,|D251,|E251,|F251,|G251,|H251,|I251,|J251,|K251,|L251,
+A252,|B252,|C252,|D252,|E252,|F252,|G252,|H252,|I252,|J252,|K252,|L252,
+A253,|B253,|C253,|D253,|E253,|F253,|G253,|H253,|I253,|J253,|K253,|L253,
+A254,|B254,|C254,|D254,|E254,|F254,|G254,|H254,|I254,|J254,|K254,|L254,
+A255,|B255,|C255,|D255,|E255,|F255,|G255,|H255,|I255,|J255,|K255,|L255,
+A256,|B256,|C256,|D256,|E256,|F256,|G256,|H256,|I256,|J256,|K256,|L256,
+A257,|B257,|C257,|D257,|E257,|F257,|G257,|H257,|I257,|J257,|K257,|L257,
+A258,|B258,|C258,|D258,|E258,|F258,|G258,|H258,|I258,|J258,|K258,|L258,
+A259,|B259,|C259,|D259,|E259,|F259,|G259,|H259,|I259,|J259,|K259,|L259,
+A260,|B260,|C260,|D260,|E260,|F260,|G260,|H260,|I260,|J260,|K260,|L260,
+A261,|B261,|C261,|D261,|E261,|F261,|G261,|H261,|I261,|J261,|K261,|L261,
+A262,|B262,|C262,|D262,|E262,|F262,|G262,|H262,|I262,|J262,|K262,|L262,
+A263,|B263,|C263,|D263,|E263,|F263,|G263,|H263,|I263,|J263,|K263,|L263,
+A264,|B264,|C264,|D264,|E264,|F264,|G264,|H264,|I264,|J264,|K264,|L264,
+A265,|B265,|C265,|D265,|E265,|F265,|G265,|H265,|I265,|J265,|K265,|L265,
+A266,|B266,|C266,|D266,|E266,|F266,|G266,|H266,|I266,|J266,|K266,|L266,
+A267,|B267,|C267,|D267,|E267,|F267,|G267,|H267,|I267,|J267,|K267,|L267,
+
+---
+
+Chunk 2/4 (rows 88-167):
+
+Text Input:
+{"BIRK":["B3","K7"],"VOO":["C3"],"2023-10-20 00:00:00":["B4"],"2024-10-30 00:00:00":["C4"],"Date":["B7","F7","J7"],"Close":["C7","G7"],"VOO (Rebased)":["L7"],"45337":["B88","F88","J88"],"49.78":["C88","K88"],"46.140192253029795":["D88","H88","L88"],"461.39":["G88"],"45338":["B89","F89","J89"],"49.25":["C89","K89"],"45.904186154681":["D89","H89","L89"],"459.03":["G89"],"45342":["B90","F90","J90"],"49.24":["C90","K90"],"45.652179642884825":["D90","H90","L90"],"456.51":["G90"],"45343":["B91","F91","J91"],"51.98":["C91","K91"],"45.69818083154604":["D91","H91","L91"],"456.97":["G91"],"45344":["B92","F92","J92"],"51.3":["C92","K92"],"46.658205638388594":["D92","H92","L92"],"466.57":["G92"],"45345":["B93","F93","J93"],"52":["C93","K93"],"46.67920618103827":["D93","H93","L93"],"466.78":["G93"],"45348":["B94","F94","J94"],"51":["C94","K94"],"46.508201762319445":["D94","H94","L94"],"465.07":["G94"],"45349":["B95","F95","J95"],"51.45":["C95","K95"],"46.59420398459908":["D95","H95","L95"],"465.93":["G95"],"45350":["B96","F96","J96"],"51.23":["C96","K96"],"46.5222021240859":["D96","H96","L96"],"465.21":["G96"],"45351":["B97","F97","J97"],"50.01":["C97","K97"],"46.694206568645185":["D97","H97","L97"],"466.93":["G97"],"45352":["B98","F98","J98"],"47.83":["C98","K98"],"47.144218196852634":["D98","H98","L98"],"471.43":["G98"],"45355":["B99","F99","J99"],"50.24":["C99","K99"],"47.08821674978682":["D99","H99","L99"],"470.87":["G99"],"45356":["B100","F100","J100"],"48.36":["C100","K100"],"46.616204553089226":["D100","H100","L100"],"466.15":["G100"],"45357":["B101","F101","J101"],"48.19":["C101","K101"],"46.86321093568309":["D101","H101","L101"],"468.62":["G101"],"45358":["B102","F102","J102"],"48.4":["C102","K102"],"47.327222925657":["D102","H102","L102"],"473.26":["G102"],"45359":["B103","F103","J103"],"47.18":["C103","K103"],"47.040215509444685":["D103","H103","L103"],"470.39":["G103"],"45362":["B104","F104","J104"],"47.43":["C104","K104"],"47.001214501666716":["D104","H104","L104"],"470":["G104"],"45363":["B105","F105","J105"],"47.03":["C105","C116","K105","K116"],"47.50422749941859":["D105","H105","L105"],"475.03":["G105"],"45364":["B106","F106","J106"],"46.85":["C106","K106"],"47.4322256389054":["D106","H106","L106"],"474.31":["G106"],"45365":["B107","F107","J107"],"46.43":["C107","K107"],"47.32822295149745":["D107","H107","L107"],"473.27":["G107"],"45366":["B108","F108","J108"],"47.09":["C108","K108"],"47.00221452750717":["D108","H108","L108"],"470.01":["G108"],"45369":["B109","F109","J109"],"46.4":["C109","K109"],"47.29622212460271":["D109","H109","L109"],"472.95":["G109"],"45370":["B110","F110","J110"],"45.87":["C110","K110"],"47.56122897232487":["D110","H110","L110"],"475.6":["G110"],"45371":["B111","F111","J111"],"45.95":["C111","K111"],"47.97623969611618":["D111","H111","L111"],"479.75":["G111"],"45372":["B112","F112","J112"],"46.75":["C112","C113","K112","K113"],"48.13624383058994":["D112","H112","L112"],"481.35":["G112"],"45373":["B113","F113","J113"],"47.91923822320991":["D113","H113","L113"],"479.18":["G113"],"45376":["B114","F114","J114"],"45.67":["C114","K114"],"47.79523501899274":["D114","H114","L114"],"477.94":["G114"],"45377":["B115","F115","J115"],"46.26":["C115","K115"],"47.66123155637097":["D115","H115","L115"],"476.6":["G115"],"45378":["B116","F116","J116"],"48.077242306002745":["D116","H116","L116"],"480.76":["G116"],"45379":["B117","F117","J117"],"47.25":["C117","K117"],"48.071242150959975":["D117","H117","L117"],"480.7":["G117"],"45383":["B118","F118","J118"],"46.59":["C118","K118"],"48.00824052301093":["D118","H118","L118"],"480.07":["G118"],"45384":["B119","F119","J119"],"45.19":["C119","K119"],"47.69423240910618":["D119","H119","L119"],"476.93":["G119"],"45385":["B120","F120","J120"],"43.36":["C120","K120"],"47.73723352024601":["D120","H120","L120"],"477.36":["G120"],"45386":["B121","F121","J121"],"41.99":["C121","K121"],"47.149218326054935":["D121","H121","L121"],"471.48":["G121"],"45387":["B122","F122","J122"],"44.04":["C122","K122"],"47.65023127212589":["D122","H122","L122"],"476.49":["G122"],"45390":["B123","F123","J123"],"44.55":["C123","K123"],"47.66923176309466":["D123","H123","L123"],"476.68":["G123"],"45391":["B124","F124","J124"],"45.21":["C124","K124"],"47.72823328768185":["D124","H124","L124"],"477.27":["G124"],"45392":["B125","F125","J125"],"43.42":["C125","K125"],"47.26622134938888":["D125","H125","L125"],"472.65":["G125"],"45393":["B126","F126","J126"],"43.81":["C126","K126"],"47.60723016098608":["D126","H126","L126"],"476.06":["G126"],"45394":["B127","F127","J127"],"43.03":["C127","K127"],"46.958213390526886":["D127","H127","L127"],"469.57":["G127"],"45397":["B128","F128","J128"],"42.16":["C128","K128"],"46.362197989612135":["D128","H128","L128"],"463.61":["G128"],"45398":["B129","F129","J129"],"42.15":["C129","K129"],"46.279195844853874":["D129","H129","L129"],"462.78":["G129"],"45399":["B130","F130","J130"],"42.29":["C130","K130"],"46.00018863536526":["D130","H130","L130"],"459.99":["G130"],"45400":["B131","F131","J131"],"42.02":["C131","K131"],"45.89518592211685":["D131","H131","L131"],"458.94":["G131"],"45401":["B132","F132","J132"],"42.67":["C132","K132"],"45.51117599937983":["D132","H132","L132"],"455.1":["G132"],"45404":["B133","F133","J133"],"43.9":["C133","K133"],"45.90618620636192":["D133","H133","L133"],"459.05":["G133"],"45405":["B134","F134","J134"],"44.84":["C134","C136","K134","K136"],"46.48520116798883":["D134","H134","L134"],"464.84":["G134"],"45406":["B135","F135","J135"],"45.04":["C135","K135"],"46.451200289413165":["D135","H135","L135"],"464.5":["G135"],"45407":["B136","F136","J136"],"46.25919532804465":["D136","H136","L136"],"462.58":["G136"],"45408":["B137","F137","J137"],"45.45":["C137","K137"],"46.72220729217809":["D137","H137","L137"],"467.21":["G137"],"45411":["B138","F138","J138"],"44.61":["C138","C141","K138","K141"],"46.885211504173235":["D138","H138","L138"],"468.84":["G138"],"45412":["B139","F139","J139"],"44.77":["C139","K139"],"46.14419235639164":["D139","H139","L139"],"461.43":["G139"],"45413":["B140","F140","J140"],"44.48":["C140","K140"],"45.9941884803225":["D140","H140","L140"],"459.93":["G140"],"45414":["B141","F141","J141"],"46.42319956588026":["D141","H141","L141"],"464.22":["G141"],"45415":["B142","F142","J142"],"44.8":["C142","K142"],"46.99921444998579":["D142","H142","L142"],"469.98":["G142"],"45418":["B143","F143","J143"],"44.9":["C143","K143"],"47.47322669836431":["D143","H143","L143"],"474.72":["G143"],"45419":["B144","F144","J144"],"44.74":["C144","K144"],"47.54122845551564":["D144","H144","L144"],"475.4":["G144"],"45420":["B145","F145","J145"],"44.89":["C145","K145"],"47.54322850719657":["D145","H145","L145"],"475.42":["G145"],"45421":["B146","F146","J146"],"46.18":["C146","K146"],"47.81623556164242":["D146","H146","L146"],"478.15":["G146"],"45422":["B147","F147","J147"],"45.49":["C147","K147"],"47.875237086229625":["D147","H147","L147"],"478.74":["G147"],"45425":["B148","F148","J148"],"47.44":["C148","K148"],"47.878237163751":["D148","H148","L148"],"478.77":["G148"],"45426":["B149","F149","J149"],"48.25":["C149","K149"],"48.10524302953565":["D149","H149","L149"],"481.04":["G149"],"45427":["B150","F150","J150"],"46.98":["C150","K150"],"48.69125817204579":["D150","H150","L150"],"486.9":["G150"],"45428":["B151","F151","J151"],"46.13":["C151","K151"],"48.59825576888293":["D151","H151","L151"],"485.97":["G151"],"45429":["B152","F152","J152"],"47.2":["C152","K152"],"48.67025762939611":["D152","H152","L152"],"486.69":["G152"],"45432":["B153","F153","J153"],"48.01":["C153","K153"],"48.71825886973824":["D153","H153","L153"],"487.17":["G153"],"45433":["B154","F154","J154"],"47.6":["C154","K154"],"48.84926225483863":["D154","H154","L154"],"488.48":["G154"],"45434":["B155","F155","J155"],"46.34":["C155","K155"],"48.70725858549317":["D155","H155","L155"],"487.06":["G155"],"45435":["B156","F156","J156"],"46.29":["C156","K156"],"48.34524923124629":["D156","H156","L156"],"483.44":["G156"],"45436":["B157","F157","J157"],"48.11":["C157","K157"],"48.67425773275795":["D157","H157","L157"],"486.73":["G157"],"45440":["B158","F158","J158"],"49.18":["C158","K158"],"48.713258740535935":["D158","H158","L158"],"487.12":["G158"],"45441":["B159","F159","J159"],"49.99":["C159","K159"],"48.37024987725781":["D159","H159","L159"],"483.69":["G159"],"45442":["B160","F160","J160"],"55.82":["C160","K160"],"48.045241479107986":["D160","H160","L160"],"480.44":["G160"],"45443":["B161","F161","J161"],"57":["C161","K161"],"48.46325228042068":["D161","H161","L161"],"484.62":["G161"],"45446":["B162","F162","J162"],"58.73":["C162","K162"],"48.516253649965115":["D162","H162","L162"],"485.15":["G162"],"45447":["B163","F163","J163"],"58.02":["C163","K163"],"48.57525517455232":["D163","H163","L163"],"485.74":["G163"],"45448":["B164","F164","J164"],"59.29":["C164","K164"],"49.15627018786016":["D164","H164","L164"],"491.55":["G164"],"45449":["B165","F165","J165"],"58.59":["C165","K165"],"49.14526990361508":["D165","H165","L165"],"491.44":["G165"],"45450":["B166","F166","J166"],"57.88":["C166","K166"],"49.081268249825584":["D166","H166","L166"],"490.8":["G166"],"45453":["B167","F167","J167"],"58.77":["C167","K167"],"49.242272410139805":["D167","H167","L167"],"492.41":["G167"],"__empty_cells":2473}
+
+Format Input:
+A1,,Font Color|B1,,Font Color|C1,,Font Color|D1,,Font Color|E1,,Font Color|F1,,Font Color|G1,,Font Color|H1,,Font Color|I1,,Font Color|J1,,Font Color|K1,,Font Color|L1,,Font Color
+A2,|B2,|C2,|D2,|E2,|F2,|G2,|H2,|I2,|J2,|K2,|L2,
+A3,,Font Color|B3,HIGHLIGHTED,BORDERED,Fill Color,Font Color,top Border,left Border|C3,HIGHLIGHTED,BORDERED,Fill Color,Font Color,right Border,top Border|D3,,Font Color|E3,,Font Color|F3,,Font Color|G3,,Font Color|H3,,Font Color|I3,,Font Color|J3,,Font Color|K3,,Font Color|L3,,Font Color
+A4,,Font Color|B4,BORDERED,Font Color,bottom Border,left Border|C4,BORDERED,Font Color,right Border,bottom Border|D4,,Font Color|E4,,Font Color|F4,,Font Color|G4,,Font Color|H4,,Font Color|I4,,Font Color|J4,,Font Color|K4,,Font Color|L4,,Font Color
+A5,|B5,|C5,|D5,|E5,|F5,|G5,|H5,|I5,|J5,|K5,|L5,
+A6,|B6,|C6,|D6,|E6,|F6,|G6,|H6,|I6,|J6,|K6,|L6,
+A7,,Font Color|B7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border,left Border|C7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|D7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|E7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|F7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|G7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|H7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|I7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|J7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|K7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|L7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,right Border,bottom Border,top Border
+A8,|B8,|C8,|D8,|E8,|F8,|G8,|H8,|I8,|J8,|K8,|L8,
+A9,|B9,|C9,|D9,|E9,|F9,|G9,|H9,|I9,|J9,|K9,|L9,
+A10,|B10,|C10,|D10,|E10,|F10,|G10,|H10,|I10,|J10,|K10,|L10,
+A11,|B11,|C11,|D11,|E11,|F11,|G11,|H11,|I11,|J11,|K11,|L11,
+A12,|B12,|C12,|D12,|E12,|F12,|G12,|H12,|I12,|J12,|K12,|L12,
+A13,|B13,|C13,|D13,|E13,|F13,|G13,|H13,|I13,|J13,|K13,|L13,
+A14,|B14,|C14,|D14,|E14,|F14,|G14,|H14,|I14,|J14,|K14,|L14,
+A15,|B15,|C15,|D15,|E15,|F15,|G15,|H15,|I15,|J15,|K15,|L15,
+A16,|B16,|C16,|D16,|E16,|F16,|G16,|H16,|I16,|J16,|K16,|L16,
+A17,|B17,|C17,|D17,|E17,|F17,|G17,|H17,|I17,|J17,|K17,|L17,
+A18,|B18,|C18,|D18,|E18,|F18,|G18,|H18,|I18,|J18,|K18,|L18,
+A19,|B19,|C19,|D19,|E19,|F19,|G19,|H19,|I19,|J19,|K19,|L19,
+A20,|B20,|C20,|D20,|E20,|F20,|G20,|H20,|I20,|J20,|K20,|L20,
+A21,|B21,|C21,|D21,|E21,|F21,|G21,|H21,|I21,|J21,|K21,|L21,
+A22,|B22,|C22,|D22,|E22,|F22,|G22,|H22,|I22,|J22,|K22,|L22,
+A23,|B23,|C23,|D23,|E23,|F23,|G23,|H23,|I23,|J23,|K23,|L23,
+A24,|B24,|C24,|D24,|E24,|F24,|G24,|H24,|I24,|J24,|K24,|L24,
+A25,|B25,|C25,|D25,|E25,|F25,|G25,|H25,|I25,|J25,|K25,|L25,
+A26,|B26,|C26,|D26,|E26,|F26,|G26,|H26,|I26,|J26,|K26,|L26,
+A27,|B27,|C27,|D27,|E27,|F27,|G27,|H27,|I27,|J27,|K27,|L27,
+A28,|B28,|C28,|D28,|E28,|F28,|G28,|H28,|I28,|J28,|K28,|L28,
+A29,|B29,|C29,|D29,|E29,|F29,|G29,|H29,|I29,|J29,|K29,|L29,
+A30,|B30,|C30,|D30,|E30,|F30,|G30,|H30,|I30,|J30,|K30,|L30,
+A31,|B31,|C31,|D31,|E31,|F31,|G31,|H31,|I31,|J31,|K31,|L31,
+A32,|B32,|C32,|D32,|E32,|F32,|G32,|H32,|I32,|J32,|K32,|L32,
+A33,|B33,|C33,|D33,|E33,|F33,|G33,|H33,|I33,|J33,|K33,|L33,
+A34,|B34,|C34,|D34,|E34,|F34,|G34,|H34,|I34,|J34,|K34,|L34,
+A35,|B35,|C35,|D35,|E35,|F35,|G35,|H35,|I35,|J35,|K35,|L35,
+A36,|B36,|C36,|D36,|E36,|F36,|G36,|H36,|I36,|J36,|K36,|L36,
+A37,|B37,|C37,|D37,|E37,|F37,|G37,|H37,|I37,|J37,|K37,|L37,
+A38,|B38,|C38,|D38,|E38,|F38,|G38,|H38,|I38,|J38,|K38,|L38,
+A39,|B39,|C39,|D39,|E39,|F39,|G39,|H39,|I39,|J39,|K39,|L39,
+A40,|B40,|C40,|D40,|E40,|F40,|G40,|H40,|I40,|J40,|K40,|L40,
+A41,|B41,|C41,|D41,|E41,|F41,|G41,|H41,|I41,|J41,|K41,|L41,
+A42,|B42,|C42,|D42,|E42,|F42,|G42,|H42,|I42,|J42,|K42,|L42,
+A43,|B43,|C43,|D43,|E43,|F43,|G43,|H43,|I43,|J43,|K43,|L43,
+A44,|B44,|C44,|D44,|E44,|F44,|G44,|H44,|I44,|J44,|K44,|L44,
+A45,|B45,|C45,|D45,|E45,|F45,|G45,|H45,|I45,|J45,|K45,|L45,
+A46,|B46,|C46,|D46,|E46,|F46,|G46,|H46,|I46,|J46,|K46,|L46,
+A47,|B47,|C47,|D47,|E47,|F47,|G47,|H47,|I47,|J47,|K47,|L47,
+A48,|B48,|C48,|D48,|E48,|F48,|G48,|H48,|I48,|J48,|K48,|L48,
+A49,|B49,|C49,|D49,|E49,|F49,|G49,|H49,|I49,|J49,|K49,|L49,
+A50,|B50,|C50,|D50,|E50,|F50,|G50,|H50,|I50,|J50,|K50,|L50,
+A51,|B51,|C51,|D51,|E51,|F51,|G51,|H51,|I51,|J51,|K51,|L51,
+A52,|B52,|C52,|D52,|E52,|F52,|G52,|H52,|I52,|J52,|K52,|L52,
+A53,|B53,|C53,|D53,|E53,|F53,|G53,|H53,|I53,|J53,|K53,|L53,
+A54,|B54,|C54,|D54,|E54,|F54,|G54,|H54,|I54,|J54,|K54,|L54,
+A55,|B55,|C55,|D55,|E55,|F55,|G55,|H55,|I55,|J55,|K55,|L55,
+A56,|B56,|C56,|D56,|E56,|F56,|G56,|H56,|I56,|J56,|K56,|L56,
+A57,|B57,|C57,|D57,|E57,|F57,|G57,|H57,|I57,|J57,|K57,|L57,
+A58,|B58,|C58,|D58,|E58,|F58,|G58,|H58,|I58,|J58,|K58,|L58,
+A59,|B59,|C59,|D59,|E59,|F59,|G59,|H59,|I59,|J59,|K59,|L59,
+A60,|B60,|C60,|D60,|E60,|F60,|G60,|H60,|I60,|J60,|K60,|L60,
+A61,|B61,|C61,|D61,|E61,|F61,|G61,|H61,|I61,|J61,|K61,|L61,
+A62,|B62,|C62,|D62,|E62,|F62,|G62,|H62,|I62,|J62,|K62,|L62,
+A63,|B63,|C63,|D63,|E63,|F63,|G63,|H63,|I63,|J63,|K63,|L63,
+A64,|B64,|C64,|D64,|E64,|F64,|G64,|H64,|I64,|J64,|K64,|L64,
+A65,|B65,|C65,|D65,|E65,|F65,|G65,|H65,|I65,|J65,|K65,|L65,
+A66,|B66,|C66,|D66,|E66,|F66,|G66,|H66,|I66,|J66,|K66,|L66,
+A67,|B67,|C67,|D67,|E67,|F67,|G67,|H67,|I67,|J67,|K67,|L67,
+A68,|B68,|C68,|D68,|E68,|F68,|G68,|H68,|I68,|J68,|K68,|L68,
+A69,|B69,|C69,|D69,|E69,|F69,|G69,|H69,|I69,|J69,|K69,|L69,
+A70,|B70,|C70,|D70,|E70,|F70,|G70,|H70,|I70,|J70,|K70,|L70,
+A71,|B71,|C71,|D71,|E71,|F71,|G71,|H71,|I71,|J71,|K71,|L71,
+A72,|B72,|C72,|D72,|E72,|F72,|G72,|H72,|I72,|J72,|K72,|L72,
+A73,|B73,|C73,|D73,|E73,|F73,|G73,|H73,|I73,|J73,|K73,|L73,
+A74,|B74,|C74,|D74,|E74,|F74,|G74,|H74,|I74,|J74,|K74,|L74,
+A75,|B75,|C75,|D75,|E75,|F75,|G75,|H75,|I75,|J75,|K75,|L75,
+A76,|B76,|C76,|D76,|E76,|F76,|G76,|H76,|I76,|J76,|K76,|L76,
+A77,|B77,|C77,|D77,|E77,|F77,|G77,|H77,|I77,|J77,|K77,|L77,
+A78,|B78,|C78,|D78,|E78,|F78,|G78,|H78,|I78,|J78,|K78,|L78,
+A79,|B79,|C79,|D79,|E79,|F79,|G79,|H79,|I79,|J79,|K79,|L79,
+A80,|B80,|C80,|D80,|E80,|F80,|G80,|H80,|I80,|J80,|K80,|L80,
+A81,|B81,|C81,|D81,|E81,|F81,|G81,|H81,|I81,|J81,|K81,|L81,
+A82,|B82,|C82,|D82,|E82,|F82,|G82,|H82,|I82,|J82,|K82,|L82,
+A83,|B83,|C83,|D83,|E83,|F83,|G83,|H83,|I83,|J83,|K83,|L83,
+A84,|B84,|C84,|D84,|E84,|F84,|G84,|H84,|I84,|J84,|K84,|L84,
+A85,|B85,|C85,|D85,|E85,|F85,|G85,|H85,|I85,|J85,|K85,|L85,
+A86,|B86,|C86,|D86,|E86,|F86,|G86,|H86,|I86,|J86,|K86,|L86,
+A87,|B87,|C87,|D87,|E87,|F87,|G87,|H87,|I87,|J87,|K87,|L87,
+A88,,Font Color|B88,BORDERED,Font Color,left Border|C88,,Font Color|D88,,Font Color|E88,,Font Color|F88,,Font Color|G88,,Font Color|H88,,Font Color|I88,,Font Color|J88,,Font Color|K88,,Font Color|L88,BORDERED,Font Color,right Border
+A89,,Font Color|B89,BORDERED,Font Color,left Border|C89,,Font Color|D89,,Font Color|E89,,Font Color|F89,,Font Color|G89,,Font Color|H89,,Font Color|I89,,Font Color|J89,,Font Color|K89,,Font Color|L89,BORDERED,Font Color,right Border
+A90,,Font Color|B90,BORDERED,Font Color,left Border|C90,,Font Color|D90,,Font Color|E90,,Font Color|F90,,Font Color|G90,,Font Color|H90,,Font Color|I90,,Font Color|J90,,Font Color|K90,,Font Color|L90,BORDERED,Font Color,right Border
+A91,,Font Color|B91,BORDERED,Font Color,left Border|C91,,Font Color|D91,,Font Color|E91,,Font Color|F91,,Font Color|G91,,Font Color|H91,,Font Color|I91,,Font Color|J91,,Font Color|K91,,Font Color|L91,BORDERED,Font Color,right Border
+A92,,Font Color|B92,BORDERED,Font Color,left Border|C92,,Font Color|D92,,Font Color|E92,,Font Color|F92,,Font Color|G92,,Font Color|H92,,Font Color|I92,,Font Color|J92,,Font Color|K92,,Font Color|L92,BORDERED,Font Color,right Border
+A93,,Font Color|B93,BORDERED,Font Color,left Border|C93,,Font Color|D93,,Font Color|E93,,Font Color|F93,,Font Color|G93,,Font Color|H93,,Font Color|I93,,Font Color|J93,,Font Color|K93,,Font Color|L93,BORDERED,Font Color,right Border
+A94,,Font Color|B94,BORDERED,Font Color,left Border|C94,,Font Color|D94,,Font Color|E94,,Font Color|F94,,Font Color|G94,,Font Color|H94,,Font Color|I94,,Font Color|J94,,Font Color|K94,,Font Color|L94,BORDERED,Font Color,right Border
+A95,,Font Color|B95,BORDERED,Font Color,left Border|C95,,Font Color|D95,,Font Color|E95,,Font Color|F95,,Font Color|G95,,Font Color|H95,,Font Color|I95,,Font Color|J95,,Font Color|K95,,Font Color|L95,BORDERED,Font Color,right Border
+A96,,Font Color|B96,BORDERED,Font Color,left Border|C96,,Font Color|D96,,Font Color|E96,,Font Color|F96,,Font Color|G96,,Font Color|H96,,Font Color|I96,,Font Color|J96,,Font Color|K96,,Font Color|L96,BORDERED,Font Color,right Border
+A97,,Font Color|B97,BORDERED,Font Color,left Border|C97,,Font Color|D97,,Font Color|E97,,Font Color|F97,,Font Color|G97,,Font Color|H97,,Font Color|I97,,Font Color|J97,,Font Color|K97,,Font Color|L97,BORDERED,Font Color,right Border
+A98,,Font Color|B98,BORDERED,Font Color,left Border|C98,,Font Color|D98,,Font Color|E98,,Font Color|F98,,Font Color|G98,,Font Color|H98,,Font Color|I98,,Font Color|J98,,Font Color|K98,,Font Color|L98,BORDERED,Font Color,right Border
+A99,,Font Color|B99,BORDERED,Font Color,left Border|C99,,Font Color|D99,,Font Color|E99,,Font Color|F99,,Font Color|G99,,Font Color|H99,,Font Color|I99,,Font Color|J99,,Font Color|K99,,Font Color|L99,BORDERED,Font Color,right Border
+A100,,Font Color|B100,BORDERED,Font Color,left Border|C100,,Font Color|D100,,Font Color|E100,,Font Color|F100,,Font Color|G100,,Font Color|H100,,Font Color|I100,,Font Color|J100,,Font Color|K100,,Font Color|L100,BORDERED,Font Color,right Border
+A101,,Font Color|B101,BORDERED,Font Color,left Border|C101,,Font Color|D101,,Font Color|E101,,Font Color|F101,,Font Color|G101,,Font Color|H101,,Font Color|I101,,Font Color|J101,,Font Color|K101,,Font Color|L101,BORDERED,Font Color,right Border
+A102,,Font Color|B102,BORDERED,Font Color,left Border|C102,,Font Color|D102,,Font Color|E102,,Font Color|F102,,Font Color|G102,,Font Color|H102,,Font Color|I102,,Font Color|J102,,Font Color|K102,,Font Color|L102,BORDERED,Font Color,right Border
+A103,,Font Color|B103,BORDERED,Font Color,left Border|C103,,Font Color|D103,,Font Color|E103,,Font Color|F103,,Font Color|G103,,Font Color|H103,,Font Color|I103,,Font Color|J103,,Font Color|K103,,Font Color|L103,BORDERED,Font Color,right Border
+A104,,Font Color|B104,BORDERED,Font Color,left Border|C104,,Font Color|D104,,Font Color|E104,,Font Color|F104,,Font Color|G104,,Font Color|H104,,Font Color|I104,,Font Color|J104,,Font Color|K104,,Font Color|L104,BORDERED,Font Color,right Border
+A105,,Font Color|B105,BORDERED,Font Color,left Border|C105,,Font Color|D105,,Font Color|E105,,Font Color|F105,,Font Color|G105,,Font Color|H105,,Font Color|I105,,Font Color|J105,,Font Color|K105,,Font Color|L105,BORDERED,Font Color,right Border
+A106,,Font Color|B106,BORDERED,Font Color,left Border|C106,,Font Color|D106,,Font Color|E106,,Font Color|F106,,Font Color|G106,,Font Color|H106,,Font Color|I106,,Font Color|J106,,Font Color|K106,,Font Color|L106,BORDERED,Font Color,right Border
+A107,,Font Color|B107,BORDERED,Font Color,left Border|C107,,Font Color|D107,,Font Color|E107,,Font Color|F107,,Font Color|G107,,Font Color|H107,,Font Color|I107,,Font Color|J107,,Font Color|K107,,Font Color|L107,BORDERED,Font Color,right Border
+A108,,Font Color|B108,BORDERED,Font Color,left Border|C108,,Font Color|D108,,Font Color|E108,,Font Color|F108,,Font Color|G108,,Font Color|H108,,Font Color|I108,,Font Color|J108,,Font Color|K108,,Font Color|L108,BORDERED,Font Color,right Border
+A109,,Font Color|B109,BORDERED,Font Color,left Border|C109,,Font Color|D109,,Font Color|E109,,Font Color|F109,,Font Color|G109,,Font Color|H109,,Font Color|I109,,Font Color|J109,,Font Color|K109,,Font Color|L109,BORDERED,Font Color,right Border
+A110,,Font Color|B110,BORDERED,Font Color,left Border|C110,,Font Color|D110,,Font Color|E110,,Font Color|F110,,Font Color|G110,,Font Color|H110,,Font Color|I110,,Font Color|J110,,Font Color|K110,,Font Color|L110,BORDERED,Font Color,right Border
+A111,,Font Color|B111,BORDERED,Font Color,left Border|C111,,Font Color|D111,,Font Color|E111,,Font Color|F111,,Font Color|G111,,Font Color|H111,,Font Color|I111,,Font Color|J111,,Font Color|K111,,Font Color|L111,BORDERED,Font Color,right Border
+A112,,Font Color|B112,BORDERED,Font Color,left Border|C112,,Font Color|D112,,Font Color|E112,,Font Color|F112,,Font Color|G112,,Font Color|H112,,Font Color|I112,,Font Color|J112,,Font Color|K112,,Font Color|L112,BORDERED,Font Color,right Border
+A113,,Font Color|B113,BORDERED,Font Color,left Border|C113,,Font Color|D113,,Font Color|E113,,Font Color|F113,,Font Color|G113,,Font Color|H113,,Font Color|I113,,Font Color|J113,,Font Color|K113,,Font Color|L113,BORDERED,Font Color,right Border
+A114,,Font Color|B114,BORDERED,Font Color,left Border|C114,,Font Color|D114,,Font Color|E114,,Font Color|F114,,Font Color|G114,,Font Color|H114,,Font Color|I114,,Font Color|J114,,Font Color|K114,,Font Color|L114,BORDERED,Font Color,right Border
+A115,,Font Color|B115,BORDERED,Font Color,left Border|C115,,Font Color|D115,,Font Color|E115,,Font Color|F115,,Font Color|G115,,Font Color|H115,,Font Color|I115,,Font Color|J115,,Font Color|K115,,Font Color|L115,BORDERED,Font Color,right Border
+A116,,Font Color|B116,BORDERED,Font Color,left Border|C116,,Font Color|D116,,Font Color|E116,,Font Color|F116,,Font Color|G116,,Font Color|H116,,Font Color|I116,,Font Color|J116,,Font Color|K116,,Font Color|L116,BORDERED,Font Color,right Border
+A117,,Font Color|B117,BORDERED,Font Color,left Border|C117,,Font Color|D117,,Font Color|E117,,Font Color|F117,,Font Color|G117,,Font Color|H117,,Font Color|I117,,Font Color|J117,,Font Color|K117,,Font Color|L117,BORDERED,Font Color,right Border
+A118,,Font Color|B118,BORDERED,Font Color,left Border|C118,,Font Color|D118,,Font Color|E118,,Font Color|F118,,Font Color|G118,,Font Color|H118,,Font Color|I118,,Font Color|J118,,Font Color|K118,,Font Color|L118,BORDERED,Font Color,right Border
+A119,,Font Color|B119,BORDERED,Font Color,left Border|C119,,Font Color|D119,,Font Color|E119,,Font Color|F119,,Font Color|G119,,Font Color|H119,,Font Color|I119,,Font Color|J119,,Font Color|K119,,Font Color|L119,BORDERED,Font Color,right Border
+A120,,Font Color|B120,BORDERED,Font Color,left Border|C120,,Font Color|D120,,Font Color|E120,,Font Color|F120,,Font Color|G120,,Font Color|H120,,Font Color|I120,,Font Color|J120,,Font Color|K120,,Font Color|L120,BORDERED,Font Color,right Border
+A121,,Font Color|B121,BORDERED,Font Color,left Border|C121,,Font Color|D121,,Font Color|E121,,Font Color|F121,,Font Color|G121,,Font Color|H121,,Font Color|I121,,Font Color|J121,,Font Color|K121,,Font Color|L121,BORDERED,Font Color,right Border
+A122,,Font Color|B122,BORDERED,Font Color,left Border|C122,,Font Color|D122,,Font Color|E122,,Font Color|F122,,Font Color|G122,,Font Color|H122,,Font Color|I122,,Font Color|J122,,Font Color|K122,,Font Color|L122,BORDERED,Font Color,right Border
+A123,,Font Color|B123,BORDERED,Font Color,left Border|C123,,Font Color|D123,,Font Color|E123,,Font Color|F123,,Font Color|G123,,Font Color|H123,,Font Color|I123,,Font Color|J123,,Font Color|K123,,Font Color|L123,BORDERED,Font Color,right Border
+A124,,Font Color|B124,BORDERED,Font Color,left Border|C124,,Font Color|D124,,Font Color|E124,,Font Color|F124,,Font Color|G124,,Font Color|H124,,Font Color|I124,,Font Color|J124,,Font Color|K124,,Font Color|L124,BORDERED,Font Color,right Border
+A125,,Font Color|B125,BORDERED,Font Color,left Border|C125,,Font Color|D125,,Font Color|E125,,Font Color|F125,,Font Color|G125,,Font Color|H125,,Font Color|I125,,Font Color|J125,,Font Color|K125,,Font Color|L125,BORDERED,Font Color,right Border
+A126,,Font Color|B126,BORDERED,Font Color,left Border|C126,,Font Color|D126,,Font Color|E126,,Font Color|F126,,Font Color|G126,,Font Color|H126,,Font Color|I126,,Font Color|J126,,Font Color|K126,,Font Color|L126,BORDERED,Font Color,right Border
+A127,,Font Color|B127,BORDERED,Font Color,left Border|C127,,Font Color|D127,,Font Color|E127,,Font Color|F127,,Font Color|G127,,Font Color|H127,,Font Color|I127,,Font Color|J127,,Font Color|K127,,Font Color|L127,BORDERED,Font Color,right Border
+A128,,Font Color|B128,BORDERED,Font Color,left Border|C128,,Font Color|D128,,Font Color|E128,,Font Color|F128,,Font Color|G128,,Font Color|H128,,Font Color|I128,,Font Color|J128,,Font Color|K128,,Font Color|L128,BORDERED,Font Color,right Border
+A129,,Font Color|B129,BORDERED,Font Color,left Border|C129,,Font Color|D129,,Font Color|E129,,Font Color|F129,,Font Color|G129,,Font Color|H129,,Font Color|I129,,Font Color|J129,,Font Color|K129,,Font Color|L129,BORDERED,Font Color,right Border
+A130,,Font Color|B130,BORDERED,Font Color,left Border|C130,,Font Color|D130,,Font Color|E130,,Font Color|F130,,Font Color|G130,,Font Color|H130,,Font Color|I130,,Font Color|J130,,Font Color|K130,,Font Color|L130,BORDERED,Font Color,right Border
+A131,,Font Color|B131,BORDERED,Font Color,left Border|C131,,Font Color|D131,,Font Color|E131,,Font Color|F131,,Font Color|G131,,Font Color|H131,,Font Color|I131,,Font Color|J131,,Font Color|K131,,Font Color|L131,BORDERED,Font Color,right Border
+A132,,Font Color|B132,BORDERED,Font Color,left Border|C132,,Font Color|D132,,Font Color|E132,,Font Color|F132,,Font Color|G132,,Font Color|H132,,Font Color|I132,,Font Color|J132,,Font Color|K132,,Font Color|L132,BORDERED,Font Color,right Border
+A133,,Font Color|B133,BORDERED,Font Color,left Border|C133,,Font Color|D133,,Font Color|E133,,Font Color|F133,,Font Color|G133,,Font Color|H133,,Font Color|I133,,Font Color|J133,,Font Color|K133,,Font Color|L133,BORDERED,Font Color,right Border
+A134,,Font Color|B134,BORDERED,Font Color,left Border|C134,,Font Color|D134,,Font Color|E134,,Font Color|F134,,Font Color|G134,,Font Color|H134,,Font Color|I134,,Font Color|J134,,Font Color|K134,,Font Color|L134,BORDERED,Font Color,right Border
+A135,,Font Color|B135,BORDERED,Font Color,left Border|C135,,Font Color|D135,,Font Color|E135,,Font Color|F135,,Font Color|G135,,Font Color|H135,,Font Color|I135,,Font Color|J135,,Font Color|K135,,Font Color|L135,BORDERED,Font Color,right Border
+A136,,Font Color|B136,BORDERED,Font Color,left Border|C136,,Font Color|D136,,Font Color|E136,,Font Color|F136,,Font Color|G136,,Font Color|H136,,Font Color|I136,,Font Color|J136,,Font Color|K136,,Font Color|L136,BORDERED,Font Color,right Border
+A137,,Font Color|B137,BORDERED,Font Color,left Border|C137,,Font Color|D137,,Font Color|E137,,Font Color|F137,,Font Color|G137,,Font Color|H137,,Font Color|I137,,Font Color|J137,,Font Color|K137,,Font Color|L137,BORDERED,Font Color,right Border
+A138,,Font Color|B138,BORDERED,Font Color,left Border|C138,,Font Color|D138,,Font Color|E138,,Font Color|F138,,Font Color|G138,,Font Color|H138,,Font Color|I138,,Font Color|J138,,Font Color|K138,,Font Color|L138,BORDERED,Font Color,right Border
+A139,,Font Color|B139,BORDERED,Font Color,left Border|C139,,Font Color|D139,,Font Color|E139,,Font Color|F139,,Font Color|G139,,Font Color|H139,,Font Color|I139,,Font Color|J139,,Font Color|K139,,Font Color|L139,BORDERED,Font Color,right Border
+A140,,Font Color|B140,BORDERED,Font Color,left Border|C140,,Font Color|D140,,Font Color|E140,,Font Color|F140,,Font Color|G140,,Font Color|H140,,Font Color|I140,,Font Color|J140,,Font Color|K140,,Font Color|L140,BORDERED,Font Color,right Border
+A141,,Font Color|B141,BORDERED,Font Color,left Border|C141,,Font Color|D141,,Font Color|E141,,Font Color|F141,,Font Color|G141,,Font Color|H141,,Font Color|I141,,Font Color|J141,,Font Color|K141,,Font Color|L141,BORDERED,Font Color,right Border
+A142,,Font Color|B142,BORDERED,Font Color,left Border|C142,,Font Color|D142,,Font Color|E142,,Font Color|F142,,Font Color|G142,,Font Color|H142,,Font Color|I142,,Font Color|J142,,Font Color|K142,,Font Color|L142,BORDERED,Font Color,right Border
+A143,,Font Color|B143,BORDERED,Font Color,left Border|C143,,Font Color|D143,,Font Color|E143,,Font Color|F143,,Font Color|G143,,Font Color|H143,,Font Color|I143,,Font Color|J143,,Font Color|K143,,Font Color|L143,BORDERED,Font Color,right Border
+A144,,Font Color|B144,BORDERED,Font Color,left Border|C144,,Font Color|D144,,Font Color|E144,,Font Color|F144,,Font Color|G144,,Font Color|H144,,Font Color|I144,,Font Color|J144,,Font Color|K144,,Font Color|L144,BORDERED,Font Color,right Border
+A145,,Font Color|B145,BORDERED,Font Color,left Border|C145,,Font Color|D145,,Font Color|E145,,Font Color|F145,,Font Color|G145,,Font Color|H145,,Font Color|I145,,Font Color|J145,,Font Color|K145,,Font Color|L145,BORDERED,Font Color,right Border
+A146,,Font Color|B146,BORDERED,Font Color,left Border|C146,,Font Color|D146,,Font Color|E146,,Font Color|F146,,Font Color|G146,,Font Color|H146,,Font Color|I146,,Font Color|J146,,Font Color|K146,,Font Color|L146,BORDERED,Font Color,right Border
+A147,,Font Color|B147,BORDERED,Font Color,left Border|C147,,Font Color|D147,,Font Color|E147,,Font Color|F147,,Font Color|G147,,Font Color|H147,,Font Color|I147,,Font Color|J147,,Font Color|K147,,Font Color|L147,BORDERED,Font Color,right Border
+A148,,Font Color|B148,BORDERED,Font Color,left Border|C148,,Font Color|D148,,Font Color|E148,,Font Color|F148,,Font Color|G148,,Font Color|H148,,Font Color|I148,,Font Color|J148,,Font Color|K148,,Font Color|L148,BORDERED,Font Color,right Border
+A149,,Font Color|B149,BORDERED,Font Color,left Border|C149,,Font Color|D149,,Font Color|E149,,Font Color|F149,,Font Color|G149,,Font Color|H149,,Font Color|I149,,Font Color|J149,,Font Color|K149,,Font Color|L149,BORDERED,Font Color,right Border
+A150,,Font Color|B150,BORDERED,Font Color,left Border|C150,,Font Color|D150,,Font Color|E150,,Font Color|F150,,Font Color|G150,,Font Color|H150,,Font Color|I150,,Font Color|J150,,Font Color|K150,,Font Color|L150,BORDERED,Font Color,right Border
+A151,,Font Color|B151,BORDERED,Font Color,left Border|C151,,Font Color|D151,,Font Color|E151,,Font Color|F151,,Font Color|G151,,Font Color|H151,,Font Color|I151,,Font Color|J151,,Font Color|K151,,Font Color|L151,BORDERED,Font Color,right Border
+A152,,Font Color|B152,BORDERED,Font Color,left Border|C152,,Font Color|D152,,Font Color|E152,,Font Color|F152,,Font Color|G152,,Font Color|H152,,Font Color|I152,,Font Color|J152,,Font Color|K152,,Font Color|L152,BORDERED,Font Color,right Border
+A153,,Font Color|B153,BORDERED,Font Color,left Border|C153,,Font Color|D153,,Font Color|E153,,Font Color|F153,,Font Color|G153,,Font Color|H153,,Font Color|I153,,Font Color|J153,,Font Color|K153,,Font Color|L153,BORDERED,Font Color,right Border
+A154,,Font Color|B154,BORDERED,Font Color,left Border|C154,,Font Color|D154,,Font Color|E154,,Font Color|F154,,Font Color|G154,,Font Color|H154,,Font Color|I154,,Font Color|J154,,Font Color|K154,,Font Color|L154,BORDERED,Font Color,right Border
+A155,,Font Color|B155,BORDERED,Font Color,left Border|C155,,Font Color|D155,,Font Color|E155,,Font Color|F155,,Font Color|G155,,Font Color|H155,,Font Color|I155,,Font Color|J155,,Font Color|K155,,Font Color|L155,BORDERED,Font Color,right Border
+A156,,Font Color|B156,BORDERED,Font Color,left Border|C156,,Font Color|D156,,Font Color|E156,,Font Color|F156,,Font Color|G156,,Font Color|H156,,Font Color|I156,,Font Color|J156,,Font Color|K156,,Font Color|L156,BORDERED,Font Color,right Border
+A157,,Font Color|B157,BORDERED,Font Color,left Border|C157,,Font Color|D157,,Font Color|E157,,Font Color|F157,,Font Color|G157,,Font Color|H157,,Font Color|I157,,Font Color|J157,,Font Color|K157,,Font Color|L157,BORDERED,Font Color,right Border
+A158,,Font Color|B158,BORDERED,Font Color,left Border|C158,,Font Color|D158,,Font Color|E158,,Font Color|F158,,Font Color|G158,,Font Color|H158,,Font Color|I158,,Font Color|J158,,Font Color|K158,,Font Color|L158,BORDERED,Font Color,right Border
+A159,,Font Color|B159,BORDERED,Font Color,left Border|C159,,Font Color|D159,,Font Color|E159,,Font Color|F159,,Font Color|G159,,Font Color|H159,,Font Color|I159,,Font Color|J159,,Font Color|K159,,Font Color|L159,BORDERED,Font Color,right Border
+A160,,Font Color|B160,BORDERED,Font Color,left Border|C160,,Font Color|D160,,Font Color|E160,,Font Color|F160,,Font Color|G160,,Font Color|H160,,Font Color|I160,,Font Color|J160,,Font Color|K160,,Font Color|L160,BORDERED,Font Color,right Border
+A161,,Font Color|B161,BORDERED,Font Color,left Border|C161,,Font Color|D161,,Font Color|E161,,Font Color|F161,,Font Color|G161,,Font Color|H161,,Font Color|I161,,Font Color|J161,,Font Color|K161,,Font Color|L161,BORDERED,Font Color,right Border
+A162,,Font Color|B162,BORDERED,Font Color,left Border|C162,,Font Color|D162,,Font Color|E162,,Font Color|F162,,Font Color|G162,,Font Color|H162,,Font Color|I162,,Font Color|J162,,Font Color|K162,,Font Color|L162,BORDERED,Font Color,right Border
+A163,,Font Color|B163,BORDERED,Font Color,left Border|C163,,Font Color|D163,,Font Color|E163,,Font Color|F163,,Font Color|G163,,Font Color|H163,,Font Color|I163,,Font Color|J163,,Font Color|K163,,Font Color|L163,BORDERED,Font Color,right Border
+A164,,Font Color|B164,BORDERED,Font Color,left Border|C164,,Font Color|D164,,Font Color|E164,,Font Color|F164,,Font Color|G164,,Font Color|H164,,Font Color|I164,,Font Color|J164,,Font Color|K164,,Font Color|L164,BORDERED,Font Color,right Border
+A165,,Font Color|B165,BORDERED,Font Color,left Border|C165,,Font Color|D165,,Font Color|E165,,Font Color|F165,,Font Color|G165,,Font Color|H165,,Font Color|I165,,Font Color|J165,,Font Color|K165,,Font Color|L165,BORDERED,Font Color,right Border
+A166,,Font Color|B166,BORDERED,Font Color,left Border|C166,,Font Color|D166,,Font Color|E166,,Font Color|F166,,Font Color|G166,,Font Color|H166,,Font Color|I166,,Font Color|J166,,Font Color|K166,,Font Color|L166,BORDERED,Font Color,right Border
+A167,,Font Color|B167,BORDERED,Font Color,left Border|C167,,Font Color|D167,,Font Color|E167,,Font Color|F167,,Font Color|G167,,Font Color|H167,,Font Color|I167,,Font Color|J167,,Font Color|K167,,Font Color|L167,BORDERED,Font Color,right Border
+A168,|B168,|C168,|D168,|E168,|F168,|G168,|H168,|I168,|J168,|K168,|L168,
+A169,|B169,|C169,|D169,|E169,|F169,|G169,|H169,|I169,|J169,|K169,|L169,
+A170,|B170,|C170,|D170,|E170,|F170,|G170,|H170,|I170,|J170,|K170,|L170,
+A171,|B171,|C171,|D171,|E171,|F171,|G171,|H171,|I171,|J171,|K171,|L171,
+A172,|B172,|C172,|D172,|E172,|F172,|G172,|H172,|I172,|J172,|K172,|L172,
+A173,|B173,|C173,|D173,|E173,|F173,|G173,|H173,|I173,|J173,|K173,|L173,
+A174,|B174,|C174,|D174,|E174,|F174,|G174,|H174,|I174,|J174,|K174,|L174,
+A175,|B175,|C175,|D175,|E175,|F175,|G175,|H175,|I175,|J175,|K175,|L175,
+A176,|B176,|C176,|D176,|E176,|F176,|G176,|H176,|I176,|J176,|K176,|L176,
+A177,|B177,|C177,|D177,|E177,|F177,|G177,|H177,|I177,|J177,|K177,|L177,
+A178,|B178,|C178,|D178,|E178,|F178,|G178,|H178,|I178,|J178,|K178,|L178,
+A179,|B179,|C179,|D179,|E179,|F179,|G179,|H179,|I179,|J179,|K179,|L179,
+A180,|B180,|C180,|D180,|E180,|F180,|G180,|H180,|I180,|J180,|K180,|L180,
+A181,|B181,|C181,|D181,|E181,|F181,|G181,|H181,|I181,|J181,|K181,|L181,
+A182,|B182,|C182,|D182,|E182,|F182,|G182,|H182,|I182,|J182,|K182,|L182,
+A183,|B183,|C183,|D183,|E183,|F183,|G183,|H183,|I183,|J183,|K183,|L183,
+A184,|B184,|C184,|D184,|E184,|F184,|G184,|H184,|I184,|J184,|K184,|L184,
+A185,|B185,|C185,|D185,|E185,|F185,|G185,|H185,|I185,|J185,|K185,|L185,
+A186,|B186,|C186,|D186,|E186,|F186,|G186,|H186,|I186,|J186,|K186,|L186,
+A187,|B187,|C187,|D187,|E187,|F187,|G187,|H187,|I187,|J187,|K187,|L187,
+A188,|B188,|C188,|D188,|E188,|F188,|G188,|H188,|I188,|J188,|K188,|L188,
+A189,|B189,|C189,|D189,|E189,|F189,|G189,|H189,|I189,|J189,|K189,|L189,
+A190,|B190,|C190,|D190,|E190,|F190,|G190,|H190,|I190,|J190,|K190,|L190,
+A191,|B191,|C191,|D191,|E191,|F191,|G191,|H191,|I191,|J191,|K191,|L191,
+A192,|B192,|C192,|D192,|E192,|F192,|G192,|H192,|I192,|J192,|K192,|L192,
+A193,|B193,|C193,|D193,|E193,|F193,|G193,|H193,|I193,|J193,|K193,|L193,
+A194,|B194,|C194,|D194,|E194,|F194,|G194,|H194,|I194,|J194,|K194,|L194,
+A195,|B195,|C195,|D195,|E195,|F195,|G195,|H195,|I195,|J195,|K195,|L195,
+A196,|B196,|C196,|D196,|E196,|F196,|G196,|H196,|I196,|J196,|K196,|L196,
+A197,|B197,|C197,|D197,|E197,|F197,|G197,|H197,|I197,|J197,|K197,|L197,
+A198,|B198,|C198,|D198,|E198,|F198,|G198,|H198,|I198,|J198,|K198,|L198,
+A199,|B199,|C199,|D199,|E199,|F199,|G199,|H199,|I199,|J199,|K199,|L199,
+A200,|B200,|C200,|D200,|E200,|F200,|G200,|H200,|I200,|J200,|K200,|L200,
+A201,|B201,|C201,|D201,|E201,|F201,|G201,|H201,|I201,|J201,|K201,|L201,
+A202,|B202,|C202,|D202,|E202,|F202,|G202,|H202,|I202,|J202,|K202,|L202,
+A203,|B203,|C203,|D203,|E203,|F203,|G203,|H203,|I203,|J203,|K203,|L203,
+A204,|B204,|C204,|D204,|E204,|F204,|G204,|H204,|I204,|J204,|K204,|L204,
+A205,|B205,|C205,|D205,|E205,|F205,|G205,|H205,|I205,|J205,|K205,|L205,
+A206,|B206,|C206,|D206,|E206,|F206,|G206,|H206,|I206,|J206,|K206,|L206,
+A207,|B207,|C207,|D207,|E207,|F207,|G207,|H207,|I207,|J207,|K207,|L207,
+A208,|B208,|C208,|D208,|E208,|F208,|G208,|H208,|I208,|J208,|K208,|L208,
+A209,|B209,|C209,|D209,|E209,|F209,|G209,|H209,|I209,|J209,|K209,|L209,
+A210,|B210,|C210,|D210,|E210,|F210,|G210,|H210,|I210,|J210,|K210,|L210,
+A211,|B211,|C211,|D211,|E211,|F211,|G211,|H211,|I211,|J211,|K211,|L211,
+A212,|B212,|C212,|D212,|E212,|F212,|G212,|H212,|I212,|J212,|K212,|L212,
+A213,|B213,|C213,|D213,|E213,|F213,|G213,|H213,|I213,|J213,|K213,|L213,
+A214,|B214,|C214,|D214,|E214,|F214,|G214,|H214,|I214,|J214,|K214,|L214,
+A215,|B215,|C215,|D215,|E215,|F215,|G215,|H215,|I215,|J215,|K215,|L215,
+A216,|B216,|C216,|D216,|E216,|F216,|G216,|H216,|I216,|J216,|K216,|L216,
+A217,|B217,|C217,|D217,|E217,|F217,|G217,|H217,|I217,|J217,|K217,|L217,
+A218,|B218,|C218,|D218,|E218,|F218,|G218,|H218,|I218,|J218,|K218,|L218,
+A219,|B219,|C219,|D219,|E219,|F219,|G219,|H219,|I219,|J219,|K219,|L219,
+A220,|B220,|C220,|D220,|E220,|F220,|G220,|H220,|I220,|J220,|K220,|L220,
+A221,|B221,|C221,|D221,|E221,|F221,|G221,|H221,|I221,|J221,|K221,|L221,
+A222,|B222,|C222,|D222,|E222,|F222,|G222,|H222,|I222,|J222,|K222,|L222,
+A223,|B223,|C223,|D223,|E223,|F223,|G223,|H223,|I223,|J223,|K223,|L223,
+A224,|B224,|C224,|D224,|E224,|F224,|G224,|H224,|I224,|J224,|K224,|L224,
+A225,|B225,|C225,|D225,|E225,|F225,|G225,|H225,|I225,|J225,|K225,|L225,
+A226,|B226,|C226,|D226,|E226,|F226,|G226,|H226,|I226,|J226,|K226,|L226,
+A227,|B227,|C227,|D227,|E227,|F227,|G227,|H227,|I227,|J227,|K227,|L227,
+A228,|B228,|C228,|D228,|E228,|F228,|G228,|H228,|I228,|J228,|K228,|L228,
+A229,|B229,|C229,|D229,|E229,|F229,|G229,|H229,|I229,|J229,|K229,|L229,
+A230,|B230,|C230,|D230,|E230,|F230,|G230,|H230,|I230,|J230,|K230,|L230,
+A231,|B231,|C231,|D231,|E231,|F231,|G231,|H231,|I231,|J231,|K231,|L231,
+A232,|B232,|C232,|D232,|E232,|F232,|G232,|H232,|I232,|J232,|K232,|L232,
+A233,|B233,|C233,|D233,|E233,|F233,|G233,|H233,|I233,|J233,|K233,|L233,
+A234,|B234,|C234,|D234,|E234,|F234,|G234,|H234,|I234,|J234,|K234,|L234,
+A235,|B235,|C235,|D235,|E235,|F235,|G235,|H235,|I235,|J235,|K235,|L235,
+A236,|B236,|C236,|D236,|E236,|F236,|G236,|H236,|I236,|J236,|K236,|L236,
+A237,|B237,|C237,|D237,|E237,|F237,|G237,|H237,|I237,|J237,|K237,|L237,
+A238,|B238,|C238,|D238,|E238,|F238,|G238,|H238,|I238,|J238,|K238,|L238,
+A239,|B239,|C239,|D239,|E239,|F239,|G239,|H239,|I239,|J239,|K239,|L239,
+A240,|B240,|C240,|D240,|E240,|F240,|G240,|H240,|I240,|J240,|K240,|L240,
+A241,|B241,|C241,|D241,|E241,|F241,|G241,|H241,|I241,|J241,|K241,|L241,
+A242,|B242,|C242,|D242,|E242,|F242,|G242,|H242,|I242,|J242,|K242,|L242,
+A243,|B243,|C243,|D243,|E243,|F243,|G243,|H243,|I243,|J243,|K243,|L243,
+A244,|B244,|C244,|D244,|E244,|F244,|G244,|H244,|I244,|J244,|K244,|L244,
+A245,|B245,|C245,|D245,|E245,|F245,|G245,|H245,|I245,|J245,|K245,|L245,
+A246,|B246,|C246,|D246,|E246,|F246,|G246,|H246,|I246,|J246,|K246,|L246,
+A247,|B247,|C247,|D247,|E247,|F247,|G247,|H247,|I247,|J247,|K247,|L247,
+A248,|B248,|C248,|D248,|E248,|F248,|G248,|H248,|I248,|J248,|K248,|L248,
+A249,|B249,|C249,|D249,|E249,|F249,|G249,|H249,|I249,|J249,|K249,|L249,
+A250,|B250,|C250,|D250,|E250,|F250,|G250,|H250,|I250,|J250,|K250,|L250,
+A251,|B251,|C251,|D251,|E251,|F251,|G251,|H251,|I251,|J251,|K251,|L251,
+A252,|B252,|C252,|D252,|E252,|F252,|G252,|H252,|I252,|J252,|K252,|L252,
+A253,|B253,|C253,|D253,|E253,|F253,|G253,|H253,|I253,|J253,|K253,|L253,
+A254,|B254,|C254,|D254,|E254,|F254,|G254,|H254,|I254,|J254,|K254,|L254,
+A255,|B255,|C255,|D255,|E255,|F255,|G255,|H255,|I255,|J255,|K255,|L255,
+A256,|B256,|C256,|D256,|E256,|F256,|G256,|H256,|I256,|J256,|K256,|L256,
+A257,|B257,|C257,|D257,|E257,|F257,|G257,|H257,|I257,|J257,|K257,|L257,
+A258,|B258,|C258,|D258,|E258,|F258,|G258,|H258,|I258,|J258,|K258,|L258,
+A259,|B259,|C259,|D259,|E259,|F259,|G259,|H259,|I259,|J259,|K259,|L259,
+A260,|B260,|C260,|D260,|E260,|F260,|G260,|H260,|I260,|J260,|K260,|L260,
+A261,|B261,|C261,|D261,|E261,|F261,|G261,|H261,|I261,|J261,|K261,|L261,
+A262,|B262,|C262,|D262,|E262,|F262,|G262,|H262,|I262,|J262,|K262,|L262,
+A263,|B263,|C263,|D263,|E263,|F263,|G263,|H263,|I263,|J263,|K263,|L263,
+A264,|B264,|C264,|D264,|E264,|F264,|G264,|H264,|I264,|J264,|K264,|L264,
+A265,|B265,|C265,|D265,|E265,|F265,|G265,|H265,|I265,|J265,|K265,|L265,
+A266,|B266,|C266,|D266,|E266,|F266,|G266,|H266,|I266,|J266,|K266,|L266,
+A267,|B267,|C267,|D267,|E267,|F267,|G267,|H267,|I267,|J267,|K267,|L267,
+
+---
+
+Chunk 3/4 (rows 168-247):
+
+Text Input:
+{"BIRK":["B3","K7"],"VOO":["C3"],"2023-10-20 00:00:00":["B4"],"2024-10-30 00:00:00":["C4"],"Date":["B7","F7","J7"],"Close":["C7","G7"],"VOO (Rebased)":["L7"],"45454":["B168","F168","J168"],"59.14":["C168","K168"],"49.354275304271425":["D168","H168","L168"],"493.53":["G168"],"45455":["B169","F169","J169"],"58.79":["C169","K169"],"49.7652859247009":["D169","H169","L169"],"497.64":["G169"],"45456":["B170","F170","J170"],"59.95":["C170","K170"],"49.85928835370423":["D170","H170","L170"],"498.58":["G170"],"45457":["B171","F171","J171"],"59.67":["C171","K171"],"49.899289387322675":["D171","H171","L171"],"498.98":["G171"],"45460":["B172","F172","J172"],"60.1":["C172","K172"],"50.29529962014522":["D172","H172","L172"],"502.94":["G172"],"45461":["B173","F173","J173"],"60.11":["C173","K173"],"50.429303082767":["D173","H173","L173"],"504.28":["G173"],"45463":["B174","F174","J174"],"61.14":["C174","K174"],"50.28929946510246":["D174","H174","L174"],"502.88":["G174"],"45464":["B175","F175","J175"],"61.47":["C175","K175"],"50.17929662265174":["D175","H175","L175"],"501.78":["G175"],"45467":["B176","F176","J176"],"59.78":["C176","K176"],"50.04429313418952":["D176","H176","L176"],"500.43":["G176"],"45468":["B177","F177","J177"],"57.37":["C177","K177"],"50.2522985090054":["D177","H177","L177"],"502.51":["G177"],"45469":["B178","F178","J178"],"54.61":["C178","K178"],"50.308299956071224":["D178","H178","L178"],"503.07":["G178"],"45470":["B179","F179","J179"],"54.3":["C179","C194","K179","K194"],"50.386301971627184":["D179","H179","L179"],"503.85":["G179"],"45471":["B180","F180","J180"],"54.41":["C180","K180"],"50.01429235897568":["D180","H180","L180"],"500.13":["G180"],"45474":["B181","F181","J181"],"55.37":["C181","K181"],"50.1292953306287":["D181","H181","L181"],"501.28":["G181"],"45475":["B182","F182","J182"],"55.46":["C182","K182"],"50.45430372877852":["D182","H182","L182"],"504.53":["G182"],"45476":["B183","F183","J183"],"56.5":["C183","K183"],"50.682309620403636":["D183","H183","L183"],"506.81":["G183"],"45478":["B184","F184","J184"],"56.62":["C184","K184"],"50.985317450063306":["D184","H184","L184"],"509.84":["G184"],"45481":["B185","F185","J185"],"56.76":["C185","K185"],"51.0343187162459":["D185","H185","L185"],"510.33":["G185"],"45482":["B186","F186","J186"],"56.29":["C186","K186"],"51.090320163311716":["D186","H186","L186"],"510.89":["G186"],"45483":["B187","F187","J187"],"55.06":["C187","K187"],"51.58233287681852":["D187","H187","L187"],"515.81":["G187"],"45484":["B188","F188","J188"],"54.78":["C188","K188"],"51.140321455334764":["D188","H188","L188"],"511.39":["G188"],"45485":["B189","F189","J189"],"55.65":["C189","K189"],"51.456329620920435":["D189","H189","L189"],"514.55":["G189"],"45488":["B190","F190","J190"],"54.66":["C190","K190"],"51.612333652032355":["D190","H190","L190"],"516.11":["G190"],"45489":["B191","F191","J191"],"55.08":["C191","K191"],"51.90534122328742":["D191","H191","L191"],"519.04":["G191"],"45490":["B192","F192","J192"],"54.16":["C192","K192"],"51.18032248895321":["D192","H192","L192"],"511.79":["G192"],"45491":["B193","F193","J193"],"53.63":["C193","K193"],"50.795312540375726":["D193","H193","L193"],"507.94":["G193"],"45492":["B194","F194","J194"],"50.45630378045944":["D194","H194","L194"],"504.55":["G194"],"45495":["B195","F195","J195"],"55.27":["C195","K195"],"50.980317320861005":["D195","H195","L195"],"509.79":["G195"],"45496":["B196","F196","J196"],"55.52":["C196","C198","K196","K198"],"50.89531512442182":["D196","H196","L196"],"508.94":["G196"],"45497":["B197","F197","J197"],"55.42":["C197","K197"],"49.73028502028477":["D197","H197","L197"],"497.29":["G197"],"45498":["B198","F198","J198"],"49.479278534329055":["D198","H198","L198"],"494.78":["G198"],"45499":["B199","F199","J199"],"57.21":["C199","K199"],"50.03429287578491":["D199","H199","L199"],"500.33":["G199"],"45502":["B200","F200","J200"],"58.55":["C200","K200"],"50.07129383188196":["D200","H200","L200"],"500.7":["G200"],"45503":["B201","F201","J201"],"58.92":["C201","K201"],"49.809287061681175":["D201","H201","L201"],"498.08":["G201"],"45504":["B202","F202","J202"],"59.11":["C202","K202"],"50.59430734644306":["D202","H202","L202"],"505.93":["G202"],"45505":["B203","F203","J203"],"58.12":["C203","K203"],"49.904289516524976":["D203","H203","L203"],"499.03":["G203"],"45506":["B204","F204","J204"],"55.95":["C204","K204"],"48.99226595002456":["D204","H204","L204"],"489.91":["G204"],"45509":["B205","F205","J205"],"54.37":["C205","K205"],"47.521227938706424":["D205","H205","L205"],"475.2":["G205"],"45510":["B206","F206","J206"],"56.02":["C206","K206"],"47.995240187084946":["D206","H206","L206"],"479.94":["G206"],"45511":["B207","F207","J207"],"55.25":["C207","K207"],"47.66223158221143":["D207","H207","L207"],"476.61":["G207"],"45512":["B208","F208","J208"],"57.31":["C208","K208"],"48.77426031680405":["D208","H208","L208"],"487.73":["G208"],"45513":["B209","F209","J209"],"58.47":["C209","K209"],"48.9832657174604":["D209","H209","L209"],"489.82":["G209"],"45516":["B210","F210","J210"],"58.66":["C210","K210"],"49.008266363471925":["D210","H210","L210"],"490.07":["G210"],"45517":["B211","F211","J211"],"60.31":["C211","K211"],"49.82228739760718":["D211","H211","L211"],"498.21":["G211"],"45518":["B212","F212","J212"],"59.56":["C212","K212"],"49.981291506240474":["D212","H212","L212"],"499.8":["G212"],"45519":["B213","F213","J213"],"62.38":["C213","K213"],"50.83931367735601":["D213","H213","L213"],"508.38":["G213"],"45520":["B214","F214","J214"],"62.89":["C214","K214"],"50.94631644228534":["D214","H214","L214"],"509.45":["G214"],"45523":["B215","F215","J215"],"61.95":["C215","K215"],"51.436329104111216":["D215","H215","L215"],"514.35":["G215"],"45524":["B216","F216","J216"],"61.6":["C216","K216"],"51.35132690767203":["D216","H216","L216"],"513.5":["G216"],"45525":["B217","F217","J217"],"63.03":["C217","K217"],"51.53133155895501":["D217","H217","L217"],"515.3":["G217"],"45526":["B218","F218","J218"],"62.22":["C218","K218"],"51.114320783482775":["D218","H218","L218"],"511.13":["G218"],"45527":["B219","F219","J219"],"63.57":["C219","K219"],"51.6673350732577":["D219","H219","L219"],"516.66":["G219"],"45530":["B220","F220","J220"],"62.4":["C220","K220"],"51.54033179151916":["D220","H220","L220"],"515.39":["G220"],"45531":["B221","F221","J221"],"61.97":["C221","K221"],"51.60933357451098":["D221","H221","L221"],"516.08":["G221"],"45532":["B222","F222","J222"],"60.7":["C222","K222"],"51.31432595157498":["D222","H222","L222"],"513.13":["G222"],"45533":["B223","F223","J223"],"50.9":["C223","K223"],"51.32232615829867":["D223","H223","L223"],"513.21":["G223"],"45534":["B224","F224","J224"],"49.9":["C224","K224"],"51.80533863924132":["D224","H224","L224"],"518.04":["G224"],"45538":["B225","F225","J225"],"49.85":["C225","K225"],"50.75731155843821":["D225","H225","L225"],"507.56":["G225"],"45539":["B226","F226","J226"],"48.21":["C226","K226"],"50.63130830254012":["D226","H226","L226"],"506.3":["G226"],"45540":["B227","F227","J227"],"47.5":["C227","K227"],"50.5063050724825":["D227","H227","L227"],"505.05":["G227"],"45541":["B228","F228","J228"],"45.41":["C228","K228"],"49.665283340654796":["D228","H228","L228"],"496.64":["G228"],"45544":["B229","F229","J229"],"44.58":["C229","K229"],"50.224297785472494":["D229","H229","L229"],"502.23":["G229"],"45545":["B230","F230","J230"],"43.88":["C230","K230"],"50.43130313444792":["D230","H230","L230"],"504.3":["G230"],"45546":["B231","F231","J231"],"44.79":["C231","K231"],"50.94731646812579":["D231","H231","L231"],"509.46":["G231"],"45547":["B232","F232","J232"],"46.43":["C232","K232"],"51.385327786247714":["D232","H232","L232"],"513.84":["G232"],"45548":["B233","F233","J233"],"46.24":["C233","K233"],"51.65833484069356":["D233","H233","L233"],"516.57":["G233"],"45551":["B234","F234","J234"],"48.24":["C234","C235","C236","K234","K235","K236"],"51.73633685624952":["D234","H234","L234"],"517.35":["G234"],"45552":["B235","F235","J235"],"51.76033747642059":["D235","H235","L235"],"517.59":["G235"],"45553":["B236","F236","J236"],"51.59233313522313":["D236","H236","L236"],"515.91":["G236"],"45554":["B237","F237","J237"],"47.86":["C237","K237"],"52.49235639163803":["D237","H237","L237"],"524.91":["G237"],"45555":["B238","F238","J238"],"47.83":["C238","K238"],"52.389353730070546":["D238","H238","L238"],"523.88":["G238"],"45558":["B239","F239","J239"],"49.17":["C239","K239"],"52.51835706349001":["D239","H239","L239"],"525.17":["G239"],"45559":["B240","F240","J240"],"50.17":["C240","K240"],"52.66936096539962":["D240","H240","L240"],"526.68":["G240"],"45560":["B241","F241","J241"],"49.35":["C241","K241"],"52.5623582004703":["D241","H241","L241"],"525.61":["G241"],"45561":["B242","F242","J242"],"49.83":["C242","K242"],"52.77136360112665":["D242","H242","L242"],"527.7":["G242"],"45562":["B243","F243","J243"],"49.25":["C243","K243"],"52.539357606139696":["D243","H243","L243"],"525.38":["G243"],"45565":["B244","F244","J244"],"49.29":["C244","K244"],"52.76836352360526":["D244","H244","L244"],"527.67":["G244"],"45566":["B245","F245","J245"],"47.97":["C245","K245"],"52.275350784257995":["D245","H245","L245"],"522.74":["G245"],"45567":["B246","F246","J246"],"47.45":["C246","K246"],"52.28435101682215":["D246","H246","L246"],"522.83":["G246"],"45568":["B247","F247","J247"],"47.44":["C247","K247"],"52.18534845861651":["D247","H247","L247"],"521.84":["G247"],"__empty_cells":2473}
+
+Format Input:
+A1,,Font Color|B1,,Font Color|C1,,Font Color|D1,,Font Color|E1,,Font Color|F1,,Font Color|G1,,Font Color|H1,,Font Color|I1,,Font Color|J1,,Font Color|K1,,Font Color|L1,,Font Color
+A2,|B2,|C2,|D2,|E2,|F2,|G2,|H2,|I2,|J2,|K2,|L2,
+A3,,Font Color|B3,HIGHLIGHTED,BORDERED,Fill Color,Font Color,top Border,left Border|C3,HIGHLIGHTED,BORDERED,Fill Color,Font Color,right Border,top Border|D3,,Font Color|E3,,Font Color|F3,,Font Color|G3,,Font Color|H3,,Font Color|I3,,Font Color|J3,,Font Color|K3,,Font Color|L3,,Font Color
+A4,,Font Color|B4,BORDERED,Font Color,bottom Border,left Border|C4,BORDERED,Font Color,right Border,bottom Border|D4,,Font Color|E4,,Font Color|F4,,Font Color|G4,,Font Color|H4,,Font Color|I4,,Font Color|J4,,Font Color|K4,,Font Color|L4,,Font Color
+A5,|B5,|C5,|D5,|E5,|F5,|G5,|H5,|I5,|J5,|K5,|L5,
+A6,|B6,|C6,|D6,|E6,|F6,|G6,|H6,|I6,|J6,|K6,|L6,
+A7,,Font Color|B7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border,left Border|C7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|D7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|E7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|F7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|G7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|H7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|I7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|J7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|K7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|L7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,right Border,bottom Border,top Border
+A8,|B8,|C8,|D8,|E8,|F8,|G8,|H8,|I8,|J8,|K8,|L8,
+A9,|B9,|C9,|D9,|E9,|F9,|G9,|H9,|I9,|J9,|K9,|L9,
+A10,|B10,|C10,|D10,|E10,|F10,|G10,|H10,|I10,|J10,|K10,|L10,
+A11,|B11,|C11,|D11,|E11,|F11,|G11,|H11,|I11,|J11,|K11,|L11,
+A12,|B12,|C12,|D12,|E12,|F12,|G12,|H12,|I12,|J12,|K12,|L12,
+A13,|B13,|C13,|D13,|E13,|F13,|G13,|H13,|I13,|J13,|K13,|L13,
+A14,|B14,|C14,|D14,|E14,|F14,|G14,|H14,|I14,|J14,|K14,|L14,
+A15,|B15,|C15,|D15,|E15,|F15,|G15,|H15,|I15,|J15,|K15,|L15,
+A16,|B16,|C16,|D16,|E16,|F16,|G16,|H16,|I16,|J16,|K16,|L16,
+A17,|B17,|C17,|D17,|E17,|F17,|G17,|H17,|I17,|J17,|K17,|L17,
+A18,|B18,|C18,|D18,|E18,|F18,|G18,|H18,|I18,|J18,|K18,|L18,
+A19,|B19,|C19,|D19,|E19,|F19,|G19,|H19,|I19,|J19,|K19,|L19,
+A20,|B20,|C20,|D20,|E20,|F20,|G20,|H20,|I20,|J20,|K20,|L20,
+A21,|B21,|C21,|D21,|E21,|F21,|G21,|H21,|I21,|J21,|K21,|L21,
+A22,|B22,|C22,|D22,|E22,|F22,|G22,|H22,|I22,|J22,|K22,|L22,
+A23,|B23,|C23,|D23,|E23,|F23,|G23,|H23,|I23,|J23,|K23,|L23,
+A24,|B24,|C24,|D24,|E24,|F24,|G24,|H24,|I24,|J24,|K24,|L24,
+A25,|B25,|C25,|D25,|E25,|F25,|G25,|H25,|I25,|J25,|K25,|L25,
+A26,|B26,|C26,|D26,|E26,|F26,|G26,|H26,|I26,|J26,|K26,|L26,
+A27,|B27,|C27,|D27,|E27,|F27,|G27,|H27,|I27,|J27,|K27,|L27,
+A28,|B28,|C28,|D28,|E28,|F28,|G28,|H28,|I28,|J28,|K28,|L28,
+A29,|B29,|C29,|D29,|E29,|F29,|G29,|H29,|I29,|J29,|K29,|L29,
+A30,|B30,|C30,|D30,|E30,|F30,|G30,|H30,|I30,|J30,|K30,|L30,
+A31,|B31,|C31,|D31,|E31,|F31,|G31,|H31,|I31,|J31,|K31,|L31,
+A32,|B32,|C32,|D32,|E32,|F32,|G32,|H32,|I32,|J32,|K32,|L32,
+A33,|B33,|C33,|D33,|E33,|F33,|G33,|H33,|I33,|J33,|K33,|L33,
+A34,|B34,|C34,|D34,|E34,|F34,|G34,|H34,|I34,|J34,|K34,|L34,
+A35,|B35,|C35,|D35,|E35,|F35,|G35,|H35,|I35,|J35,|K35,|L35,
+A36,|B36,|C36,|D36,|E36,|F36,|G36,|H36,|I36,|J36,|K36,|L36,
+A37,|B37,|C37,|D37,|E37,|F37,|G37,|H37,|I37,|J37,|K37,|L37,
+A38,|B38,|C38,|D38,|E38,|F38,|G38,|H38,|I38,|J38,|K38,|L38,
+A39,|B39,|C39,|D39,|E39,|F39,|G39,|H39,|I39,|J39,|K39,|L39,
+A40,|B40,|C40,|D40,|E40,|F40,|G40,|H40,|I40,|J40,|K40,|L40,
+A41,|B41,|C41,|D41,|E41,|F41,|G41,|H41,|I41,|J41,|K41,|L41,
+A42,|B42,|C42,|D42,|E42,|F42,|G42,|H42,|I42,|J42,|K42,|L42,
+A43,|B43,|C43,|D43,|E43,|F43,|G43,|H43,|I43,|J43,|K43,|L43,
+A44,|B44,|C44,|D44,|E44,|F44,|G44,|H44,|I44,|J44,|K44,|L44,
+A45,|B45,|C45,|D45,|E45,|F45,|G45,|H45,|I45,|J45,|K45,|L45,
+A46,|B46,|C46,|D46,|E46,|F46,|G46,|H46,|I46,|J46,|K46,|L46,
+A47,|B47,|C47,|D47,|E47,|F47,|G47,|H47,|I47,|J47,|K47,|L47,
+A48,|B48,|C48,|D48,|E48,|F48,|G48,|H48,|I48,|J48,|K48,|L48,
+A49,|B49,|C49,|D49,|E49,|F49,|G49,|H49,|I49,|J49,|K49,|L49,
+A50,|B50,|C50,|D50,|E50,|F50,|G50,|H50,|I50,|J50,|K50,|L50,
+A51,|B51,|C51,|D51,|E51,|F51,|G51,|H51,|I51,|J51,|K51,|L51,
+A52,|B52,|C52,|D52,|E52,|F52,|G52,|H52,|I52,|J52,|K52,|L52,
+A53,|B53,|C53,|D53,|E53,|F53,|G53,|H53,|I53,|J53,|K53,|L53,
+A54,|B54,|C54,|D54,|E54,|F54,|G54,|H54,|I54,|J54,|K54,|L54,
+A55,|B55,|C55,|D55,|E55,|F55,|G55,|H55,|I55,|J55,|K55,|L55,
+A56,|B56,|C56,|D56,|E56,|F56,|G56,|H56,|I56,|J56,|K56,|L56,
+A57,|B57,|C57,|D57,|E57,|F57,|G57,|H57,|I57,|J57,|K57,|L57,
+A58,|B58,|C58,|D58,|E58,|F58,|G58,|H58,|I58,|J58,|K58,|L58,
+A59,|B59,|C59,|D59,|E59,|F59,|G59,|H59,|I59,|J59,|K59,|L59,
+A60,|B60,|C60,|D60,|E60,|F60,|G60,|H60,|I60,|J60,|K60,|L60,
+A61,|B61,|C61,|D61,|E61,|F61,|G61,|H61,|I61,|J61,|K61,|L61,
+A62,|B62,|C62,|D62,|E62,|F62,|G62,|H62,|I62,|J62,|K62,|L62,
+A63,|B63,|C63,|D63,|E63,|F63,|G63,|H63,|I63,|J63,|K63,|L63,
+A64,|B64,|C64,|D64,|E64,|F64,|G64,|H64,|I64,|J64,|K64,|L64,
+A65,|B65,|C65,|D65,|E65,|F65,|G65,|H65,|I65,|J65,|K65,|L65,
+A66,|B66,|C66,|D66,|E66,|F66,|G66,|H66,|I66,|J66,|K66,|L66,
+A67,|B67,|C67,|D67,|E67,|F67,|G67,|H67,|I67,|J67,|K67,|L67,
+A68,|B68,|C68,|D68,|E68,|F68,|G68,|H68,|I68,|J68,|K68,|L68,
+A69,|B69,|C69,|D69,|E69,|F69,|G69,|H69,|I69,|J69,|K69,|L69,
+A70,|B70,|C70,|D70,|E70,|F70,|G70,|H70,|I70,|J70,|K70,|L70,
+A71,|B71,|C71,|D71,|E71,|F71,|G71,|H71,|I71,|J71,|K71,|L71,
+A72,|B72,|C72,|D72,|E72,|F72,|G72,|H72,|I72,|J72,|K72,|L72,
+A73,|B73,|C73,|D73,|E73,|F73,|G73,|H73,|I73,|J73,|K73,|L73,
+A74,|B74,|C74,|D74,|E74,|F74,|G74,|H74,|I74,|J74,|K74,|L74,
+A75,|B75,|C75,|D75,|E75,|F75,|G75,|H75,|I75,|J75,|K75,|L75,
+A76,|B76,|C76,|D76,|E76,|F76,|G76,|H76,|I76,|J76,|K76,|L76,
+A77,|B77,|C77,|D77,|E77,|F77,|G77,|H77,|I77,|J77,|K77,|L77,
+A78,|B78,|C78,|D78,|E78,|F78,|G78,|H78,|I78,|J78,|K78,|L78,
+A79,|B79,|C79,|D79,|E79,|F79,|G79,|H79,|I79,|J79,|K79,|L79,
+A80,|B80,|C80,|D80,|E80,|F80,|G80,|H80,|I80,|J80,|K80,|L80,
+A81,|B81,|C81,|D81,|E81,|F81,|G81,|H81,|I81,|J81,|K81,|L81,
+A82,|B82,|C82,|D82,|E82,|F82,|G82,|H82,|I82,|J82,|K82,|L82,
+A83,|B83,|C83,|D83,|E83,|F83,|G83,|H83,|I83,|J83,|K83,|L83,
+A84,|B84,|C84,|D84,|E84,|F84,|G84,|H84,|I84,|J84,|K84,|L84,
+A85,|B85,|C85,|D85,|E85,|F85,|G85,|H85,|I85,|J85,|K85,|L85,
+A86,|B86,|C86,|D86,|E86,|F86,|G86,|H86,|I86,|J86,|K86,|L86,
+A87,|B87,|C87,|D87,|E87,|F87,|G87,|H87,|I87,|J87,|K87,|L87,
+A88,|B88,|C88,|D88,|E88,|F88,|G88,|H88,|I88,|J88,|K88,|L88,
+A89,|B89,|C89,|D89,|E89,|F89,|G89,|H89,|I89,|J89,|K89,|L89,
+A90,|B90,|C90,|D90,|E90,|F90,|G90,|H90,|I90,|J90,|K90,|L90,
+A91,|B91,|C91,|D91,|E91,|F91,|G91,|H91,|I91,|J91,|K91,|L91,
+A92,|B92,|C92,|D92,|E92,|F92,|G92,|H92,|I92,|J92,|K92,|L92,
+A93,|B93,|C93,|D93,|E93,|F93,|G93,|H93,|I93,|J93,|K93,|L93,
+A94,|B94,|C94,|D94,|E94,|F94,|G94,|H94,|I94,|J94,|K94,|L94,
+A95,|B95,|C95,|D95,|E95,|F95,|G95,|H95,|I95,|J95,|K95,|L95,
+A96,|B96,|C96,|D96,|E96,|F96,|G96,|H96,|I96,|J96,|K96,|L96,
+A97,|B97,|C97,|D97,|E97,|F97,|G97,|H97,|I97,|J97,|K97,|L97,
+A98,|B98,|C98,|D98,|E98,|F98,|G98,|H98,|I98,|J98,|K98,|L98,
+A99,|B99,|C99,|D99,|E99,|F99,|G99,|H99,|I99,|J99,|K99,|L99,
+A100,|B100,|C100,|D100,|E100,|F100,|G100,|H100,|I100,|J100,|K100,|L100,
+A101,|B101,|C101,|D101,|E101,|F101,|G101,|H101,|I101,|J101,|K101,|L101,
+A102,|B102,|C102,|D102,|E102,|F102,|G102,|H102,|I102,|J102,|K102,|L102,
+A103,|B103,|C103,|D103,|E103,|F103,|G103,|H103,|I103,|J103,|K103,|L103,
+A104,|B104,|C104,|D104,|E104,|F104,|G104,|H104,|I104,|J104,|K104,|L104,
+A105,|B105,|C105,|D105,|E105,|F105,|G105,|H105,|I105,|J105,|K105,|L105,
+A106,|B106,|C106,|D106,|E106,|F106,|G106,|H106,|I106,|J106,|K106,|L106,
+A107,|B107,|C107,|D107,|E107,|F107,|G107,|H107,|I107,|J107,|K107,|L107,
+A108,|B108,|C108,|D108,|E108,|F108,|G108,|H108,|I108,|J108,|K108,|L108,
+A109,|B109,|C109,|D109,|E109,|F109,|G109,|H109,|I109,|J109,|K109,|L109,
+A110,|B110,|C110,|D110,|E110,|F110,|G110,|H110,|I110,|J110,|K110,|L110,
+A111,|B111,|C111,|D111,|E111,|F111,|G111,|H111,|I111,|J111,|K111,|L111,
+A112,|B112,|C112,|D112,|E112,|F112,|G112,|H112,|I112,|J112,|K112,|L112,
+A113,|B113,|C113,|D113,|E113,|F113,|G113,|H113,|I113,|J113,|K113,|L113,
+A114,|B114,|C114,|D114,|E114,|F114,|G114,|H114,|I114,|J114,|K114,|L114,
+A115,|B115,|C115,|D115,|E115,|F115,|G115,|H115,|I115,|J115,|K115,|L115,
+A116,|B116,|C116,|D116,|E116,|F116,|G116,|H116,|I116,|J116,|K116,|L116,
+A117,|B117,|C117,|D117,|E117,|F117,|G117,|H117,|I117,|J117,|K117,|L117,
+A118,|B118,|C118,|D118,|E118,|F118,|G118,|H118,|I118,|J118,|K118,|L118,
+A119,|B119,|C119,|D119,|E119,|F119,|G119,|H119,|I119,|J119,|K119,|L119,
+A120,|B120,|C120,|D120,|E120,|F120,|G120,|H120,|I120,|J120,|K120,|L120,
+A121,|B121,|C121,|D121,|E121,|F121,|G121,|H121,|I121,|J121,|K121,|L121,
+A122,|B122,|C122,|D122,|E122,|F122,|G122,|H122,|I122,|J122,|K122,|L122,
+A123,|B123,|C123,|D123,|E123,|F123,|G123,|H123,|I123,|J123,|K123,|L123,
+A124,|B124,|C124,|D124,|E124,|F124,|G124,|H124,|I124,|J124,|K124,|L124,
+A125,|B125,|C125,|D125,|E125,|F125,|G125,|H125,|I125,|J125,|K125,|L125,
+A126,|B126,|C126,|D126,|E126,|F126,|G126,|H126,|I126,|J126,|K126,|L126,
+A127,|B127,|C127,|D127,|E127,|F127,|G127,|H127,|I127,|J127,|K127,|L127,
+A128,|B128,|C128,|D128,|E128,|F128,|G128,|H128,|I128,|J128,|K128,|L128,
+A129,|B129,|C129,|D129,|E129,|F129,|G129,|H129,|I129,|J129,|K129,|L129,
+A130,|B130,|C130,|D130,|E130,|F130,|G130,|H130,|I130,|J130,|K130,|L130,
+A131,|B131,|C131,|D131,|E131,|F131,|G131,|H131,|I131,|J131,|K131,|L131,
+A132,|B132,|C132,|D132,|E132,|F132,|G132,|H132,|I132,|J132,|K132,|L132,
+A133,|B133,|C133,|D133,|E133,|F133,|G133,|H133,|I133,|J133,|K133,|L133,
+A134,|B134,|C134,|D134,|E134,|F134,|G134,|H134,|I134,|J134,|K134,|L134,
+A135,|B135,|C135,|D135,|E135,|F135,|G135,|H135,|I135,|J135,|K135,|L135,
+A136,|B136,|C136,|D136,|E136,|F136,|G136,|H136,|I136,|J136,|K136,|L136,
+A137,|B137,|C137,|D137,|E137,|F137,|G137,|H137,|I137,|J137,|K137,|L137,
+A138,|B138,|C138,|D138,|E138,|F138,|G138,|H138,|I138,|J138,|K138,|L138,
+A139,|B139,|C139,|D139,|E139,|F139,|G139,|H139,|I139,|J139,|K139,|L139,
+A140,|B140,|C140,|D140,|E140,|F140,|G140,|H140,|I140,|J140,|K140,|L140,
+A141,|B141,|C141,|D141,|E141,|F141,|G141,|H141,|I141,|J141,|K141,|L141,
+A142,|B142,|C142,|D142,|E142,|F142,|G142,|H142,|I142,|J142,|K142,|L142,
+A143,|B143,|C143,|D143,|E143,|F143,|G143,|H143,|I143,|J143,|K143,|L143,
+A144,|B144,|C144,|D144,|E144,|F144,|G144,|H144,|I144,|J144,|K144,|L144,
+A145,|B145,|C145,|D145,|E145,|F145,|G145,|H145,|I145,|J145,|K145,|L145,
+A146,|B146,|C146,|D146,|E146,|F146,|G146,|H146,|I146,|J146,|K146,|L146,
+A147,|B147,|C147,|D147,|E147,|F147,|G147,|H147,|I147,|J147,|K147,|L147,
+A148,|B148,|C148,|D148,|E148,|F148,|G148,|H148,|I148,|J148,|K148,|L148,
+A149,|B149,|C149,|D149,|E149,|F149,|G149,|H149,|I149,|J149,|K149,|L149,
+A150,|B150,|C150,|D150,|E150,|F150,|G150,|H150,|I150,|J150,|K150,|L150,
+A151,|B151,|C151,|D151,|E151,|F151,|G151,|H151,|I151,|J151,|K151,|L151,
+A152,|B152,|C152,|D152,|E152,|F152,|G152,|H152,|I152,|J152,|K152,|L152,
+A153,|B153,|C153,|D153,|E153,|F153,|G153,|H153,|I153,|J153,|K153,|L153,
+A154,|B154,|C154,|D154,|E154,|F154,|G154,|H154,|I154,|J154,|K154,|L154,
+A155,|B155,|C155,|D155,|E155,|F155,|G155,|H155,|I155,|J155,|K155,|L155,
+A156,|B156,|C156,|D156,|E156,|F156,|G156,|H156,|I156,|J156,|K156,|L156,
+A157,|B157,|C157,|D157,|E157,|F157,|G157,|H157,|I157,|J157,|K157,|L157,
+A158,|B158,|C158,|D158,|E158,|F158,|G158,|H158,|I158,|J158,|K158,|L158,
+A159,|B159,|C159,|D159,|E159,|F159,|G159,|H159,|I159,|J159,|K159,|L159,
+A160,|B160,|C160,|D160,|E160,|F160,|G160,|H160,|I160,|J160,|K160,|L160,
+A161,|B161,|C161,|D161,|E161,|F161,|G161,|H161,|I161,|J161,|K161,|L161,
+A162,|B162,|C162,|D162,|E162,|F162,|G162,|H162,|I162,|J162,|K162,|L162,
+A163,|B163,|C163,|D163,|E163,|F163,|G163,|H163,|I163,|J163,|K163,|L163,
+A164,|B164,|C164,|D164,|E164,|F164,|G164,|H164,|I164,|J164,|K164,|L164,
+A165,|B165,|C165,|D165,|E165,|F165,|G165,|H165,|I165,|J165,|K165,|L165,
+A166,|B166,|C166,|D166,|E166,|F166,|G166,|H166,|I166,|J166,|K166,|L166,
+A167,|B167,|C167,|D167,|E167,|F167,|G167,|H167,|I167,|J167,|K167,|L167,
+A168,,Font Color|B168,BORDERED,Font Color,left Border|C168,,Font Color|D168,,Font Color|E168,,Font Color|F168,,Font Color|G168,,Font Color|H168,,Font Color|I168,,Font Color|J168,,Font Color|K168,,Font Color|L168,BORDERED,Font Color,right Border
+A169,,Font Color|B169,BORDERED,Font Color,left Border|C169,,Font Color|D169,,Font Color|E169,,Font Color|F169,,Font Color|G169,,Font Color|H169,,Font Color|I169,,Font Color|J169,,Font Color|K169,,Font Color|L169,BORDERED,Font Color,right Border
+A170,,Font Color|B170,BORDERED,Font Color,left Border|C170,,Font Color|D170,,Font Color|E170,,Font Color|F170,,Font Color|G170,,Font Color|H170,,Font Color|I170,,Font Color|J170,,Font Color|K170,,Font Color|L170,BORDERED,Font Color,right Border
+A171,,Font Color|B171,BORDERED,Font Color,left Border|C171,,Font Color|D171,,Font Color|E171,,Font Color|F171,,Font Color|G171,,Font Color|H171,,Font Color|I171,,Font Color|J171,,Font Color|K171,,Font Color|L171,BORDERED,Font Color,right Border
+A172,,Font Color|B172,BORDERED,Font Color,left Border|C172,,Font Color|D172,,Font Color|E172,,Font Color|F172,,Font Color|G172,,Font Color|H172,,Font Color|I172,,Font Color|J172,,Font Color|K172,,Font Color|L172,BORDERED,Font Color,right Border
+A173,,Font Color|B173,BORDERED,Font Color,left Border|C173,,Font Color|D173,,Font Color|E173,,Font Color|F173,,Font Color|G173,,Font Color|H173,,Font Color|I173,,Font Color|J173,,Font Color|K173,,Font Color|L173,BORDERED,Font Color,right Border
+A174,,Font Color|B174,BORDERED,Font Color,left Border|C174,,Font Color|D174,,Font Color|E174,,Font Color|F174,,Font Color|G174,,Font Color|H174,,Font Color|I174,,Font Color|J174,,Font Color|K174,,Font Color|L174,BORDERED,Font Color,right Border
+A175,,Font Color|B175,BORDERED,Font Color,left Border|C175,,Font Color|D175,,Font Color|E175,,Font Color|F175,,Font Color|G175,,Font Color|H175,,Font Color|I175,,Font Color|J175,,Font Color|K175,,Font Color|L175,BORDERED,Font Color,right Border
+A176,,Font Color|B176,BORDERED,Font Color,left Border|C176,,Font Color|D176,,Font Color|E176,,Font Color|F176,,Font Color|G176,,Font Color|H176,,Font Color|I176,,Font Color|J176,,Font Color|K176,,Font Color|L176,BORDERED,Font Color,right Border
+A177,,Font Color|B177,BORDERED,Font Color,left Border|C177,,Font Color|D177,,Font Color|E177,,Font Color|F177,,Font Color|G177,,Font Color|H177,,Font Color|I177,,Font Color|J177,,Font Color|K177,,Font Color|L177,BORDERED,Font Color,right Border
+A178,,Font Color|B178,BORDERED,Font Color,left Border|C178,,Font Color|D178,,Font Color|E178,,Font Color|F178,,Font Color|G178,,Font Color|H178,,Font Color|I178,,Font Color|J178,,Font Color|K178,,Font Color|L178,BORDERED,Font Color,right Border
+A179,,Font Color|B179,BORDERED,Font Color,left Border|C179,,Font Color|D179,,Font Color|E179,,Font Color|F179,,Font Color|G179,,Font Color|H179,,Font Color|I179,,Font Color|J179,,Font Color|K179,,Font Color|L179,BORDERED,Font Color,right Border
+A180,,Font Color|B180,BORDERED,Font Color,left Border|C180,,Font Color|D180,,Font Color|E180,,Font Color|F180,,Font Color|G180,,Font Color|H180,,Font Color|I180,,Font Color|J180,,Font Color|K180,,Font Color|L180,BORDERED,Font Color,right Border
+A181,,Font Color|B181,BORDERED,Font Color,left Border|C181,,Font Color|D181,,Font Color|E181,,Font Color|F181,,Font Color|G181,,Font Color|H181,,Font Color|I181,,Font Color|J181,,Font Color|K181,,Font Color|L181,BORDERED,Font Color,right Border
+A182,,Font Color|B182,BORDERED,Font Color,left Border|C182,,Font Color|D182,,Font Color|E182,,Font Color|F182,,Font Color|G182,,Font Color|H182,,Font Color|I182,,Font Color|J182,,Font Color|K182,,Font Color|L182,BORDERED,Font Color,right Border
+A183,,Font Color|B183,BORDERED,Font Color,left Border|C183,,Font Color|D183,,Font Color|E183,,Font Color|F183,,Font Color|G183,,Font Color|H183,,Font Color|I183,,Font Color|J183,,Font Color|K183,,Font Color|L183,BORDERED,Font Color,right Border
+A184,,Font Color|B184,BORDERED,Font Color,left Border|C184,,Font Color|D184,,Font Color|E184,,Font Color|F184,,Font Color|G184,,Font Color|H184,,Font Color|I184,,Font Color|J184,,Font Color|K184,,Font Color|L184,BORDERED,Font Color,right Border
+A185,,Font Color|B185,BORDERED,Font Color,left Border|C185,,Font Color|D185,,Font Color|E185,,Font Color|F185,,Font Color|G185,,Font Color|H185,,Font Color|I185,,Font Color|J185,,Font Color|K185,,Font Color|L185,BORDERED,Font Color,right Border
+A186,,Font Color|B186,BORDERED,Font Color,left Border|C186,,Font Color|D186,,Font Color|E186,,Font Color|F186,,Font Color|G186,,Font Color|H186,,Font Color|I186,,Font Color|J186,,Font Color|K186,,Font Color|L186,BORDERED,Font Color,right Border
+A187,,Font Color|B187,BORDERED,Font Color,left Border|C187,,Font Color|D187,,Font Color|E187,,Font Color|F187,,Font Color|G187,,Font Color|H187,,Font Color|I187,,Font Color|J187,,Font Color|K187,,Font Color|L187,BORDERED,Font Color,right Border
+A188,,Font Color|B188,BORDERED,Font Color,left Border|C188,,Font Color|D188,,Font Color|E188,,Font Color|F188,,Font Color|G188,,Font Color|H188,,Font Color|I188,,Font Color|J188,,Font Color|K188,,Font Color|L188,BORDERED,Font Color,right Border
+A189,,Font Color|B189,BORDERED,Font Color,left Border|C189,,Font Color|D189,,Font Color|E189,,Font Color|F189,,Font Color|G189,,Font Color|H189,,Font Color|I189,,Font Color|J189,,Font Color|K189,,Font Color|L189,BORDERED,Font Color,right Border
+A190,,Font Color|B190,BORDERED,Font Color,left Border|C190,,Font Color|D190,,Font Color|E190,,Font Color|F190,,Font Color|G190,,Font Color|H190,,Font Color|I190,,Font Color|J190,,Font Color|K190,,Font Color|L190,BORDERED,Font Color,right Border
+A191,,Font Color|B191,BORDERED,Font Color,left Border|C191,,Font Color|D191,,Font Color|E191,,Font Color|F191,,Font Color|G191,,Font Color|H191,,Font Color|I191,,Font Color|J191,,Font Color|K191,,Font Color|L191,BORDERED,Font Color,right Border
+A192,,Font Color|B192,BORDERED,Font Color,left Border|C192,,Font Color|D192,,Font Color|E192,,Font Color|F192,,Font Color|G192,,Font Color|H192,,Font Color|I192,,Font Color|J192,,Font Color|K192,,Font Color|L192,BORDERED,Font Color,right Border
+A193,,Font Color|B193,BORDERED,Font Color,left Border|C193,,Font Color|D193,,Font Color|E193,,Font Color|F193,,Font Color|G193,,Font Color|H193,,Font Color|I193,,Font Color|J193,,Font Color|K193,,Font Color|L193,BORDERED,Font Color,right Border
+A194,,Font Color|B194,BORDERED,Font Color,left Border|C194,,Font Color|D194,,Font Color|E194,,Font Color|F194,,Font Color|G194,,Font Color|H194,,Font Color|I194,,Font Color|J194,,Font Color|K194,,Font Color|L194,BORDERED,Font Color,right Border
+A195,,Font Color|B195,BORDERED,Font Color,left Border|C195,,Font Color|D195,,Font Color|E195,,Font Color|F195,,Font Color|G195,,Font Color|H195,,Font Color|I195,,Font Color|J195,,Font Color|K195,,Font Color|L195,BORDERED,Font Color,right Border
+A196,,Font Color|B196,BORDERED,Font Color,left Border|C196,,Font Color|D196,,Font Color|E196,,Font Color|F196,,Font Color|G196,,Font Color|H196,,Font Color|I196,,Font Color|J196,,Font Color|K196,,Font Color|L196,BORDERED,Font Color,right Border
+A197,,Font Color|B197,BORDERED,Font Color,left Border|C197,,Font Color|D197,,Font Color|E197,,Font Color|F197,,Font Color|G197,,Font Color|H197,,Font Color|I197,,Font Color|J197,,Font Color|K197,,Font Color|L197,BORDERED,Font Color,right Border
+A198,,Font Color|B198,BORDERED,Font Color,left Border|C198,,Font Color|D198,,Font Color|E198,,Font Color|F198,,Font Color|G198,,Font Color|H198,,Font Color|I198,,Font Color|J198,,Font Color|K198,,Font Color|L198,BORDERED,Font Color,right Border
+A199,,Font Color|B199,BORDERED,Font Color,left Border|C199,,Font Color|D199,,Font Color|E199,,Font Color|F199,,Font Color|G199,,Font Color|H199,,Font Color|I199,,Font Color|J199,,Font Color|K199,,Font Color|L199,BORDERED,Font Color,right Border
+A200,,Font Color|B200,BORDERED,Font Color,left Border|C200,,Font Color|D200,,Font Color|E200,,Font Color|F200,,Font Color|G200,,Font Color|H200,,Font Color|I200,,Font Color|J200,,Font Color|K200,,Font Color|L200,BORDERED,Font Color,right Border
+A201,,Font Color|B201,BORDERED,Font Color,left Border|C201,,Font Color|D201,,Font Color|E201,,Font Color|F201,,Font Color|G201,,Font Color|H201,,Font Color|I201,,Font Color|J201,,Font Color|K201,,Font Color|L201,BORDERED,Font Color,right Border
+A202,,Font Color|B202,BORDERED,Font Color,left Border|C202,,Font Color|D202,,Font Color|E202,,Font Color|F202,,Font Color|G202,,Font Color|H202,,Font Color|I202,,Font Color|J202,,Font Color|K202,,Font Color|L202,BORDERED,Font Color,right Border
+A203,,Font Color|B203,BORDERED,Font Color,left Border|C203,,Font Color|D203,,Font Color|E203,,Font Color|F203,,Font Color|G203,,Font Color|H203,,Font Color|I203,,Font Color|J203,,Font Color|K203,,Font Color|L203,BORDERED,Font Color,right Border
+A204,,Font Color|B204,BORDERED,Font Color,left Border|C204,,Font Color|D204,,Font Color|E204,,Font Color|F204,,Font Color|G204,,Font Color|H204,,Font Color|I204,,Font Color|J204,,Font Color|K204,,Font Color|L204,BORDERED,Font Color,right Border
+A205,,Font Color|B205,BORDERED,Font Color,left Border|C205,,Font Color|D205,,Font Color|E205,,Font Color|F205,,Font Color|G205,,Font Color|H205,,Font Color|I205,,Font Color|J205,,Font Color|K205,,Font Color|L205,BORDERED,Font Color,right Border
+A206,,Font Color|B206,BORDERED,Font Color,left Border|C206,,Font Color|D206,,Font Color|E206,,Font Color|F206,,Font Color|G206,,Font Color|H206,,Font Color|I206,,Font Color|J206,,Font Color|K206,,Font Color|L206,BORDERED,Font Color,right Border
+A207,,Font Color|B207,BORDERED,Font Color,left Border|C207,,Font Color|D207,,Font Color|E207,,Font Color|F207,,Font Color|G207,,Font Color|H207,,Font Color|I207,,Font Color|J207,,Font Color|K207,,Font Color|L207,BORDERED,Font Color,right Border
+A208,,Font Color|B208,BORDERED,Font Color,left Border|C208,,Font Color|D208,,Font Color|E208,,Font Color|F208,,Font Color|G208,,Font Color|H208,,Font Color|I208,,Font Color|J208,,Font Color|K208,,Font Color|L208,BORDERED,Font Color,right Border
+A209,,Font Color|B209,BORDERED,Font Color,left Border|C209,,Font Color|D209,,Font Color|E209,,Font Color|F209,,Font Color|G209,,Font Color|H209,,Font Color|I209,,Font Color|J209,,Font Color|K209,,Font Color|L209,BORDERED,Font Color,right Border
+A210,,Font Color|B210,BORDERED,Font Color,left Border|C210,,Font Color|D210,,Font Color|E210,,Font Color|F210,,Font Color|G210,,Font Color|H210,,Font Color|I210,,Font Color|J210,,Font Color|K210,,Font Color|L210,BORDERED,Font Color,right Border
+A211,,Font Color|B211,BORDERED,Font Color,left Border|C211,,Font Color|D211,,Font Color|E211,,Font Color|F211,,Font Color|G211,,Font Color|H211,,Font Color|I211,,Font Color|J211,,Font Color|K211,,Font Color|L211,BORDERED,Font Color,right Border
+A212,,Font Color|B212,BORDERED,Font Color,left Border|C212,,Font Color|D212,,Font Color|E212,,Font Color|F212,,Font Color|G212,,Font Color|H212,,Font Color|I212,,Font Color|J212,,Font Color|K212,,Font Color|L212,BORDERED,Font Color,right Border
+A213,,Font Color|B213,BORDERED,Font Color,left Border|C213,,Font Color|D213,,Font Color|E213,,Font Color|F213,,Font Color|G213,,Font Color|H213,,Font Color|I213,,Font Color|J213,,Font Color|K213,,Font Color|L213,BORDERED,Font Color,right Border
+A214,,Font Color|B214,BORDERED,Font Color,left Border|C214,,Font Color|D214,,Font Color|E214,,Font Color|F214,,Font Color|G214,,Font Color|H214,,Font Color|I214,,Font Color|J214,,Font Color|K214,,Font Color|L214,BORDERED,Font Color,right Border
+A215,,Font Color|B215,BORDERED,Font Color,left Border|C215,,Font Color|D215,,Font Color|E215,,Font Color|F215,,Font Color|G215,,Font Color|H215,,Font Color|I215,,Font Color|J215,,Font Color|K215,,Font Color|L215,BORDERED,Font Color,right Border
+A216,,Font Color|B216,BORDERED,Font Color,left Border|C216,,Font Color|D216,,Font Color|E216,,Font Color|F216,,Font Color|G216,,Font Color|H216,,Font Color|I216,,Font Color|J216,,Font Color|K216,,Font Color|L216,BORDERED,Font Color,right Border
+A217,,Font Color|B217,BORDERED,Font Color,left Border|C217,,Font Color|D217,,Font Color|E217,,Font Color|F217,,Font Color|G217,,Font Color|H217,,Font Color|I217,,Font Color|J217,,Font Color|K217,,Font Color|L217,BORDERED,Font Color,right Border
+A218,,Font Color|B218,BORDERED,Font Color,left Border|C218,,Font Color|D218,,Font Color|E218,,Font Color|F218,,Font Color|G218,,Font Color|H218,,Font Color|I218,,Font Color|J218,,Font Color|K218,,Font Color|L218,BORDERED,Font Color,right Border
+A219,,Font Color|B219,BORDERED,Font Color,left Border|C219,,Font Color|D219,,Font Color|E219,,Font Color|F219,,Font Color|G219,,Font Color|H219,,Font Color|I219,,Font Color|J219,,Font Color|K219,,Font Color|L219,BORDERED,Font Color,right Border
+A220,,Font Color|B220,BORDERED,Font Color,left Border|C220,,Font Color|D220,,Font Color|E220,,Font Color|F220,,Font Color|G220,,Font Color|H220,,Font Color|I220,,Font Color|J220,,Font Color|K220,,Font Color|L220,BORDERED,Font Color,right Border
+A221,,Font Color|B221,BORDERED,Font Color,left Border|C221,,Font Color|D221,,Font Color|E221,,Font Color|F221,,Font Color|G221,,Font Color|H221,,Font Color|I221,,Font Color|J221,,Font Color|K221,,Font Color|L221,BORDERED,Font Color,right Border
+A222,,Font Color|B222,BORDERED,Font Color,left Border|C222,,Font Color|D222,,Font Color|E222,,Font Color|F222,,Font Color|G222,,Font Color|H222,,Font Color|I222,,Font Color|J222,,Font Color|K222,,Font Color|L222,BORDERED,Font Color,right Border
+A223,,Font Color|B223,BORDERED,Font Color,left Border|C223,,Font Color|D223,,Font Color|E223,,Font Color|F223,,Font Color|G223,,Font Color|H223,,Font Color|I223,,Font Color|J223,,Font Color|K223,,Font Color|L223,BORDERED,Font Color,right Border
+A224,,Font Color|B224,BORDERED,Font Color,left Border|C224,,Font Color|D224,,Font Color|E224,,Font Color|F224,,Font Color|G224,,Font Color|H224,,Font Color|I224,,Font Color|J224,,Font Color|K224,,Font Color|L224,BORDERED,Font Color,right Border
+A225,,Font Color|B225,BORDERED,Font Color,left Border|C225,,Font Color|D225,,Font Color|E225,,Font Color|F225,,Font Color|G225,,Font Color|H225,,Font Color|I225,,Font Color|J225,,Font Color|K225,,Font Color|L225,BORDERED,Font Color,right Border
+A226,,Font Color|B226,BORDERED,Font Color,left Border|C226,,Font Color|D226,,Font Color|E226,,Font Color|F226,,Font Color|G226,,Font Color|H226,,Font Color|I226,,Font Color|J226,,Font Color|K226,,Font Color|L226,BORDERED,Font Color,right Border
+A227,,Font Color|B227,BORDERED,Font Color,left Border|C227,,Font Color|D227,,Font Color|E227,,Font Color|F227,,Font Color|G227,,Font Color|H227,,Font Color|I227,,Font Color|J227,,Font Color|K227,,Font Color|L227,BORDERED,Font Color,right Border
+A228,,Font Color|B228,BORDERED,Font Color,left Border|C228,,Font Color|D228,,Font Color|E228,,Font Color|F228,,Font Color|G228,,Font Color|H228,,Font Color|I228,,Font Color|J228,,Font Color|K228,,Font Color|L228,BORDERED,Font Color,right Border
+A229,,Font Color|B229,BORDERED,Font Color,left Border|C229,,Font Color|D229,,Font Color|E229,,Font Color|F229,,Font Color|G229,,Font Color|H229,,Font Color|I229,,Font Color|J229,,Font Color|K229,,Font Color|L229,BORDERED,Font Color,right Border
+A230,,Font Color|B230,BORDERED,Font Color,left Border|C230,,Font Color|D230,,Font Color|E230,,Font Color|F230,,Font Color|G230,,Font Color|H230,,Font Color|I230,,Font Color|J230,,Font Color|K230,,Font Color|L230,BORDERED,Font Color,right Border
+A231,,Font Color|B231,BORDERED,Font Color,left Border|C231,,Font Color|D231,,Font Color|E231,,Font Color|F231,,Font Color|G231,,Font Color|H231,,Font Color|I231,,Font Color|J231,,Font Color|K231,,Font Color|L231,BORDERED,Font Color,right Border
+A232,,Font Color|B232,BORDERED,Font Color,left Border|C232,,Font Color|D232,,Font Color|E232,,Font Color|F232,,Font Color|G232,,Font Color|H232,,Font Color|I232,,Font Color|J232,,Font Color|K232,,Font Color|L232,BORDERED,Font Color,right Border
+A233,,Font Color|B233,BORDERED,Font Color,left Border|C233,,Font Color|D233,,Font Color|E233,,Font Color|F233,,Font Color|G233,,Font Color|H233,,Font Color|I233,,Font Color|J233,,Font Color|K233,,Font Color|L233,BORDERED,Font Color,right Border
+A234,,Font Color|B234,BORDERED,Font Color,left Border|C234,,Font Color|D234,,Font Color|E234,,Font Color|F234,,Font Color|G234,,Font Color|H234,,Font Color|I234,,Font Color|J234,,Font Color|K234,,Font Color|L234,BORDERED,Font Color,right Border
+A235,,Font Color|B235,BORDERED,Font Color,left Border|C235,,Font Color|D235,,Font Color|E235,,Font Color|F235,,Font Color|G235,,Font Color|H235,,Font Color|I235,,Font Color|J235,,Font Color|K235,,Font Color|L235,BORDERED,Font Color,right Border
+A236,,Font Color|B236,BORDERED,Font Color,left Border|C236,,Font Color|D236,,Font Color|E236,,Font Color|F236,,Font Color|G236,,Font Color|H236,,Font Color|I236,,Font Color|J236,,Font Color|K236,,Font Color|L236,BORDERED,Font Color,right Border
+A237,,Font Color|B237,BORDERED,Font Color,left Border|C237,,Font Color|D237,,Font Color|E237,,Font Color|F237,,Font Color|G237,,Font Color|H237,,Font Color|I237,,Font Color|J237,,Font Color|K237,,Font Color|L237,BORDERED,Font Color,right Border
+A238,,Font Color|B238,BORDERED,Font Color,left Border|C238,,Font Color|D238,,Font Color|E238,,Font Color|F238,,Font Color|G238,,Font Color|H238,,Font Color|I238,,Font Color|J238,,Font Color|K238,,Font Color|L238,BORDERED,Font Color,right Border
+A239,,Font Color|B239,BORDERED,Font Color,left Border|C239,,Font Color|D239,,Font Color|E239,,Font Color|F239,,Font Color|G239,,Font Color|H239,,Font Color|I239,,Font Color|J239,,Font Color|K239,,Font Color|L239,BORDERED,Font Color,right Border
+A240,,Font Color|B240,BORDERED,Font Color,left Border|C240,,Font Color|D240,,Font Color|E240,,Font Color|F240,,Font Color|G240,,Font Color|H240,,Font Color|I240,,Font Color|J240,,Font Color|K240,,Font Color|L240,BORDERED,Font Color,right Border
+A241,,Font Color|B241,BORDERED,Font Color,left Border|C241,,Font Color|D241,,Font Color|E241,,Font Color|F241,,Font Color|G241,,Font Color|H241,,Font Color|I241,,Font Color|J241,,Font Color|K241,,Font Color|L241,BORDERED,Font Color,right Border
+A242,,Font Color|B242,BORDERED,Font Color,left Border|C242,,Font Color|D242,,Font Color|E242,,Font Color|F242,,Font Color|G242,,Font Color|H242,,Font Color|I242,,Font Color|J242,,Font Color|K242,,Font Color|L242,BORDERED,Font Color,right Border
+A243,,Font Color|B243,BORDERED,Font Color,left Border|C243,,Font Color|D243,,Font Color|E243,,Font Color|F243,,Font Color|G243,,Font Color|H243,,Font Color|I243,,Font Color|J243,,Font Color|K243,,Font Color|L243,BORDERED,Font Color,right Border
+A244,,Font Color|B244,BORDERED,Font Color,left Border|C244,,Font Color|D244,,Font Color|E244,,Font Color|F244,,Font Color|G244,,Font Color|H244,,Font Color|I244,,Font Color|J244,,Font Color|K244,,Font Color|L244,BORDERED,Font Color,right Border
+A245,,Font Color|B245,BORDERED,Font Color,left Border|C245,,Font Color|D245,,Font Color|E245,,Font Color|F245,,Font Color|G245,,Font Color|H245,,Font Color|I245,,Font Color|J245,,Font Color|K245,,Font Color|L245,BORDERED,Font Color,right Border
+A246,,Font Color|B246,BORDERED,Font Color,left Border|C246,,Font Color|D246,,Font Color|E246,,Font Color|F246,,Font Color|G246,,Font Color|H246,,Font Color|I246,,Font Color|J246,,Font Color|K246,,Font Color|L246,BORDERED,Font Color,right Border
+A247,,Font Color|B247,BORDERED,Font Color,left Border|C247,,Font Color|D247,,Font Color|E247,,Font Color|F247,,Font Color|G247,,Font Color|H247,,Font Color|I247,,Font Color|J247,,Font Color|K247,,Font Color|L247,BORDERED,Font Color,right Border
+A248,|B248,|C248,|D248,|E248,|F248,|G248,|H248,|I248,|J248,|K248,|L248,
+A249,|B249,|C249,|D249,|E249,|F249,|G249,|H249,|I249,|J249,|K249,|L249,
+A250,|B250,|C250,|D250,|E250,|F250,|G250,|H250,|I250,|J250,|K250,|L250,
+A251,|B251,|C251,|D251,|E251,|F251,|G251,|H251,|I251,|J251,|K251,|L251,
+A252,|B252,|C252,|D252,|E252,|F252,|G252,|H252,|I252,|J252,|K252,|L252,
+A253,|B253,|C253,|D253,|E253,|F253,|G253,|H253,|I253,|J253,|K253,|L253,
+A254,|B254,|C254,|D254,|E254,|F254,|G254,|H254,|I254,|J254,|K254,|L254,
+A255,|B255,|C255,|D255,|E255,|F255,|G255,|H255,|I255,|J255,|K255,|L255,
+A256,|B256,|C256,|D256,|E256,|F256,|G256,|H256,|I256,|J256,|K256,|L256,
+A257,|B257,|C257,|D257,|E257,|F257,|G257,|H257,|I257,|J257,|K257,|L257,
+A258,|B258,|C258,|D258,|E258,|F258,|G258,|H258,|I258,|J258,|K258,|L258,
+A259,|B259,|C259,|D259,|E259,|F259,|G259,|H259,|I259,|J259,|K259,|L259,
+A260,|B260,|C260,|D260,|E260,|F260,|G260,|H260,|I260,|J260,|K260,|L260,
+A261,|B261,|C261,|D261,|E261,|F261,|G261,|H261,|I261,|J261,|K261,|L261,
+A262,|B262,|C262,|D262,|E262,|F262,|G262,|H262,|I262,|J262,|K262,|L262,
+A263,|B263,|C263,|D263,|E263,|F263,|G263,|H263,|I263,|J263,|K263,|L263,
+A264,|B264,|C264,|D264,|E264,|F264,|G264,|H264,|I264,|J264,|K264,|L264,
+A265,|B265,|C265,|D265,|E265,|F265,|G265,|H265,|I265,|J265,|K265,|L265,
+A266,|B266,|C266,|D266,|E266,|F266,|G266,|H266,|I266,|J266,|K266,|L266,
+A267,|B267,|C267,|D267,|E267,|F267,|G267,|H267,|I267,|J267,|K267,|L267,
+
+---
+
+Chunk 4/4 (rows 248-267):
+
+Text Input:
+{"BIRK":["B3","K7"],"VOO":["C3"],"2023-10-20 00:00:00":["B4"],"2024-10-30 00:00:00":["C4"],"Date":["B7","F7","J7"],"Close":["C7","G7"],"VOO (Rebased)":["L7"],"45569":["B248","F248","J248"],"48.81":["C248","K248"],"52.66636088787824":["D248","H248","L248"],"526.65":["G248"],"45572":["B249","F249","J249"],"47.27":["C249","K249"],"52.19234863949973":["D249","H249","L249"],"521.91":["G249"],"45573":["B250","F250","J250"],"47.79":["C250","K250"],"52.68636140468747":["D250","H250","L250"],"526.85":["G250"],"45574":["B251","F251","J251"],"48.83":["C251","K251"],"53.04637070725342":["D251","H251","L251"],"530.45":["G251"],"45575":["B252","F252","J252"],"49.84":["C252","K252"],"52.957368407452385":["D252","H252","L252"],"529.56":["G252"],"45576":["B253","F253","J253"],"50.02":["C253","K253"],"53.27237654719761":["D253","H253","L253"],"532.71":["G253"],"45579":["B254","F254","J254"],"51.77":["C254","K254"],"53.7083878136386":["D254","H254","L254"],"537.07":["G254"],"45580":["B255","F255","J255"],"50.44":["C255","K255"],"53.29937724489005":["D255","H255","L255"],"532.98":["G255"],"45581":["B256","F256","J256"],"50.36":["C256","K256"],"53.523383033153316":["D256","H256","L256"],"535.22":["G256"],"45582":["B257","F257","J257"],"50.48":["C257","K257"],"53.531383239876995":["D257","H257","L257"],"535.3":["G257"],"45583":["B258","F258","J258"],"51.78":["C258","K258"],"53.73738856301197":["D258","H258","L258"],"537.36":["G258"],"45586":["B259","F259","J259"],"51.06":["C259","K259"],"53.6543864182537":["D259","H259","L259"],"536.53":["G259"],"45587":["B260","F260","J260"],"50.69":["C260","K260"],"53.61738546215664":["D260","H260","L260"],"536.16":["G260"],"45588":["B261","F261","J261"],"50.32":["C261","K261"],"53.12837282617122":["D261","H261","L261"],"531.27":["G261"],"45589":["B262","F262","J262"],"49.51":["C262","K262"],"53.248375927026544":["D262","H262","L262"],"532.47":["G262"],"45590":["B263","F263","J263"],"49.4":["C263","K263"],"53.22737538437686":["D263","H263","L263"],"532.26":["G263"],"45593":["B264","F264","J264"],"48.52":["C264","K264"],"53.393379673893385":["D264","H264","L264"],"533.92":["G264"],"45594":["B265","F265","J265"],"47.69":["C265","K265"],"53.47838187033257":["D265","H265","L265"],"534.77":["G265"],"45595":["B266","F266"],"46.73":["C266"],"533.16":["G266"],"Source: Factset":["B267"],"__empty_cells":3026}
+
+Format Input:
+A1,,Font Color|B1,,Font Color|C1,,Font Color|D1,,Font Color|E1,,Font Color|F1,,Font Color|G1,,Font Color|H1,,Font Color|I1,,Font Color|J1,,Font Color|K1,,Font Color|L1,,Font Color
+A2,|B2,|C2,|D2,|E2,|F2,|G2,|H2,|I2,|J2,|K2,|L2,
+A3,,Font Color|B3,HIGHLIGHTED,BORDERED,Fill Color,Font Color,top Border,left Border|C3,HIGHLIGHTED,BORDERED,Fill Color,Font Color,right Border,top Border|D3,,Font Color|E3,,Font Color|F3,,Font Color|G3,,Font Color|H3,,Font Color|I3,,Font Color|J3,,Font Color|K3,,Font Color|L3,,Font Color
+A4,,Font Color|B4,BORDERED,Font Color,bottom Border,left Border|C4,BORDERED,Font Color,right Border,bottom Border|D4,,Font Color|E4,,Font Color|F4,,Font Color|G4,,Font Color|H4,,Font Color|I4,,Font Color|J4,,Font Color|K4,,Font Color|L4,,Font Color
+A5,|B5,|C5,|D5,|E5,|F5,|G5,|H5,|I5,|J5,|K5,|L5,
+A6,|B6,|C6,|D6,|E6,|F6,|G6,|H6,|I6,|J6,|K6,|L6,
+A7,,Font Color|B7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border,left Border|C7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|D7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|E7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|F7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|G7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|H7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|I7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|J7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|K7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,bottom Border,top Border|L7,HIGHLIGHTED,BOLD,BORDERED,Fill Color,Font Color,right Border,bottom Border,top Border
+A8,|B8,|C8,|D8,|E8,|F8,|G8,|H8,|I8,|J8,|K8,|L8,
+A9,|B9,|C9,|D9,|E9,|F9,|G9,|H9,|I9,|J9,|K9,|L9,
+A10,|B10,|C10,|D10,|E10,|F10,|G10,|H10,|I10,|J10,|K10,|L10,
+A11,|B11,|C11,|D11,|E11,|F11,|G11,|H11,|I11,|J11,|K11,|L11,
+A12,|B12,|C12,|D12,|E12,|F12,|G12,|H12,|I12,|J12,|K12,|L12,
+A13,|B13,|C13,|D13,|E13,|F13,|G13,|H13,|I13,|J13,|K13,|L13,
+A14,|B14,|C14,|D14,|E14,|F14,|G14,|H14,|I14,|J14,|K14,|L14,
+A15,|B15,|C15,|D15,|E15,|F15,|G15,|H15,|I15,|J15,|K15,|L15,
+A16,|B16,|C16,|D16,|E16,|F16,|G16,|H16,|I16,|J16,|K16,|L16,
+A17,|B17,|C17,|D17,|E17,|F17,|G17,|H17,|I17,|J17,|K17,|L17,
+A18,|B18,|C18,|D18,|E18,|F18,|G18,|H18,|I18,|J18,|K18,|L18,
+A19,|B19,|C19,|D19,|E19,|F19,|G19,|H19,|I19,|J19,|K19,|L19,
+A20,|B20,|C20,|D20,|E20,|F20,|G20,|H20,|I20,|J20,|K20,|L20,
+A21,|B21,|C21,|D21,|E21,|F21,|G21,|H21,|I21,|J21,|K21,|L21,
+A22,|B22,|C22,|D22,|E22,|F22,|G22,|H22,|I22,|J22,|K22,|L22,
+A23,|B23,|C23,|D23,|E23,|F23,|G23,|H23,|I23,|J23,|K23,|L23,
+A24,|B24,|C24,|D24,|E24,|F24,|G24,|H24,|I24,|J24,|K24,|L24,
+A25,|B25,|C25,|D25,|E25,|F25,|G25,|H25,|I25,|J25,|K25,|L25,
+A26,|B26,|C26,|D26,|E26,|F26,|G26,|H26,|I26,|J26,|K26,|L26,
+A27,|B27,|C27,|D27,|E27,|F27,|G27,|H27,|I27,|J27,|K27,|L27,
+A28,|B28,|C28,|D28,|E28,|F28,|G28,|H28,|I28,|J28,|K28,|L28,
+A29,|B29,|C29,|D29,|E29,|F29,|G29,|H29,|I29,|J29,|K29,|L29,
+A30,|B30,|C30,|D30,|E30,|F30,|G30,|H30,|I30,|J30,|K30,|L30,
+A31,|B31,|C31,|D31,|E31,|F31,|G31,|H31,|I31,|J31,|K31,|L31,
+A32,|B32,|C32,|D32,|E32,|F32,|G32,|H32,|I32,|J32,|K32,|L32,
+A33,|B33,|C33,|D33,|E33,|F33,|G33,|H33,|I33,|J33,|K33,|L33,
+A34,|B34,|C34,|D34,|E34,|F34,|G34,|H34,|I34,|J34,|K34,|L34,
+A35,|B35,|C35,|D35,|E35,|F35,|G35,|H35,|I35,|J35,|K35,|L35,
+A36,|B36,|C36,|D36,|E36,|F36,|G36,|H36,|I36,|J36,|K36,|L36,
+A37,|B37,|C37,|D37,|E37,|F37,|G37,|H37,|I37,|J37,|K37,|L37,
+A38,|B38,|C38,|D38,|E38,|F38,|G38,|H38,|I38,|J38,|K38,|L38,
+A39,|B39,|C39,|D39,|E39,|F39,|G39,|H39,|I39,|J39,|K39,|L39,
+A40,|B40,|C40,|D40,|E40,|F40,|G40,|H40,|I40,|J40,|K40,|L40,
+A41,|B41,|C41,|D41,|E41,|F41,|G41,|H41,|I41,|J41,|K41,|L41,
+A42,|B42,|C42,|D42,|E42,|F42,|G42,|H42,|I42,|J42,|K42,|L42,
+A43,|B43,|C43,|D43,|E43,|F43,|G43,|H43,|I43,|J43,|K43,|L43,
+A44,|B44,|C44,|D44,|E44,|F44,|G44,|H44,|I44,|J44,|K44,|L44,
+A45,|B45,|C45,|D45,|E45,|F45,|G45,|H45,|I45,|J45,|K45,|L45,
+A46,|B46,|C46,|D46,|E46,|F46,|G46,|H46,|I46,|J46,|K46,|L46,
+A47,|B47,|C47,|D47,|E47,|F47,|G47,|H47,|I47,|J47,|K47,|L47,
+A48,|B48,|C48,|D48,|E48,|F48,|G48,|H48,|I48,|J48,|K48,|L48,
+A49,|B49,|C49,|D49,|E49,|F49,|G49,|H49,|I49,|J49,|K49,|L49,
+A50,|B50,|C50,|D50,|E50,|F50,|G50,|H50,|I50,|J50,|K50,|L50,
+A51,|B51,|C51,|D51,|E51,|F51,|G51,|H51,|I51,|J51,|K51,|L51,
+A52,|B52,|C52,|D52,|E52,|F52,|G52,|H52,|I52,|J52,|K52,|L52,
+A53,|B53,|C53,|D53,|E53,|F53,|G53,|H53,|I53,|J53,|K53,|L53,
+A54,|B54,|C54,|D54,|E54,|F54,|G54,|H54,|I54,|J54,|K54,|L54,
+A55,|B55,|C55,|D55,|E55,|F55,|G55,|H55,|I55,|J55,|K55,|L55,
+A56,|B56,|C56,|D56,|E56,|F56,|G56,|H56,|I56,|J56,|K56,|L56,
+A57,|B57,|C57,|D57,|E57,|F57,|G57,|H57,|I57,|J57,|K57,|L57,
+A58,|B58,|C58,|D58,|E58,|F58,|G58,|H58,|I58,|J58,|K58,|L58,
+A59,|B59,|C59,|D59,|E59,|F59,|G59,|H59,|I59,|J59,|K59,|L59,
+A60,|B60,|C60,|D60,|E60,|F60,|G60,|H60,|I60,|J60,|K60,|L60,
+A61,|B61,|C61,|D61,|E61,|F61,|G61,|H61,|I61,|J61,|K61,|L61,
+A62,|B62,|C62,|D62,|E62,|F62,|G62,|H62,|I62,|J62,|K62,|L62,
+A63,|B63,|C63,|D63,|E63,|F63,|G63,|H63,|I63,|J63,|K63,|L63,
+A64,|B64,|C64,|D64,|E64,|F64,|G64,|H64,|I64,|J64,|K64,|L64,
+A65,|B65,|C65,|D65,|E65,|F65,|G65,|H65,|I65,|J65,|K65,|L65,
+A66,|B66,|C66,|D66,|E66,|F66,|G66,|H66,|I66,|J66,|K66,|L66,
+A67,|B67,|C67,|D67,|E67,|F67,|G67,|H67,|I67,|J67,|K67,|L67,
+A68,|B68,|C68,|D68,|E68,|F68,|G68,|H68,|I68,|J68,|K68,|L68,
+A69,|B69,|C69,|D69,|E69,|F69,|G69,|H69,|I69,|J69,|K69,|L69,
+A70,|B70,|C70,|D70,|E70,|F70,|G70,|H70,|I70,|J70,|K70,|L70,
+A71,|B71,|C71,|D71,|E71,|F71,|G71,|H71,|I71,|J71,|K71,|L71,
+A72,|B72,|C72,|D72,|E72,|F72,|G72,|H72,|I72,|J72,|K72,|L72,
+A73,|B73,|C73,|D73,|E73,|F73,|G73,|H73,|I73,|J73,|K73,|L73,
+A74,|B74,|C74,|D74,|E74,|F74,|G74,|H74,|I74,|J74,|K74,|L74,
+A75,|B75,|C75,|D75,|E75,|F75,|G75,|H75,|I75,|J75,|K75,|L75,
+A76,|B76,|C76,|D76,|E76,|F76,|G76,|H76,|I76,|J76,|K76,|L76,
+A77,|B77,|C77,|D77,|E77,|F77,|G77,|H77,|I77,|J77,|K77,|L77,
+A78,|B78,|C78,|D78,|E78,|F78,|G78,|H78,|I78,|J78,|K78,|L78,
+A79,|B79,|C79,|D79,|E79,|F79,|G79,|H79,|I79,|J79,|K79,|L79,
+A80,|B80,|C80,|D80,|E80,|F80,|G80,|H80,|I80,|J80,|K80,|L80,
+A81,|B81,|C81,|D81,|E81,|F81,|G81,|H81,|I81,|J81,|K81,|L81,
+A82,|B82,|C82,|D82,|E82,|F82,|G82,|H82,|I82,|J82,|K82,|L82,
+A83,|B83,|C83,|D83,|E83,|F83,|G83,|H83,|I83,|J83,|K83,|L83,
+A84,|B84,|C84,|D84,|E84,|F84,|G84,|H84,|I84,|J84,|K84,|L84,
+A85,|B85,|C85,|D85,|E85,|F85,|G85,|H85,|I85,|J85,|K85,|L85,
+A86,|B86,|C86,|D86,|E86,|F86,|G86,|H86,|I86,|J86,|K86,|L86,
+A87,|B87,|C87,|D87,|E87,|F87,|G87,|H87,|I87,|J87,|K87,|L87,
+A88,|B88,|C88,|D88,|E88,|F88,|G88,|H88,|I88,|J88,|K88,|L88,
+A89,|B89,|C89,|D89,|E89,|F89,|G89,|H89,|I89,|J89,|K89,|L89,
+A90,|B90,|C90,|D90,|E90,|F90,|G90,|H90,|I90,|J90,|K90,|L90,
+A91,|B91,|C91,|D91,|E91,|F91,|G91,|H91,|I91,|J91,|K91,|L91,
+A92,|B92,|C92,|D92,|E92,|F92,|G92,|H92,|I92,|J92,|K92,|L92,
+A93,|B93,|C93,|D93,|E93,|F93,|G93,|H93,|I93,|J93,|K93,|L93,
+A94,|B94,|C94,|D94,|E94,|F94,|G94,|H94,|I94,|J94,|K94,|L94,
+A95,|B95,|C95,|D95,|E95,|F95,|G95,|H95,|I95,|J95,|K95,|L95,
+A96,|B96,|C96,|D96,|E96,|F96,|G96,|H96,|I96,|J96,|K96,|L96,
+A97,|B97,|C97,|D97,|E97,|F97,|G97,|H97,|I97,|J97,|K97,|L97,
+A98,|B98,|C98,|D98,|E98,|F98,|G98,|H98,|I98,|J98,|K98,|L98,
+A99,|B99,|C99,|D99,|E99,|F99,|G99,|H99,|I99,|J99,|K99,|L99,
+A100,|B100,|C100,|D100,|E100,|F100,|G100,|H100,|I100,|J100,|K100,|L100,
+A101,|B101,|C101,|D101,|E101,|F101,|G101,|H101,|I101,|J101,|K101,|L101,
+A102,|B102,|C102,|D102,|E102,|F102,|G102,|H102,|I102,|J102,|K102,|L102,
+A103,|B103,|C103,|D103,|E103,|F103,|G103,|H103,|I103,|J103,|K103,|L103,
+A104,|B104,|C104,|D104,|E104,|F104,|G104,|H104,|I104,|J104,|K104,|L104,
+A105,|B105,|C105,|D105,|E105,|F105,|G105,|H105,|I105,|J105,|K105,|L105,
+A106,|B106,|C106,|D106,|E106,|F106,|G106,|H106,|I106,|J106,|K106,|L106,
+A107,|B107,|C107,|D107,|E107,|F107,|G107,|H107,|I107,|J107,|K107,|L107,
+A108,|B108,|C108,|D108,|E108,|F108,|G108,|H108,|I108,|J108,|K108,|L108,
+A109,|B109,|C109,|D109,|E109,|F109,|G109,|H109,|I109,|J109,|K109,|L109,
+A110,|B110,|C110,|D110,|E110,|F110,|G110,|H110,|I110,|J110,|K110,|L110,
+A111,|B111,|C111,|D111,|E111,|F111,|G111,|H111,|I111,|J111,|K111,|L111,
+A112,|B112,|C112,|D112,|E112,|F112,|G112,|H112,|I112,|J112,|K112,|L112,
+A113,|B113,|C113,|D113,|E113,|F113,|G113,|H113,|I113,|J113,|K113,|L113,
+A114,|B114,|C114,|D114,|E114,|F114,|G114,|H114,|I114,|J114,|K114,|L114,
+A115,|B115,|C115,|D115,|E115,|F115,|G115,|H115,|I115,|J115,|K115,|L115,
+A116,|B116,|C116,|D116,|E116,|F116,|G116,|H116,|I116,|J116,|K116,|L116,
+A117,|B117,|C117,|D117,|E117,|F117,|G117,|H117,|I117,|J117,|K117,|L117,
+A118,|B118,|C118,|D118,|E118,|F118,|G118,|H118,|I118,|J118,|K118,|L118,
+A119,|B119,|C119,|D119,|E119,|F119,|G119,|H119,|I119,|J119,|K119,|L119,
+A120,|B120,|C120,|D120,|E120,|F120,|G120,|H120,|I120,|J120,|K120,|L120,
+A121,|B121,|C121,|D121,|E121,|F121,|G121,|H121,|I121,|J121,|K121,|L121,
+A122,|B122,|C122,|D122,|E122,|F122,|G122,|H122,|I122,|J122,|K122,|L122,
+A123,|B123,|C123,|D123,|E123,|F123,|G123,|H123,|I123,|J123,|K123,|L123,
+A124,|B124,|C124,|D124,|E124,|F124,|G124,|H124,|I124,|J124,|K124,|L124,
+A125,|B125,|C125,|D125,|E125,|F125,|G125,|H125,|I125,|J125,|K125,|L125,
+A126,|B126,|C126,|D126,|E126,|F126,|G126,|H126,|I126,|J126,|K126,|L126,
+A127,|B127,|C127,|D127,|E127,|F127,|G127,|H127,|I127,|J127,|K127,|L127,
+A128,|B128,|C128,|D128,|E128,|F128,|G128,|H128,|I128,|J128,|K128,|L128,
+A129,|B129,|C129,|D129,|E129,|F129,|G129,|H129,|I129,|J129,|K129,|L129,
+A130,|B130,|C130,|D130,|E130,|F130,|G130,|H130,|I130,|J130,|K130,|L130,
+A131,|B131,|C131,|D131,|E131,|F131,|G131,|H131,|I131,|J131,|K131,|L131,
+A132,|B132,|C132,|D132,|E132,|F132,|G132,|H132,|I132,|J132,|K132,|L132,
+A133,|B133,|C133,|D133,|E133,|F133,|G133,|H133,|I133,|J133,|K133,|L133,
+A134,|B134,|C134,|D134,|E134,|F134,|G134,|H134,|I134,|J134,|K134,|L134,
+A135,|B135,|C135,|D135,|E135,|F135,|G135,|H135,|I135,|J135,|K135,|L135,
+A136,|B136,|C136,|D136,|E136,|F136,|G136,|H136,|I136,|J136,|K136,|L136,
+A137,|B137,|C137,|D137,|E137,|F137,|G137,|H137,|I137,|J137,|K137,|L137,
+A138,|B138,|C138,|D138,|E138,|F138,|G138,|H138,|I138,|J138,|K138,|L138,
+A139,|B139,|C139,|D139,|E139,|F139,|G139,|H139,|I139,|J139,|K139,|L139,
+A140,|B140,|C140,|D140,|E140,|F140,|G140,|H140,|I140,|J140,|K140,|L140,
+A141,|B141,|C141,|D141,|E141,|F141,|G141,|H141,|I141,|J141,|K141,|L141,
+A142,|B142,|C142,|D142,|E142,|F142,|G142,|H142,|I142,|J142,|K142,|L142,
+A143,|B143,|C143,|D143,|E143,|F143,|G143,|H143,|I143,|J143,|K143,|L143,
+A144,|B144,|C144,|D144,|E144,|F144,|G144,|H144,|I144,|J144,|K144,|L144,
+A145,|B145,|C145,|D145,|E145,|F145,|G145,|H145,|I145,|J145,|K145,|L145,
+A146,|B146,|C146,|D146,|E146,|F146,|G146,|H146,|I146,|J146,|K146,|L146,
+A147,|B147,|C147,|D147,|E147,|F147,|G147,|H147,|I147,|J147,|K147,|L147,
+A148,|B148,|C148,|D148,|E148,|F148,|G148,|H148,|I148,|J148,|K148,|L148,
+A149,|B149,|C149,|D149,|E149,|F149,|G149,|H149,|I149,|J149,|K149,|L149,
+A150,|B150,|C150,|D150,|E150,|F150,|G150,|H150,|I150,|J150,|K150,|L150,
+A151,|B151,|C151,|D151,|E151,|F151,|G151,|H151,|I151,|J151,|K151,|L151,
+A152,|B152,|C152,|D152,|E152,|F152,|G152,|H152,|I152,|J152,|K152,|L152,
+A153,|B153,|C153,|D153,|E153,|F153,|G153,|H153,|I153,|J153,|K153,|L153,
+A154,|B154,|C154,|D154,|E154,|F154,|G154,|H154,|I154,|J154,|K154,|L154,
+A155,|B155,|C155,|D155,|E155,|F155,|G155,|H155,|I155,|J155,|K155,|L155,
+A156,|B156,|C156,|D156,|E156,|F156,|G156,|H156,|I156,|J156,|K156,|L156,
+A157,|B157,|C157,|D157,|E157,|F157,|G157,|H157,|I157,|J157,|K157,|L157,
+A158,|B158,|C158,|D158,|E158,|F158,|G158,|H158,|I158,|J158,|K158,|L158,
+A159,|B159,|C159,|D159,|E159,|F159,|G159,|H159,|I159,|J159,|K159,|L159,
+A160,|B160,|C160,|D160,|E160,|F160,|G160,|H160,|I160,|J160,|K160,|L160,
+A161,|B161,|C161,|D161,|E161,|F161,|G161,|H161,|I161,|J161,|K161,|L161,
+A162,|B162,|C162,|D162,|E162,|F162,|G162,|H162,|I162,|J162,|K162,|L162,
+A163,|B163,|C163,|D163,|E163,|F163,|G163,|H163,|I163,|J163,|K163,|L163,
+A164,|B164,|C164,|D164,|E164,|F164,|G164,|H164,|I164,|J164,|K164,|L164,
+A165,|B165,|C165,|D165,|E165,|F165,|G165,|H165,|I165,|J165,|K165,|L165,
+A166,|B166,|C166,|D166,|E166,|F166,|G166,|H166,|I166,|J166,|K166,|L166,
+A167,|B167,|C167,|D167,|E167,|F167,|G167,|H167,|I167,|J167,|K167,|L167,
+A168,|B168,|C168,|D168,|E168,|F168,|G168,|H168,|I168,|J168,|K168,|L168,
+A169,|B169,|C169,|D169,|E169,|F169,|G169,|H169,|I169,|J169,|K169,|L169,
+A170,|B170,|C170,|D170,|E170,|F170,|G170,|H170,|I170,|J170,|K170,|L170,
+A171,|B171,|C171,|D171,|E171,|F171,|G171,|H171,|I171,|J171,|K171,|L171,
+A172,|B172,|C172,|D172,|E172,|F172,|G172,|H172,|I172,|J172,|K172,|L172,
+A173,|B173,|C173,|D173,|E173,|F173,|G173,|H173,|I173,|J173,|K173,|L173,
+A174,|B174,|C174,|D174,|E174,|F174,|G174,|H174,|I174,|J174,|K174,|L174,
+A175,|B175,|C175,|D175,|E175,|F175,|G175,|H175,|I175,|J175,|K175,|L175,
+A176,|B176,|C176,|D176,|E176,|F176,|G176,|H176,|I176,|J176,|K176,|L176,
+A177,|B177,|C177,|D177,|E177,|F177,|G177,|H177,|I177,|J177,|K177,|L177,
+A178,|B178,|C178,|D178,|E178,|F178,|G178,|H178,|I178,|J178,|K178,|L178,
+A179,|B179,|C179,|D179,|E179,|F179,|G179,|H179,|I179,|J179,|K179,|L179,
+A180,|B180,|C180,|D180,|E180,|F180,|G180,|H180,|I180,|J180,|K180,|L180,
+A181,|B181,|C181,|D181,|E181,|F181,|G181,|H181,|I181,|J181,|K181,|L181,
+A182,|B182,|C182,|D182,|E182,|F182,|G182,|H182,|I182,|J182,|K182,|L182,
+A183,|B183,|C183,|D183,|E183,|F183,|G183,|H183,|I183,|J183,|K183,|L183,
+A184,|B184,|C184,|D184,|E184,|F184,|G184,|H184,|I184,|J184,|K184,|L184,
+A185,|B185,|C185,|D185,|E185,|F185,|G185,|H185,|I185,|J185,|K185,|L185,
+A186,|B186,|C186,|D186,|E186,|F186,|G186,|H186,|I186,|J186,|K186,|L186,
+A187,|B187,|C187,|D187,|E187,|F187,|G187,|H187,|I187,|J187,|K187,|L187,
+A188,|B188,|C188,|D188,|E188,|F188,|G188,|H188,|I188,|J188,|K188,|L188,
+A189,|B189,|C189,|D189,|E189,|F189,|G189,|H189,|I189,|J189,|K189,|L189,
+A190,|B190,|C190,|D190,|E190,|F190,|G190,|H190,|I190,|J190,|K190,|L190,
+A191,|B191,|C191,|D191,|E191,|F191,|G191,|H191,|I191,|J191,|K191,|L191,
+A192,|B192,|C192,|D192,|E192,|F192,|G192,|H192,|I192,|J192,|K192,|L192,
+A193,|B193,|C193,|D193,|E193,|F193,|G193,|H193,|I193,|J193,|K193,|L193,
+A194,|B194,|C194,|D194,|E194,|F194,|G194,|H194,|I194,|J194,|K194,|L194,
+A195,|B195,|C195,|D195,|E195,|F195,|G195,|H195,|I195,|J195,|K195,|L195,
+A196,|B196,|C196,|D196,|E196,|F196,|G196,|H196,|I196,|J196,|K196,|L196,
+A197,|B197,|C197,|D197,|E197,|F197,|G197,|H197,|I197,|J197,|K197,|L197,
+A198,|B198,|C198,|D198,|E198,|F198,|G198,|H198,|I198,|J198,|K198,|L198,
+A199,|B199,|C199,|D199,|E199,|F199,|G199,|H199,|I199,|J199,|K199,|L199,
+A200,|B200,|C200,|D200,|E200,|F200,|G200,|H200,|I200,|J200,|K200,|L200,
+A201,|B201,|C201,|D201,|E201,|F201,|G201,|H201,|I201,|J201,|K201,|L201,
+A202,|B202,|C202,|D202,|E202,|F202,|G202,|H202,|I202,|J202,|K202,|L202,
+A203,|B203,|C203,|D203,|E203,|F203,|G203,|H203,|I203,|J203,|K203,|L203,
+A204,|B204,|C204,|D204,|E204,|F204,|G204,|H204,|I204,|J204,|K204,|L204,
+A205,|B205,|C205,|D205,|E205,|F205,|G205,|H205,|I205,|J205,|K205,|L205,
+A206,|B206,|C206,|D206,|E206,|F206,|G206,|H206,|I206,|J206,|K206,|L206,
+A207,|B207,|C207,|D207,|E207,|F207,|G207,|H207,|I207,|J207,|K207,|L207,
+A208,|B208,|C208,|D208,|E208,|F208,|G208,|H208,|I208,|J208,|K208,|L208,
+A209,|B209,|C209,|D209,|E209,|F209,|G209,|H209,|I209,|J209,|K209,|L209,
+A210,|B210,|C210,|D210,|E210,|F210,|G210,|H210,|I210,|J210,|K210,|L210,
+A211,|B211,|C211,|D211,|E211,|F211,|G211,|H211,|I211,|J211,|K211,|L211,
+A212,|B212,|C212,|D212,|E212,|F212,|G212,|H212,|I212,|J212,|K212,|L212,
+A213,|B213,|C213,|D213,|E213,|F213,|G213,|H213,|I213,|J213,|K213,|L213,
+A214,|B214,|C214,|D214,|E214,|F214,|G214,|H214,|I214,|J214,|K214,|L214,
+A215,|B215,|C215,|D215,|E215,|F215,|G215,|H215,|I215,|J215,|K215,|L215,
+A216,|B216,|C216,|D216,|E216,|F216,|G216,|H216,|I216,|J216,|K216,|L216,
+A217,|B217,|C217,|D217,|E217,|F217,|G217,|H217,|I217,|J217,|K217,|L217,
+A218,|B218,|C218,|D218,|E218,|F218,|G218,|H218,|I218,|J218,|K218,|L218,
+A219,|B219,|C219,|D219,|E219,|F219,|G219,|H219,|I219,|J219,|K219,|L219,
+A220,|B220,|C220,|D220,|E220,|F220,|G220,|H220,|I220,|J220,|K220,|L220,
+A221,|B221,|C221,|D221,|E221,|F221,|G221,|H221,|I221,|J221,|K221,|L221,
+A222,|B222,|C222,|D222,|E222,|F222,|G222,|H222,|I222,|J222,|K222,|L222,
+A223,|B223,|C223,|D223,|E223,|F223,|G223,|H223,|I223,|J223,|K223,|L223,
+A224,|B224,|C224,|D224,|E224,|F224,|G224,|H224,|I224,|J224,|K224,|L224,
+A225,|B225,|C225,|D225,|E225,|F225,|G225,|H225,|I225,|J225,|K225,|L225,
+A226,|B226,|C226,|D226,|E226,|F226,|G226,|H226,|I226,|J226,|K226,|L226,
+A227,|B227,|C227,|D227,|E227,|F227,|G227,|H227,|I227,|J227,|K227,|L227,
+A228,|B228,|C228,|D228,|E228,|F228,|G228,|H228,|I228,|J228,|K228,|L228,
+A229,|B229,|C229,|D229,|E229,|F229,|G229,|H229,|I229,|J229,|K229,|L229,
+A230,|B230,|C230,|D230,|E230,|F230,|G230,|H230,|I230,|J230,|K230,|L230,
+A231,|B231,|C231,|D231,|E231,|F231,|G231,|H231,|I231,|J231,|K231,|L231,
+A232,|B232,|C232,|D232,|E232,|F232,|G232,|H232,|I232,|J232,|K232,|L232,
+A233,|B233,|C233,|D233,|E233,|F233,|G233,|H233,|I233,|J233,|K233,|L233,
+A234,|B234,|C234,|D234,|E234,|F234,|G234,|H234,|I234,|J234,|K234,|L234,
+A235,|B235,|C235,|D235,|E235,|F235,|G235,|H235,|I235,|J235,|K235,|L235,
+A236,|B236,|C236,|D236,|E236,|F236,|G236,|H236,|I236,|J236,|K236,|L236,
+A237,|B237,|C237,|D237,|E237,|F237,|G237,|H237,|I237,|J237,|K237,|L237,
+A238,|B238,|C238,|D238,|E238,|F238,|G238,|H238,|I238,|J238,|K238,|L238,
+A239,|B239,|C239,|D239,|E239,|F239,|G239,|H239,|I239,|J239,|K239,|L239,
+A240,|B240,|C240,|D240,|E240,|F240,|G240,|H240,|I240,|J240,|K240,|L240,
+A241,|B241,|C241,|D241,|E241,|F241,|G241,|H241,|I241,|J241,|K241,|L241,
+A242,|B242,|C242,|D242,|E242,|F242,|G242,|H242,|I242,|J242,|K242,|L242,
+A243,|B243,|C243,|D243,|E243,|F243,|G243,|H243,|I243,|J243,|K243,|L243,
+A244,|B244,|C244,|D244,|E244,|F244,|G244,|H244,|I244,|J244,|K244,|L244,
+A245,|B245,|C245,|D245,|E245,|F245,|G245,|H245,|I245,|J245,|K245,|L245,
+A246,|B246,|C246,|D246,|E246,|F246,|G246,|H246,|I246,|J246,|K246,|L246,
+A247,|B247,|C247,|D247,|E247,|F247,|G247,|H247,|I247,|J247,|K247,|L247,
+A248,,Font Color|B248,BORDERED,Font Color,left Border|C248,,Font Color|D248,,Font Color|E248,,Font Color|F248,,Font Color|G248,,Font Color|H248,,Font Color|I248,,Font Color|J248,,Font Color|K248,,Font Color|L248,BORDERED,Font Color,right Border
+A249,,Font Color|B249,BORDERED,Font Color,left Border|C249,,Font Color|D249,,Font Color|E249,,Font Color|F249,,Font Color|G249,,Font Color|H249,,Font Color|I249,,Font Color|J249,,Font Color|K249,,Font Color|L249,BORDERED,Font Color,right Border
+A250,,Font Color|B250,BORDERED,Font Color,left Border|C250,,Font Color|D250,,Font Color|E250,,Font Color|F250,,Font Color|G250,,Font Color|H250,,Font Color|I250,,Font Color|J250,,Font Color|K250,,Font Color|L250,BORDERED,Font Color,right Border
+A251,,Font Color|B251,BORDERED,Font Color,left Border|C251,,Font Color|D251,,Font Color|E251,,Font Color|F251,,Font Color|G251,,Font Color|H251,,Font Color|I251,,Font Color|J251,,Font Color|K251,,Font Color|L251,BORDERED,Font Color,right Border
+A252,,Font Color|B252,BORDERED,Font Color,left Border|C252,,Font Color|D252,,Font Color|E252,,Font Color|F252,,Font Color|G252,,Font Color|H252,,Font Color|I252,,Font Color|J252,,Font Color|K252,,Font Color|L252,BORDERED,Font Color,right Border
+A253,,Font Color|B253,BORDERED,Font Color,left Border|C253,,Font Color|D253,,Font Color|E253,,Font Color|F253,,Font Color|G253,,Font Color|H253,,Font Color|I253,,Font Color|J253,,Font Color|K253,,Font Color|L253,BORDERED,Font Color,right Border
+A254,,Font Color|B254,BORDERED,Font Color,left Border|C254,,Font Color|D254,,Font Color|E254,,Font Color|F254,,Font Color|G254,,Font Color|H254,,Font Color|I254,,Font Color|J254,,Font Color|K254,,Font Color|L254,BORDERED,Font Color,right Border
+A255,,Font Color|B255,BORDERED,Font Color,left Border|C255,,Font Color|D255,,Font Color|E255,,Font Color|F255,,Font Color|G255,,Font Color|H255,,Font Color|I255,,Font Color|J255,,Font Color|K255,,Font Color|L255,BORDERED,Font Color,right Border
+A256,,Font Color|B256,BORDERED,Font Color,left Border|C256,,Font Color|D256,,Font Color|E256,,Font Color|F256,,Font Color|G256,,Font Color|H256,,Font Color|I256,,Font Color|J256,,Font Color|K256,,Font Color|L256,BORDERED,Font Color,right Border
+A257,,Font Color|B257,BORDERED,Font Color,left Border|C257,,Font Color|D257,,Font Color|E257,,Font Color|F257,,Font Color|G257,,Font Color|H257,,Font Color|I257,,Font Color|J257,,Font Color|K257,,Font Color|L257,BORDERED,Font Color,right Border
+A258,,Font Color|B258,BORDERED,Font Color,left Border|C258,,Font Color|D258,,Font Color|E258,,Font Color|F258,,Font Color|G258,,Font Color|H258,,Font Color|I258,,Font Color|J258,,Font Color|K258,,Font Color|L258,BORDERED,Font Color,right Border
+A259,,Font Color|B259,BORDERED,Font Color,left Border|C259,,Font Color|D259,,Font Color|E259,,Font Color|F259,,Font Color|G259,,Font Color|H259,,Font Color|I259,,Font Color|J259,,Font Color|K259,,Font Color|L259,BORDERED,Font Color,right Border
+A260,,Font Color|B260,BORDERED,Font Color,left Border|C260,,Font Color|D260,,Font Color|E260,,Font Color|F260,,Font Color|G260,,Font Color|H260,,Font Color|I260,,Font Color|J260,,Font Color|K260,,Font Color|L260,BORDERED,Font Color,right Border
+A261,,Font Color|B261,BORDERED,Font Color,left Border|C261,,Font Color|D261,,Font Color|E261,,Font Color|F261,,Font Color|G261,,Font Color|H261,,Font Color|I261,,Font Color|J261,,Font Color|K261,,Font Color|L261,BORDERED,Font Color,right Border
+A262,,Font Color|B262,BORDERED,Font Color,left Border|C262,,Font Color|D262,,Font Color|E262,,Font Color|F262,,Font Color|G262,,Font Color|H262,,Font Color|I262,,Font Color|J262,,Font Color|K262,,Font Color|L262,BORDERED,Font Color,right Border
+A263,,Font Color|B263,BORDERED,Font Color,left Border|C263,,Font Color|D263,,Font Color|E263,,Font Color|F263,,Font Color|G263,,Font Color|H263,,Font Color|I263,,Font Color|J263,,Font Color|K263,,Font Color|L263,BORDERED,Font Color,right Border
+A264,,Font Color|B264,BORDERED,Font Color,left Border|C264,,Font Color|D264,,Font Color|E264,,Font Color|F264,,Font Color|G264,,Font Color|H264,,Font Color|I264,,Font Color|J264,,Font Color|K264,,Font Color|L264,BORDERED,Font Color,right Border
+A265,,Font Color|B265,BORDERED,Font Color,left Border|C265,,Font Color|D265,,Font Color|E265,,Font Color|F265,,Font Color|G265,,Font Color|H265,,Font Color|I265,,Font Color|J265,,Font Color|K265,,Font Color|L265,BORDERED,Font Color,right Border
+A266,,Font Color|B266,BORDERED,Font Color,bottom Border,left Border|C266,BORDERED,Font Color,bottom Border|D266,BORDERED,Font Color,bottom Border|E266,BORDERED,Font Color,bottom Border|F266,BORDERED,Font Color,bottom Border|G266,BORDERED,Font Color,bottom Border|H266,BORDERED,Font Color,bottom Border|I266,BORDERED,Font Color,bottom Border|J266,BORDERED,Font Color,bottom Border|K266,BORDERED,Font Color,bottom Border|L266,BORDERED,Font Color,right Border,bottom Border
+A267,,Font Color|B267,ITALIC,Font Color|C267,,Font Color|D267,,Font Color|E267,,Font Color|F267,,Font Color|G267,,Font Color|H267,,Font Color|I267,,Font Color|J267,,Font Color|K267,,Font Color|L267,,Font Color
